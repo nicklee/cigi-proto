@@ -2,38 +2,39 @@
     "projectName" : "Project name",
     "priorityNavigation" : [
         {
-            "title" : "Primary nav 1",
+            "title" : "Research",
             "href" : "#",
             "dropdown" : false
         },
         {
-            "title" : "Primary nav 2",
+            "title" : "Publications",
             "href" : "#",
             "dropdown" : false
         },
         {
-            "title" : "Primary nav 3",
+            "title" : "Experts",
             "href" : "#",
             "dropdown" : false
         },
         {
-            "title" : "Primary nav 4",
+            "title" : "Opinions",
             "href" : "#",
             "dropdown" : false
-        }
-    ],
-    "audienceNavigation" : [
-        {
-            "title" : "Audience nav 1",
-            "href" : "#"
         },
         {
-            "title" : "Audience nav 2",
-            "href" : "#"
+            "title" : "Multimedia",
+            "href" : "#",
+            "dropdown" : false
         },
         {
-            "title" : "Audience nav 3",
-            "href" : "#"
+            "title" : "Events",
+            "href" : "#",
+            "dropdown" : false
+        },
+        {
+            "title" : "About",
+            "href" : "#",
+            "dropdown" : false
         }
     ],
     "loadMore" : {
