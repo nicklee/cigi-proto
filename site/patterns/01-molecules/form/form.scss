@@ -39,18 +39,6 @@
             border: 1px solid $color--border-light;
         }
 
-        .newsletter & {
-            position: relative;
-
-            .select__icon {
-                pointer-events: none;
-                top: auto;
-                bottom: ($grid);
-                fill: $color--white;
-            }
-
-        }
-
     }
 
     &__group-heading {
@@ -58,12 +46,6 @@
         @include font-size(l);
         margin-bottom: 0;
         color: $color--black;
-
-        .newsletter--dark & {
-            display: none;
-            color: $color--white;
-        }
-
     }
 
     &__item {
@@ -86,27 +68,6 @@
                     width: ($grid);
                 }
 
-            }
-
-        }
-
-        .newsletter & {
-            @include gutter(0, 0, 0.5, 0);
-
-            // Mailchimp overrides
-            select {
-                @include font-size(default);
-                @include gutter(0.2, 0.25, 0.2, 0.25);
-                position: relative;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                display: block;
-                background-color: transparent;
-                border-radius: 0;
-                border: 1px solid $color--white;
-                width: 100%;
-                color: #91849d;
             }
 
         }
@@ -147,12 +108,6 @@
                 border: 1px solid $color--border;
                 width: 100%;
                 color: $color--black;
-
-                .newsletter__form & {
-                    border-color: $color--white;
-                    color: #91849d;
-                }
-
             }
 
         }
@@ -210,15 +165,6 @@
         @include font-size(default);
         display: block;
         color: $color--black;
-
-        .newsletter & {
-            @include gutter(0, 0, 0.2, 0);
-        }
-
-        .newsletter--dark & {
-            color: $color--white;
-        }
-
     }
 
     &__input,
@@ -262,38 +208,11 @@
             background-size: 100% 100%;
             background-image: linear-gradient(180deg, transparent 98%, $color--secondary 0);
             border-bottom: 1px solid transparent;
-
-            .search-header & {
-                background-image: linear-gradient(180deg, transparent 98%, $color--black 0);
-            }
-
-            .newsletter--dark & {
-                border-color: $color--white;
-                color: $color--white;
-            }
-
         }
 
         &::placeholder {
             @include font-size(default);
             color: $color--primary;
-
-            .newsletter--dark & {
-                color: $color--off-white;
-            }
-
-        }
-
-        .newsletter--dark & {
-            color: $color--white;
-            border-color: $color--off-white;
-            min-width: 0;
-            width: auto;
-
-            @include media-query(tablet) {
-                width: 100%;
-            }
-
         }
 
     }
@@ -327,10 +246,6 @@
             margin-right: ($grid / 4);
         }
 
-        .newsletter--dark & {
-            color: $color--off-white;
-        }
-
     }
 
     &__checkbox-item {
@@ -341,30 +256,6 @@
         @include media-query(laptop) {
             flex-basis: 50%;
             min-width: 50%;
-
-            .newsletter & {
-                flex-basis: 100%;
-                min-width: 100%;
-
-                // Mailchimp overrides
-                ul {
-                    margin: 0;
-                    padding: 0;
-                    list-style-type: none;
-                }
-
-                label {
-                    display: flex;
-                    align-items: center;
-                }
-
-                input {
-                    min-width: 0;
-                    width: auto;
-                }
-
-            }
-
         }
 
     }
@@ -372,11 +263,6 @@
     &__required {
         font-weight: 700;
         color: $color--primary;
-
-        .newsletter & {
-            color: $color--white;
-        }
-
     }
 
     &__description {

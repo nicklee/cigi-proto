@@ -2,7 +2,7 @@
     $App header
 \*------------------------------------*/
 
-.app-header {
+.header {
     @include gutter(0, 0, 0, 0);
     $root: &;
     position: fixed;
@@ -58,7 +58,7 @@
         }
 
         @include media-query(laptop) {
-            // Bottom gutter should match app-header__container top gutter
+            // Bottom gutter should match header__container top gutter
             @include gutter(0, 0, 0.75, 0);
         }
 
@@ -109,8 +109,7 @@
 
     // Template specific
 
-    .headroom--not-top &,
-    .template__data & {
+    .headroom--not-top & {
         border-color: $color--border-light;
 
         #{$root}__container {
@@ -150,34 +149,6 @@
             min-width: 24px; // Width of search icon for IE
         }
 
-    }
-
-    .template__homepage & {
-        background-color: transparent;
-
-        #{$root}__nav-container {
-
-            @include media-query(tablet) {
-                animation: fadein 5s;
-            }
-
-        }
-
-    }
-
-    // sass-lint:disable force-element-nesting
-    .headroom--not-top .template__homepage & {
-        background-color: $color--white;
-    }
-    // sass-lint:enddisable
-
-    .header--light &,
-    .header--dark & {
-        background-color: transparent;
-    }
-
-    .headroom--top .template__about & {
-        background-color: transparent;
     }
 
     // Animations
