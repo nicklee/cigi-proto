@@ -1,0 +1,9 @@
+<div class="social-links">
+    <div class="social-links__container">
+        {% for social in items %}
+            <div class="social-links__item">
+                {% include "@atoms/social-item/social-item.twig" with social %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
