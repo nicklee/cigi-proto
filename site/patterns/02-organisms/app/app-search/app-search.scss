@@ -36,7 +36,7 @@
 
         &::placeholder {
             @include font-size(l);
-            color: $color--warm-grey2;
+            color: $color--primary;
 
             @include media-query(laptop) {
                 @include font-size(xl);

@@ -24,7 +24,7 @@
     }
 
     &.stuck {
-        background-color: rgba($color--warm-grey4, 0.95);
+        background-color: rgba($color--primary, 0.95);
         color: $color--white;
 
         .template__blog-detail &,

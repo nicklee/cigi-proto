@@ -1,7 +1,7 @@
 .footer-link-item {
     @include font-size(xs);
     margin-right: 0;
-    color: $color--warm-grey2;
+    color: $color--primary;
     text-align: center;
 
     @include media-query(laptop) {

@@ -3,7 +3,7 @@
 
     &__text {
         @include font-size(m);
-        color: $color--warm-grey2;
+        color: $color--primary;
 
         @include media-query(tablet) {
             @include font-size(l);
@@ -96,7 +96,7 @@
     .template__listing & {
 
         #{$root}__text {
-            color: $color--warm-grey6;
+            color: $color--primary;
         }
 
     }
@@ -110,7 +110,7 @@
     .page__header--dark & {
 
         #{$root}__text {
-            color: $color--warm-grey6;
+            color: $color--primary;
         }
 
     }
