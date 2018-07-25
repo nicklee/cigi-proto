@@ -1,0 +1,32 @@
+.hero {
+    $root: &;
+
+    &__container {
+        will-change: max-height;
+        transition: max-height $default-transition-speed ease 0s;
+    }
+
+    .feature-area & {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        grid-row-end: 2;
+        font-size: 42px;
+        font-weight: bold;
+
+        #{$root}__container {
+            position: sticky;
+            bottom: 0;
+            max-height: calc(100vh - #{$header-height});
+            height: 100%;
+            width: 100%;
+
+            .headroom--not-top & {
+                max-height: calc(100vh - #{$header-sticky-height});
+            }
+
+        }
+
+    }
+
+}

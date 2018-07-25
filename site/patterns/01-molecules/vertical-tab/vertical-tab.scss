@@ -1,0 +1,99 @@
+.vertical-tab {
+    position: relative;
+
+    &__container {
+        @include aligner;
+        @include gutter(1, 1, 2, 1);
+
+        @include media-query(laptop) {
+            @include gutter(2, 3, 3, 3);
+        }
+
+    }
+
+    &__header {
+        @include gutter(0, 0, 1, 0);
+    }
+
+    &__heading {
+        color: $color--white;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        @include media-query(tablet) {
+            flex-direction: row;
+        }
+
+    }
+
+    &__options {
+        margin-bottom: ($grid);
+
+        @include media-query(tablet) {
+            flex-basis: 30%;
+            max-width: 30%;
+            min-width: 30%;
+            width: 30%;
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__option-item {
+        @include gutter(0.4, 1, 0.4, 0);
+        position: relative;
+        display: block;
+        border-bottom: 0;
+        margin: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: ($grid * 2);
+            height: 1px;
+            background-color: rgba($color--white, 0.2);
+        }
+
+        &.tab-item--active {
+            color: $color--white;
+            background-color: $color--primary;
+
+            &::after {
+                display: none;
+
+                @include media-query(laptop) {
+                    display: block;
+                    position: absolute;
+                    right: -($grid);
+                    left: auto;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 28px 0 28px 20px;
+                    border-color: transparent transparent transparent $color--primary;
+                    background-color: transparent;
+                }
+
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -($grid);
+                top: 0;
+                height: 100%;
+                width: ($grid);
+                background-color: $color--primary;
+            }
+
+        }
+
+    }
+
+}

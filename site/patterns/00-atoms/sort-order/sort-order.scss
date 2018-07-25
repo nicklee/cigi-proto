@@ -1,0 +1,23 @@
+.sort-order {
+
+    &__item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        opacity: 0.5;
+
+        &--active {
+            opacity: 1;
+        }
+
+    }
+
+    &__label {
+        display: none;
+    }
+
+    &__icon {
+        align-self: baseline;
+    }
+
+}

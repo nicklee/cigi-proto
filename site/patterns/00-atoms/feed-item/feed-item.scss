@@ -1,0 +1,84 @@
+.feed-item {
+    $root: &;
+
+    &--video {
+
+        #{$root}__image-container {
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color--black, 0.5);
+            }
+
+        }
+
+    }
+
+    &__link {
+        @include gutter(0, 0, 1, 0);
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &__text {
+        @include gutter(0.5, 0, 0, 0.5);
+        border-top: 1px solid $color--border-light;
+    }
+
+    &__image-container {
+        position: relative;
+        flex-basis: 40%;
+        max-width: 40%;
+        min-width: 40%;
+        height: auto;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__meta {
+        @include gutter(0, 0, 0.1, 0);
+        @include font-size(xxs);
+        font-weight: 500;
+        color: $color--primary;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        @include gutter(0, 0, 0.1, 0);
+        @include font-size(m);
+        color: $color--secondary;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        @include font-size(s);
+        color: $color--default;
+        margin-bottom: 0;
+        line-height: 1.3;
+    }
+
+    &__video-icon {
+        position: absolute;
+        z-index: 2;
+        height: 48px;
+        width: 48px;
+        fill: $color--white;
+        opacity: 0.85;
+        top: calc(50% - 21px);
+        left: calc(50% - 21px);
+    }
+
+}

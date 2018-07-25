@@ -1,7 +1,6 @@
 .tabs {
     $root: &;
     border-bottom: 1px solid $color--border-light;
-    background-color: rgba($color--border-light, 0.2);
 
     &__container {
         @include gutter(0.5, 0, 0, 0);

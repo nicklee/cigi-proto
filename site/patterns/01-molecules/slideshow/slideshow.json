@@ -2,12 +2,20 @@
     "title" : "Slideshow",
     "items" : [
         {
-            "title" : "First test caption",
-            "image" : "../../../images/browser-image_art.jpg"
+            "title" : "Homepage",
+            "image" : "../../../images/yst_home.png"
         },
         {
-            "title" : "Test caption",
-            "image" : "../../../images/browser-image_health.jpg"
+            "title" : "Homepage",
+            "image" : "../../../images/yst_add-event.png"
+        },
+        {
+            "title" : "Homepage",
+            "image" : "../../../images/yst_listing.png"
+        },
+        {
+            "title" : "Homepage",
+            "image" : "../../../images/yst_school.png"
         }
     ]
 }

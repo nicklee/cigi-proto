@@ -1,0 +1,11 @@
+.feature-area {
+    background-color: $color--white;
+
+    &__container {
+        position: relative;
+        display: grid;
+        grid-gap: ($grid * 2);
+        grid-template-columns: 0.6fr 0.4fr;
+    }
+
+}

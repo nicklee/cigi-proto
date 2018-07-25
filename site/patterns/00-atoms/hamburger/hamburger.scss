@@ -11,20 +11,12 @@
         position: absolute;
         height: 3px;
         width: 100%;
-        background-color: $color--primary;
+        background-color: $color--secondary;
         border-radius: 3px;
         opacity: 1;
         left: 0;
         transform: rotate(0deg);
         transition: 0.25s ease-in-out;
-
-        .header--light & {
-            background-color: $color--black;
-        }
-
-        .header--dark & {
-            background-color: $color--white;
-        }
 
         &:nth-child(1) {
             top: 0;
@@ -44,17 +36,7 @@
     &:hover {
 
         span {
-            background-color: $color--black;
-
-            .header--light &,
-            .header--dark & {
-                opacity: 0.5;
-            }
-
-            .header--dark & {
-                background-color: $color--white;
-            }
-
+            background-color: $color--primary;
         }
 
     }
@@ -63,14 +45,14 @@
     .secondary-nav__container.active & {
 
         span {
-            background-color: $color--black;
+            background-color: $color--primary;
 
             .header--light & {
-                background-color: $color--black;
+                background-color: $color--primary;
             }
 
             .header--dark & {
-                background-color: $color--white;
+                background-color: $color--primary;
             }
 
             &:nth-child(1) {
@@ -93,27 +75,6 @@
                 left: 50%;
             }
 
-        }
-
-    }
-
-    .secondary-nav:hover & {
-
-        span {
-            background-color: $color--black;
-
-            .overview-bar.stuck & {
-                background-color: $color--black;
-            }
-
-        }
-
-    }
-
-    .overview-bar.stuck & {
-
-        span {
-            background-color: $color--white;
         }
 
     }

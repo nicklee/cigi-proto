@@ -8,7 +8,7 @@
 */
 
 /* Primary */
-$color--red:                    #a49483;
+$color--red:                    #e6023b;
 
 /* Secondary */
 $color--grey-dark:              #92908c;
@@ -59,8 +59,8 @@ $font-sans-serif: 'futura-pt', sans-serif;
 $font--primary: $font-sans-serif;
 $font--secondary: $font-sans-serif;
 
-$base-font-size: 18px;
-$base-font-weight: 500;
+$base-font-size: 17px;
+$base-font-weight: 400;
 $base-font-color: $color--black;
 $base-line-height: 1.8;
 $font-sizes: (
@@ -72,8 +72,8 @@ $font-sizes: (
     m:     21px,
     default: $base-font-size,
     s:     16px,
-    xs:    15px,
-    xxs:   13px
+    xs:    14px,
+    xxs:   12px
 );
 
 $font-weights: (
@@ -107,6 +107,13 @@ $font-weights: (
 $max-width:         980px;
 $max-width--m:      768px;
 $max-width--s:      768px;
+
+/* ============================================
+   Magic numbers
+*/
+
+$header-height:             87px;
+$header-sticky-height:      55px;
 
 /* ============================================
     Transition speeds
@@ -151,60 +158,3 @@ $breakpoints: (
     'wide':         (min-width: 1440px)
 )
     !default;
-
-/* ============================================
-Media Query mixin
-*/
-
-@mixin media-query($breakpoint) {
-    // If the key exists in the map
-    @if map-has-key($breakpoints, $breakpoint) {
-        // Prints a media query based on the value
-        @media #{inspect(map-get($breakpoints, $breakpoint))} {
-            @content;
-        }
-    } @else {     // If the key doesn't exist in the map
-        @warn 'Unfortunately, no value could be retrieved from '#{$breakpoint}'. ' + 'Available breakpoints are: #{map-keys($breakpoints)}.';
-    }
-
-}
-
-/* ============================================
-   Gutter spacing
-*/
-
-@mixin gutter($top: 0.5, $right: 0.5, $bottom: 0.5, $left: 0.5, $reset: false) {
-
-    @function stomp($value) {
-        @return if($value, !important, null); // sass-lint:disable-line no-important
-    }
-
-    $p-top: map-get($gutters, 'default') * $top;
-    $p-right: map-get($gutters, 'default') * $right;
-    $p-bottom: map-get($gutters, 'default') * $bottom;
-    $p-left: map-get($gutters, 'default') * $left;
-
-    $default-pad: $p-top $p-right $p-bottom $p-left;
-
-    padding: $default-pad;
-
-    $last-pad: $default-pad;
-
-    @each $point, $value in $breakpoints {
-
-        $p-top: map-get($gutters, $point) * $top;
-        $p-right: map-get($gutters, $point) * $right;
-        $p-bottom: map-get($gutters, $point) * $bottom;
-        $p-left: map-get($gutters, $point) * $left;
-
-        $new-pad: $p-top $p-right $p-bottom $p-left;
-
-        @if( $new-pad != $last-pad ){
-            @include media-query($point) {
-                padding: $new-pad stomp($reset);
-            }
-        }
-
-        $last-pad: $new-pad;
-    }
-}

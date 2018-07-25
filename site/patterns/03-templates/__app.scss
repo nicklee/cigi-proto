@@ -83,6 +83,15 @@
         display: none;
     }
 
+    &__body {
+        padding-top: $header-height;
+
+        .headroom--not-top & {
+            padding-top: $header-sticky-height;
+        }
+
+    }
+
 }
 
 .menu-active {

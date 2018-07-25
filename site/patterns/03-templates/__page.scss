@@ -2,19 +2,6 @@
     $root: &;
 
     &__header {
-        position: relative;
-        z-index: 3;
-        display: flex;
-        flex-direction: column;
-        background-position: bottom center;
-        background-size: cover;
-
-        &--image {
-            @include gutter(1, 0, 1, 0);
-            background-position: bottom center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
 
         &--bottom-margin {
             margin-bottom: ($grid * 2);

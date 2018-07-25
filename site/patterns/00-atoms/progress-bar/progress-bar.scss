@@ -21,7 +21,7 @@
 
     &::-webkit-progress-value {
         opacity: 1;
-        background-color: $color--secondary;
+        background-color: $color--primary;
     }
 
     &__container {
@@ -35,7 +35,7 @@
     }
 
     &__bar {
-        background-color: $color--secondary;
+        background-color: $color--primary;
         width: 50%;
         display: block;
         height: inherit;

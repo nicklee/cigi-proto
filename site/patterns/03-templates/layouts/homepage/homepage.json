@@ -1,6 +1,7 @@
 {
     "title": "Home Page",
     "template" : "homepage",
+    "progressBar" : true,
     "hero": {
         "text" : "We back new ideas to tackle the big challenges of our time.",
         "image" : "../../../images/hero-water.jpg",
@@ -119,6 +120,27 @@
                 }
             ]
         }
+    },
+    "screenshots" : {
+        "title" : "Visuals",
+        "items" : [
+            {
+                "title" : "Homepage",
+                "image" : "../../../images/yst_home.png"
+            },
+            {
+                "title" : "Homepage",
+                "image" : "../../../images/yst_add-event.png"
+            },
+            {
+                "title" : "Homepage",
+                "image" : "../../../images/yst_listing.png"
+            },
+            {
+                "title" : "Homepage",
+                "image" : "../../../images/yst_school.png"
+            }
+        ]
     },
     "video" : {
         "title" : "iframe",

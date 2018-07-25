@@ -7,6 +7,7 @@
     display: block;
 
     &__item {
+        display: block;
         position: relative;
         width: 100%;
         height: auto;
@@ -16,12 +17,24 @@
                     width $default-transition-speed ease 0s;
         // sass-lint:enddisable
 
-        .headroom--not-top & {
-            top: 0;
-        }
-
         &:hover {
             opacity: 0.8;
+        }
+
+        &--mini {
+            display: none;
+        }
+
+    }
+
+    .headroom--not-top & {
+
+        #{$root}__item {
+            display: none;
+        }
+
+        #{$root}__item--mini {
+            display: block;
         }
 
     }
