@@ -1,0 +1,63 @@
+.newsletter {
+    @include gutter(1.5, 0, 2, 0);
+    background-color: $color--white;
+
+    &__container {
+        @include aligner;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: ($grid * 2);
+    }
+
+    &__intro {
+        @include font-size(l);
+        font-weight: 400;
+        color: $color--default;
+        line-height: 1.2;
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__input {
+        @include gutter(0.25, 0.25, 0.25, 0);
+        background-color: transparent;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid $color--primary;
+        color: $color--black;
+        transition: border-color $default-transition-speed ease 0s;
+
+        &:focus {
+            outline: 0;
+            border-bottom: 2px solid $color--black;
+        }
+
+    }
+
+    &__button {
+        position: absolute;
+        right: 0;
+        bottom: ($grid / 4);
+        cursor: pointer;
+        color: $color--primary;
+
+        &:hover {
+            color: $color--secondary;
+        }
+
+    }
+
+    &__button-icon {
+        fill: currentColor;
+    }
+
+}

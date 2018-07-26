@@ -1,4 +1,6 @@
-.priority-nav {
+.primary-nav {
+    display: flex;
+    align-items: center;
 
     &__menu {
         display: none;
@@ -15,16 +17,8 @@
     }
 
     &__full-link {
-        display: block;
-
-        @include media-query(laptop) {
-            display: none;
-        }
-
-        .headroom--not-top &,
-        .template__data & {
-            display: block;
-        }
+        display: flex;
+        align-items: center;
 
         .header--light & {
             border-color: $color--off-black;

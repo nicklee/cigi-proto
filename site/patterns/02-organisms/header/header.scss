@@ -16,18 +16,8 @@
     // sass-lint:enddisable
 
     &__container {
-        @include gutter(0.5, 1, 0.5, 1);
         @include aligner;
         transition: padding $default-transition-speed ease 0s;
-
-        @include media-query(laptop) {
-            @include gutter(0.75, 1, 0, 1);
-        }
-
-        @include media-query(wide) {
-            @include gutter(0.5, 0, 0, 0);
-        }
-
     }
 
     &__content {
@@ -44,31 +34,18 @@
     &__search-toggle {
         display: flex;
         align-items: center;
-
-        @include media-query(laptop) {
-            display: none;
-        }
-
     }
 
     &__home-link {
+        @include gutter(0.25, 0, 0.35, 0);
 
         @include media-query(tablet) {
             flex-basis: auto;
         }
 
-        @include media-query(laptop) {
-            // Bottom gutter should match header__container top gutter
-            @include gutter(0, 0, 0.75, 0);
-        }
-
         @include media-query(desktop) {
             display: flex;
             align-items: flex-end;
-        }
-
-        @include media-query(wide) {
-            @include gutter(0, 0, 0.5, 0);
         }
 
     }
@@ -79,7 +56,7 @@
             display: flex;
             flex-direction: column;
             flex-basis: auto;
-            justify-content: space-between;
+            justify-content: center;
         }
 
     }
@@ -136,11 +113,6 @@
 
         #{$root}__navigation {
             @include gutter(0, 0, 0, 0.5);
-
-            @include media-query(laptop) {
-                border-left: 1px solid $color--border-light;
-            }
-
         }
 
         #{$root}__audience-navigation {

@@ -3,31 +3,28 @@
 {% block app__page %}
 
     <div class="page__header">
-
+        
         <div class="hero">
             <div class="hero__container">
-                <div class="hero-item" style="background-image: url('../../../images/hero2.jpg')">
+                <div class="hero-item" style="background-image: url('../../../images/hero3.jpg')">
                     <a href="#" class="hero-item__link">
                         <div class="hero-item__header">
                             <div class="hero-item__meta">Environment & Energy</div>
                             <h2 class="hero-item__heading">Protection for Those Who Need It Most: Sustainable Property Insurance in High-risk Areas</h2>
                             <p class="hero-item__date">25 July 2018 - Author: Jason Thistlewaite & Daniel Henstra</p>
+                            <div class="hero-item__btn">Read the article</div>
                         </div>
                     </a>
                 </div>
             </div>
+            {% include "@atoms/scroll-down/scroll-down.twig" %}
         </div>
 
     </div>
 
-    <div class="page__content">
+    <div class="page__content" id="content">
 
-        <div class="newsletter">
-            <div class="newsletter__container">
-                <input class="newsletter__input" type="email" placeholder="Your email">
-                <button class="newsletter__button">Sign up</button>
-            </div>
-        </div>
+        {% include "@molecules/newsletter/newsletter.twig" %}
 
         <div class="feature-area">
             <div class="feature-area__container">
@@ -74,8 +71,8 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="feed__content">
-                                <div class="feed-item">
+                            <div class="feed__content" id="js-modal">
+                                <div class="feed-item js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
@@ -87,8 +84,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item feed-item--video">
-                                    <a class="feed-item__link" href="#">
+                                <div class="feed-item feed-item--video js-slide-in js-modal-item" data-src="https://www.youtube.com/watch?v=JB0vKVSnfzg">
+                                    <a class="feed-item__link js-modal-item" href="#" >
                                         <div class="feed-item__image-container">
                                             <svg class="feed-item__video-icon" width="48" height="48">
                                                 <use xlink:href="#video" />
@@ -102,7 +99,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item feed-item--video">
+                                <div class="feed-item feed-item--video js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <svg class="feed-item__video-icon" width="48" height="48">
@@ -117,7 +114,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item">
+                                <div class="feed-item js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
@@ -129,7 +126,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item">
+                                <div class="feed-item js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
@@ -141,7 +138,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item">
+                                <div class="feed-item js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <img class="feed-item__image" src="../../../images/news-item3.jpg" alt="">
@@ -153,7 +150,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item">
+                                <div class="feed-item js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
@@ -165,7 +162,34 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="feed-item feed-item--video">
+                                <div class="feed-item feed-item--video js-slide-in">
+                                    <a class="feed-item__link" href="#">
+                                        <div class="feed-item__image-container">
+                                            <svg class="feed-item__video-icon" width="48" height="48">
+                                                <use xlink:href="#video" />
+                                            </svg>
+                                            <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
+                                        </div>
+                                        <div class="feed-item__text">
+                                            <p class="feed-item__meta">July 29, 2018</p>
+                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
+                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="feed-item js-slide-in">
+                                    <a class="feed-item__link" href="#">
+                                        <div class="feed-item__image-container">
+                                            <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
+                                        </div>
+                                        <div class="feed-item__text">
+                                            <p class="feed-item__meta">July 29, 2018</p>
+                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
+                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="feed-item feed-item--video js-slide-in">
                                     <a class="feed-item__link" href="#">
                                         <div class="feed-item__image-container">
                                             <svg class="feed-item__video-icon" width="48" height="48">
@@ -181,20 +205,42 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="feed__load-more">
+                                {% include "@atoms/load-more/load-more.twig" %}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div> <!-- /feature-area -->
 
-        {% include "@molecules/vertical-tab/vertical-tab.twig" %}
+        {% include "@molecules/partners/partners.twig" %}
 
-        {% include "@molecules/slideshow/slideshow.twig" with screenshots %}
-
+        {% include "@molecules/carousel/carousel.twig" with events %}
 
     </div>
 
     <div class="page__footer">
+
+        <div class="who-we-are">
+            Who we are TBC - could include programmes?
+        </div>
+
+        <div class="cta">
+            <div class="cta__container">
+                <div class="cta__message">
+                    <p>Know what we know. Sign up for regular updates on our research, CIGI news and events.</p>
+                    <form class="newsletter__form">
+                        <input class="newsletter__input" type="email" placeholder="Your email">
+                        <button class="newsletter__button">
+                            <svg class="newsletter__button-icon" width="24" height="24">
+                                <use xlink:href="#mail" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
 

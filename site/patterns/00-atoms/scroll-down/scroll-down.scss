@@ -1,0 +1,68 @@
+.scroll-down {
+    $root: &;
+    margin: auto;
+    display: none; // Everyone knows to scroll on a mobile, right?
+
+    @include media-query(tablet) {
+        display: block;
+    }
+
+    .hero & {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        bottom: ($grid * 0.75);
+        left: 0;
+    }
+
+    &__container {
+        @include gutter(0.1, 1, 0, 1);
+        display: flex;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+
+        &:hover {
+
+            #{$root}__icon {
+                fill: $color--secondary;
+                transform: translateY(1px);
+            }
+
+        }
+
+    }
+
+    &__icon {
+        fill: $color--black;
+        width: ($grid * 2);
+        height: ($grid * 2);
+        // sass-lint:disable indentation
+        transition: fill $default-transition-speed ease 0s,
+                    transform $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        .hero & {
+            fill: $color--white;
+        }
+
+    }
+
+
+    .hero--section & {
+
+        #{$root}__container {
+
+            @include media-query(tablet) {
+                justify-content: flex-end;
+            }
+
+            @include media-query(desktop) {
+                justify-content: center;
+            }
+
+        }
+
+    }
+
+}

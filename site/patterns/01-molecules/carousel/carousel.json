@@ -1,0 +1,13 @@
+{
+    "title" : "carousel",
+    "items" : [
+        {
+            "title" : "Homepage",
+            "image" : ""
+        },
+        {
+            "title" : "Homepage 2",
+            "image" : ""
+        }
+    ]
+}

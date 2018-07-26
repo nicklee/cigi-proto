@@ -1,0 +1,32 @@
+
+<div class="carousel">
+    <div class="carousel__container glide js-carousel">
+
+        <div class="carousel__header">
+            <h2 class="carousel__heading">{{ title }}</h3>
+            <div class="carousel__controls glide__arrows" data-glide-el="controls">
+                <button aria-label="Previous" class="carousel__arrow carousel__arrow--prev glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <svg class="carousel__arrow-icon" width="24" height="24">
+                        <use xlink:href="#arrow-left" />
+                    </svg>
+                </button>
+                <button aria-label="Next" class="carousel__arrow carousel__arrow--next glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <svg class="carousel__arrow-icon" width="24" height="24">
+                        <use xlink:href="#arrow-right" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel__content glide__track" data-glide-el="track">
+            <div class="carousel__slides glide__slides">
+                {% for slides in items %}
+                <div class="carousel__slide glide__slide">
+                    {% include "@atoms/carousel-item/carousel-item.twig" with slides %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div> <!-- /carousel -->

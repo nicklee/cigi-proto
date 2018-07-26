@@ -1,0 +1,14 @@
+<nav class="primary-nav">
+    <div class="primary-nav__menu">
+        {% for item in priorityNavigation %}
+            <div class="primary-nav__menu__item">
+                {% include "@molecules/links/primary-link/primary-link.twig" with item %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="primary-nav__full-link">
+        {% include "@atoms/search-toggle/search-toggle.twig" %}
+        {% include "@molecules/links/mobile-menu-link/mobile-menu-link.twig" %}
+    </div>
+</nav>

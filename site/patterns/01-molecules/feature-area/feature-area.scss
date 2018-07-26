@@ -1,5 +1,6 @@
 .feature-area {
-    background-color: $color--white;
+    $root: &;
+    margin-bottom: ($grid * 3);
 
     &__container {
         position: relative;

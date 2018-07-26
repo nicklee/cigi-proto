@@ -1,4 +1,5 @@
 .search-toggle {
+    @include gutter(0, 0.4, 0, 1);
     $root: &;
 
     &__container {
@@ -8,19 +9,11 @@
     }
 
     &__icon {
-        fill: $color--primary;
+        fill: $color--secondary;
         // sass-lint:disable indentation
         transition: fill $default-transition-speed ease 0s,
                     opacity $default-transition-speed ease 0s;
         // sass-lint:enddisable
-
-        .header--light & {
-            fill: $color--black;
-        }
-
-        .header--dark & {
-            fill: $color--white;
-        }
 
     }
 
@@ -33,11 +26,6 @@
         transition: fill $default-transition-speed ease 0s,
                     opacity $default-transition-speed ease 0s;
         // sass-lint:enddisable
-
-        .header--dark & {
-            fill: $color--white;
-        }
-
     }
 
     &__link {
@@ -51,21 +39,7 @@
             outline: 0;
 
             #{$root}__icon {
-                fill: $color--black;
-
-                .header--light & {
-                    fill: $color--black;
-                }
-
-                .header--dark & {
-                    fill: $color--white;
-                }
-
-                .header--dark &,
-                .header--light & {
-                    opacity: 0.5;
-                }
-
+                fill: $color--primary;
             }
 
         }
@@ -74,12 +48,6 @@
 
             #{$root}__icon {
                 opacity: 0;
-
-                .header--dark &,
-                .header--light & {
-                    opacity: 0;
-                }
-
             }
 
             #{$root}__icon-close {

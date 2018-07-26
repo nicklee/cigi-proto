@@ -1,0 +1,62 @@
+.carousel-item {
+    $root: &;
+
+    &__link {
+        @include gutter(1, 1, 1, 1);
+        display: block;
+        text-decoration: none;
+        background-color: rgba($color--white, 0.8);
+        border: 2px solid transparent;
+        transition: background-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s,
+                    border-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s,
+                    transform $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s;
+
+        &:hover {
+            background-color: $color--white;
+            transform: translate3d(0, -10px, 0);
+
+            #{$root}__heading {
+                color: $color--primary;
+            }
+
+        }
+
+    }
+
+    &__heading {
+        @include font-size(s);
+        @include gutter(0, 0, 0.15, 0);
+        color: $color--black;
+        margin-bottom: 0;
+        transition: color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
+
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__meta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__date,
+    &__location {
+        @include gutter(0, 0.25, 0, 0);
+        @include font-size(xs);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $color--default;
+    }
+
+    &__date-label,
+    &__location-label {
+        @include gutter(0, 0, 0, 0.15);
+    }
+
+}

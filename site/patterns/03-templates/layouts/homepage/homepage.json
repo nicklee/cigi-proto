@@ -5,140 +5,38 @@
     "hero": {
         "text" : "We back new ideas to tackle the big challenges of our time.",
         "image" : "../../../images/hero-water.jpg",
-        "thumbnail" : "../../../images/hero-water_thumb.jpg",
-        "bubbles" : {
-            "title" :  "bubble grid",
-            "items" : [
-                {
-                    "title" : "large yellow",
-                    "col" : "1",
-                    "row" : "2",
-                    "speed" : "22",
-                    "size" : "large",
-                    "colour" : "yellow",
-                    "margin" : "0",
-                    "options" : "half-right",
-                    "columnClass" : "start"
-                },
-                {
-                    "title" : "empty",
-                    "col" : "2",
-                    "row" : "2",
-                    "speed" : "-1",
-                    "size" : "small",
-                    "colour" : "orange",
-                    "margin" : "-10",
-                    "options" : "half-left",
-                    "columnClass" : "end"
-                },
-                {
-                    "title" : "purple",
-                    "col" : "3",
-                    "row" : "2",
-                    "speed" : "1",
-                    "size" : "xsmall",
-                    "colour" : "purple",
-                    "margin" : "200",
-                    "options" : "",
-                    "columnClass" : ""
-                },
-                {
-                    "title" : "medium yellow",
-                    "col" : "4",
-                    "row" : "2",
-                    "speed" : "-1",
-                    "size" : "medium",
-                    "colour" : "yellow",
-                    "margin" : "276",
-                    "options" : "",
-                    "columnClass" : "end"
-                },
-                {
-                    "title" : "small yellow",
-                    "col" : "5",
-                    "row" : "2",
-                    "speed" : "4",
-                    "size" : "xsmall",
-                    "colour" : "yellow",
-                    "margin" : "140",
-                    "options" : "",
-                    "columnClass" : ""
-                },
-                {
-                    "title" : "empty",
-                    "col" : "1",
-                    "row" : "1",
-                    "speed" : "-4",
-                    "size" : "",
-                    "colour" : "",
-                    "options" : "",
-                    "columnClass" : ""
-                },
-                {
-                    "title" : "empty",
-                    "col" : "2",
-                    "row" : "1",
-                    "speed" : "-1",
-                    "size" : "small",
-                    "colour" : "orange",
-                    "margin" : "-10",
-                    "options" : "half-left",
-                    "columnClass" : "end"
-                },
-                {
-                    "title" : "orange half",
-                    "col" : "3",
-                    "row" : "1",
-                    "speed" : "7",
-                    "size" : "small",
-                    "colour" : "orange",
-                    "options" : "half-left",
-                    "margin" : "-40",
-                    "columnClass" : "end"
-                },
-                {
-                    "title" : "purple half",
-                    "col" : "4",
-                    "row" : "1",
-                    "speed" : "7",
-                    "size" : "medium",
-                    "colour" : "purple",
-                    "options" : "half-right",
-                    "margin" : "-194",
-                    "columnClass" : "start"
-                },
-                {
-                    "title" : "pink",
-                    "col" : "5",
-                    "row" : "1",
-                    "speed" : "",
-                    "size" : "large",
-                    "colour" : "pink",
-                    "options" : "half-left",
-                    "margin" : "-280",
-                    "columnClass" : "end"
-                }
-            ]
-        }
+        "thumbnail" : "../../../images/hero-water_thumb.jpg"
     },
-    "screenshots" : {
-        "title" : "Visuals",
+    "events" : {
+        "title" : "Upcoming events",
         "items" : [
             {
-                "title" : "Homepage",
-                "image" : "../../../images/yst_home.png"
+                "title" : "78th Biennial International Law Association Conference",
+                "link" : "#",
+                "image" : false,
+                "date" : "20th August 2018",
+                "location" : "Sydney, Australia"
             },
             {
-                "title" : "Homepage",
-                "image" : "../../../images/yst_add-event.png"
+                "title" : "The Collapse of the American Empire",
+                "link" : "#",
+                "image" : false,
+                "date" : "29th August 2018",
+                "location" : "Waterloo, Canada"
             },
             {
-                "title" : "Homepage",
-                "image" : "../../../images/yst_listing.png"
+                "title" : "78th Biennial International Law Association Conference",
+                "link" : "#",
+                "image" : false,
+                "date" : "20th August 2018",
+                "location" : "Sydney, Australia"
             },
             {
-                "title" : "Homepage",
-                "image" : "../../../images/yst_school.png"
+                "title" : "The Collapse of the American Empire",
+                "link" : "#",
+                "image" : false,
+                "date" : "29th August 2018",
+                "location" : "Waterloo, Canada"
             }
         ]
     },

@@ -1,16 +1,16 @@
 import Glide from '@glidejs/glide';
 
-class Slideshow {
+class carousel {
 
     constructor( ) {
-        this.slideshowContainer =  '.js-slideshow';
+        this.carouselContainer =  '.js-carousel';
 
-        this.launchSlideshow(); 
+        this.launchcarousel();
     }
 
-    launchSlideshow() {
+    launchcarousel() {
 
-        new Glide(this.slideshowContainer, {
+        new Glide(this.carouselContainer, {
             type: 'slider',
             startAt: 0,
             perView: 2,
@@ -21,10 +21,10 @@ class Slideshow {
             },
             breakpoints: {
                 1024: {
-                    perView: 2
+                    perView: 4
                 },
                 600: {
-                    perView: 1
+                    perView: 2
                 }
             }
         }).mount();
@@ -33,7 +33,6 @@ class Slideshow {
 
 }
 
-
-[].forEach.call(document.getElementsByClassName('js-slideshow'), function(el) {
-    new Slideshow(el);
+[].forEach.call(document.getElementsByClassName('js-carousel'), function(el) {
+    new carousel(el);
 });

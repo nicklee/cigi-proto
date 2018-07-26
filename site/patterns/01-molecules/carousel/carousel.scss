@@ -1,0 +1,74 @@
+.carousel {
+    $root: &;
+    overflow: hidden;
+
+    &__container {
+        @include aligner;
+        position: relative;
+    }
+
+    &__content {
+        @include gutter(0, 0, 2, 0);
+    }
+
+    &__slides {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        align-items: flex-end;
+    }
+
+    &__header {
+        @include gutter(0, 0, 1, 0);
+    }
+
+    &__heading {
+        @include font-size(l);
+        @include gutter(0.25, 0, 0.5, 0);
+        display: inline-block;
+        border-top: 3px solid $color--secondary;
+        margin-bottom: 0;
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border: 2px solid $color--white;
+        margin-right: ($grid / 4);
+        transition: border-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s;
+
+        &:hover {
+            border-color: $color--primary;
+
+            #{$root}__arrow-icon {
+                fill: $color--secondary;
+            }
+
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+    }
+
+    &__arrow-icon {
+        position: relative;
+        fill: $color--primary;
+        width: ($grid);
+        height: ($grid);
+        transition: fill $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
+    }
+
+}

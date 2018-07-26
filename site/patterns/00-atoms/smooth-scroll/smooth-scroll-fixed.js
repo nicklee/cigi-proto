@@ -4,10 +4,7 @@ class SmoothScrollFixed {
 
     constructor( ) {
         this.$menuNode = $('.js-slowscroll-fixed');
-        this.fixedheader = 54;
-        this.overviewbar = $('.overview-bar').outerHeight();
-        this.padding = 14;
-        this.headerHeight = parseInt(this.fixedheader) + parseInt(this.overviewbar) + parseInt(this.padding);
+        this.headerHeight = 55;
 
         this.bindEvents();
     }

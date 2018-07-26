@@ -1,0 +1,27 @@
+.partners {
+    @include gutter(0, 0, 2, 0);
+
+    &__container {
+        @include aligner;
+    }
+
+    &__header {
+        @include gutter(0, 0, 0.5, 0);
+    }
+
+    &__heading {
+        @include font-size(l);
+        @include gutter(0.25, 0, 0.5, 0);
+        display: inline-block;
+        border-top: 3px solid $color--secondary;
+        margin-bottom: 0;
+    }
+
+    &__content {
+        display: grid;
+        grid-column-gap: ($grid * 3);
+        grid-row-gap: ($grid * 1);
+        grid-template-columns: 60% 40%;
+    }
+
+}

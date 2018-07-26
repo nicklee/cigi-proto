@@ -62,17 +62,6 @@
 
         }
 
-        .newsletter--dark & {
-            @include font-size(l);
-            color: $color--white;
-
-            &:hover {
-                color: $color--white;
-                opacity: 0.7;
-            }
-
-        }
-
     }
 
     &--small {

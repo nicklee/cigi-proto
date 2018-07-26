@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="footer__container">
         <div class="footer__icons">
-            {% include "@molecules/social-links/social-links.twig" %}
+            {% include "@molecules/social-links/social-links.twig" with share only %}
             {% include "@molecules/footer-links/footer-links.twig" %}
         </div>
         {% if footerCopyright %}

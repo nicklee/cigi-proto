@@ -9,18 +9,24 @@
 
     &__link {
         display: block;
+
+        &:hover {
+
+            #{$root}__btn {
+                border-color: $color--white;
+                color: $color--white;
+            }
+
+        }
+
     }
 
     &__header {
-        @include gutter(1, 1, 1, 1);
         position: absolute;
-        background-color: $color--overlay;
     }
 
     &__meta {
         @include font-size(xxs);
-        @include gutter(0.5, 0, 0.15, 0);
-        border-top: 3px solid $color--secondary;
         text-transform: uppercase;
         margin-bottom: 0;
         color: $color--primary;
@@ -41,13 +47,37 @@
         margin-bottom: 0;
     }
 
+    &__btn {
+        @include gutter(0.25, 0.5, 0.25, 0.5);
+        font-weight: 500;
+        display: inline-block;
+        border: 1px solid $color--primary;
+        color: $color--primary;
+        transition: color $default-transition-speed ease 0.1s,
+                    border $default-transition-speed ease 0s;
+    }
+
     .page__header & {
+        background-position: bottom center;
 
         #{$root}__header {
             @include aligner;
-            bottom: 0;
+            top: 20%;
             left: 0;
             right: 0;
+            animation: fadein 4s;
+        }
+
+        #{$root}__meta {
+            @include gutter(0, 0, 0.15, 0);
+        }
+
+        #{$root}__heading {
+            max-width: ($grid * 20);
+        }
+
+        #{$root}__date {
+            margin-bottom: ($grid);
         }
 
     }
@@ -55,9 +85,46 @@
     .feature-area & {
 
         #{$root}__header {
+            @include gutter(1, 1, 1, 1);
+            background-color: $color--overlay;
             bottom: ($grid * 2);
             left: ($grid * 2);
             right: ($grid * 2);
+            will-change: transform;
+            transition: transform $default-transition-speed ease 0.1s,
+                        background-color $default-transition-speed ease 0s;
+        }
+
+        #{$root}__meta {
+            @include gutter(0, 0, 0.15, 0);
+        }
+
+        #{$root}__link {
+
+            &:hover {
+
+                #{$root}__header {
+                    background-color: $color--white;
+                    transform: translate3d(0, -10px, 0);
+                }
+
+            }
+        }
+
+    }
+
+    @keyframes fadein {
+
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
 
     }
