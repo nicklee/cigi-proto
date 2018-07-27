@@ -1,0 +1,26 @@
+.latest {
+    @include aligner;
+
+    &__container {
+        @include gutter(1, 0, 0, 0);
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2; // ensure content sits in front of shard
+        display: grid;
+        grid-gap: ($grid / 2);
+        grid-template-columns: 1fr;
+
+        @include media-query(mobile) {
+            grid-gap: $grid;
+            grid-template-columns: 0.5fr 0.5fr;
+        }
+
+        @include media-query(laptop) {
+            grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+        }
+
+    }
+
+}

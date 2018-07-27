@@ -1,0 +1,13 @@
+<div class="latest">
+
+    <div class="latest__container">
+
+        <div class="latest__content">
+            {% for item in items %}
+                {% include "@molecules/listing-item/listing-item.twig" with item %}
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div> <!-- /latest -->

@@ -3,7 +3,7 @@
     "href" : "#",
     "text" : "Cranfield University’s Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
     "image" : "../../../images/news-feature.jpg",
-    "featured" : "",
+    "featured" : true,
     "meta" : [
         {
             "title" : "News"

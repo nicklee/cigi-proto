@@ -3,22 +3,10 @@
 {% block app__page %}
 
     <div class="page__header">
-        
-        <div class="hero">
-            <div class="hero__container">
-                <div class="hero-item" style="background-image: url('../../../images/hero3.jpg')">
-                    <a href="#" class="hero-item__link">
-                        <div class="hero-item__header">
-                            <div class="hero-item__meta">Environment & Energy</div>
-                            <h2 class="hero-item__heading">Protection for Those Who Need It Most: Sustainable Property Insurance in High-risk Areas</h2>
-                            <p class="hero-item__date">25 July 2018 - Author: Jason Thistlewaite & Daniel Henstra</p>
-                            <div class="hero-item__btn">Read the article</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            {% include "@atoms/scroll-down/scroll-down.twig" %}
-        </div>
+
+        {% if newsFeed %}
+        {% include "@organisms/latest/latest.twig" with newsFeed %}
+        {% endif %}
 
     </div>
 
@@ -216,7 +204,9 @@
 
         {% include "@molecules/partners/partners.twig" %}
 
+        {% if events %}
         {% include "@molecules/carousel/carousel.twig" with events %}
+        {% endif %}
 
     </div>
 

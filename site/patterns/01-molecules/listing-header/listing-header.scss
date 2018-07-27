@@ -1,165 +1,68 @@
 .listing-header {
-    @include gutter(0, 0, 0.5, 0);
+    @include gutter(0, 0, 2, 0);
     $root: &;
 
+    @include media-query(tablet) {
+        @include gutter(0, 0, 1, 0);
+    }
+
     &__container {
-        @include gutter(0, 0.5, 0.5, 0.5);
+        @include aligner;
+        position: relative;
+        z-index: 2;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        font-family: $font--primary;
 
-        @include media-query(wide) {
-            @include gutter(0, 0.5, 0.5, 0);
+        @include media-query(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
         }
 
     }
 
-    &__label {
+    &__heading {
         @include font-size(m);
-        margin-bottom: 0;
-
-        .browser-item & {
-            @include gutter(0, 0, 0.5, 0);
-            font-weight: 500;
-
-            @media only screen and ( min-device-pixel-ratio: 1.25),
-                only screen and ( min-resolution: 200dpi),
-                only screen and ( min-resolution: 1.25dppx) {
-                    font-weight: 300;
-            }
-
-        }
-
-        .browser-item__card--dark & {
-            color: $color--white;
-        }
-
-    }
-
-    &__label-total {
         font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
 
-        .browser & {
+        @include media-query(tablet) {
+            @include font-size(l);
+            font-weight: 300;
+            text-align: left;
+        }
+
+        &::after {
             display: none;
         }
 
     }
 
-    &__item-container {
-        display: none;
+    &__actions {
+        @include font-size(default);
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
 
-        @include media-query(desktop) {
-            display: flex;
+        @include media-query(tablet) {
+            font-weight: 500;
+            text-align: left;
         }
 
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
-        margin-right: ($grid / 2);
-        opacity: 1;
-
-        &:hover {
-
-            #{$root}__item-label {
-                color: $color--link-hover;
-            }
-
-            #{$root}__item-icon {
-                fill: $color--link-hover;
-            }
-
-        }
-
-        &--active {
+        a {
+            color: $color--link;
             text-decoration: none;
-            opacity: 0.7;
-            cursor: default;
+            font-weight: 300;
+            transition: color $default-transition-speed ease 0s;
 
-            #{$root}__item-label {
-                color: $color--black;
-            }
-
-            #{$root}__item-icon {
-                fill: $color--black;
+            @include media-query(tablet) {
+                font-weight: 600;
             }
 
             &:hover {
-
-                #{$root}__item-label {
-                    color: $color--black;
-                }
-
-                #{$root}__item-icon {
-                    fill: $color--black;
-                }
-
-            }
-
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-    }
-
-    &__item-icon {
-        fill: $color--link;
-        pointer-events: none; // Prevent js classes being added to this on click
-    }
-
-    &__item-label {
-        padding-left: 5px;
-        pointer-events: none; // Prevent js classes being added to this on click
-    }
-
-    .listing--related & {
-        @include gutter(0, 0, 0, 0);
-
-        #{$root}__label {
-            @include font-size(l);
-            font-weight: 500;
-            color: $color--white;
-
-            @include media-query(tablet) {
-                @include font-size(xl);
-            }
-
-            @media only screen and ( min-device-pixel-ratio: 1.25),
-                only screen and ( min-resolution: 200dpi),
-                only screen and ( min-resolution: 1.25dppx) {
-                    font-weight: 300;
-            }
-
-        }
-
-    }
-
-    .browser & {
-        @include gutter(0.3, 0, 0.2, 0, true);
-
-        #{$root}__container {
-            @include gutter(0, 0, 0, 0, true);
-        }
-
-    }
-
-    .listing--latest-feed & {
-
-        #{$root}__container {
-            @include gutter(0, 0, 0.5, 0);
-        }
-
-        #{$root}__label {
-            @include font-size(xl);
-            font-weight: 500;
-
-            @media only screen and ( min-device-pixel-ratio: 1.25),
-                only screen and ( min-resolution: 200dpi),
-                only screen and ( min-resolution: 1.25dppx) {
-                    font-weight: 300;
+                color: $color--link-hover;
             }
 
         }
