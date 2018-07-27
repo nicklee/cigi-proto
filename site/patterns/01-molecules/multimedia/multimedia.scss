@@ -1,0 +1,32 @@
+.multimedia {
+    $root: &;
+    background-color: $color--primary;
+    margin-bottom: ($grid * 2);
+
+    &__container {
+        @include gutter(2, 0, 2, 0);
+        @include aligner;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    &__header {
+
+    }
+
+    &__heading {
+        @include font-size(l);
+        @include gutter(0.25, 1, 0.5, 0);
+        display: inline-block;
+        border-top: 3px solid $color--secondary;
+        margin-bottom: 0;
+    }
+
+    &__content {
+
+        display: grid;
+        grid-gap: ($grid);
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+}

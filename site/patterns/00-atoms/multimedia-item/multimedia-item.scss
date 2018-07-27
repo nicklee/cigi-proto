@@ -1,0 +1,70 @@
+.multimedia-item {
+    $root: &;
+
+    &--featured {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+
+        #{$root}__container {
+            display: grid;
+            grid-gap: ($grid);
+            grid-template-columns: 33.33% 33.33% 33.33%;
+        }
+
+        #{$root}__image-container {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 1;
+        }
+
+        #{$root}__content {
+            border-top: 1px solid $color--border-light;
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        #{$root}__heading {
+            @include font-size(l);
+        }
+
+        #{$root}__meta {
+            @include gutter(0.25, 0, 0.25, 0);
+        }
+
+    }
+
+    &__image-container {
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__video-icon {
+        position: absolute;
+        bottom: ($grid / 2);
+        left: ($grid / 2);
+        fill: $color--white;
+    }
+
+    &__meta {
+        @include gutter(0.25, 0, 0.15, 0);
+        @include font-size(xxs);
+        color: $color--white;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        @include gutter(0, 0, 0.25, 0);
+        @include font-size(default);
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        line-height: 1.3;
+    }
+
+}
