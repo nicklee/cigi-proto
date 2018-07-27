@@ -213,6 +213,91 @@
         {% include "@molecules/carousel/carousel.twig" with events %}
         {% endif %}
 
+
+        <div class="carousel">
+            <div class="carousel__container glide js-carousel">
+
+                <div class="carousel__header">
+                    <h2 class="carousel__heading">Partners</h3>
+                    <div class="carousel__controls glide__arrows" data-glide-el="controls">
+                        <button aria-label="Previous" class="carousel__arrow carousel__arrow--prev glide__arrow glide__arrow--left" data-glide-dir="<">
+                            <svg class="carousel__arrow-icon" width="24" height="24">
+                                <use xlink:href="#arrow-left" />
+                            </svg>
+                        </button>
+                        <button aria-label="Next" class="carousel__arrow carousel__arrow--next glide__arrow glide__arrow--right" data-glide-dir=">">
+                            <svg class="carousel__arrow-icon" width="24" height="24">
+                                <use xlink:href="#arrow-right" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="carousel__content glide__track" data-glide-el="track">
+                    <div class="carousel__slides glide__slides">
+                        <div class="carousel__slide glide__slide">
+                            <div class="carousel-item">
+                                <a class="carousel-item__link" href="{{ link }}">
+                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                    <h3 class="carousel-item__heading">Institute for new economic thinking</h3>
+                                    <div class="carousel-item__meta">
+                                        <div class="carousel-item__date">
+                                            <div class="carousel-item__date-label">Partner Content</div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel__slide glide__slide">
+                            <div class="carousel-item">
+                                <a class="carousel-item__link" href="{{ link }}">
+                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                    <h3 class="carousel-item__heading">The Africa Portal</h3>
+                                    <div class="carousel-item__meta">
+                                        <div class="carousel-item__date">
+                                            <div class="carousel-item__date-label">Partner Content</div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel__slide glide__slide">
+                            <div class="carousel-item">
+                                <a class="carousel-item__link" href="{{ link }}">
+                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                    <h3 class="carousel-item__heading">Balsillie School of International Affairs</h3>
+                                    <div class="carousel-item__meta">
+                                        <div class="carousel-item__date">
+                                            <div class="carousel-item__date-label">Partner Content</div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel__slide glide__slide">
+                            <div class="carousel-item">
+                                <a class="carousel-item__link" href="{{ link }}">
+                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                    <h3 class="carousel-item__heading">Open Canada</h3>
+                                    <div class="carousel-item__meta">
+                                        <div class="carousel-item__date">
+                                            <div class="carousel-item__date-label">Partner Content</div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- /carousel -->
+
+
     </div>
 
     <div class="page__footer">
