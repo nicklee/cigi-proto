@@ -1,16 +1,39 @@
 <div class="footer">
     <div class="footer__container">
-        <svg class="logo__item--mini" width="46" height="26">
-            <use xlink:href="#logo-mini" />
-        </svg>
-        <div class="footer__icons">
-            {% include "@molecules/social-links/social-links.twig" with share only %}
-            {% include "@molecules/footer-links/footer-links.twig" %}
+        <div class="footer__primary">
+            <div class="footer__links">
+                <svg class="footer__logo" width="92" height="52">
+                    <use xlink:href="#logo-mini" />
+                </svg>
+                {% include "@molecules/footer-links/footer-links.twig" %}
+            </div>
+            {% if footerCopyright %}
+            <div class="footer-link-item">
+                &copy; {{ footerCopyright }}
+            </div>
+            {% endif %}
         </div>
-        {% if footerCopyright %}
-        <div class="footer-link-item">
-            &copy; {{ footerCopyright }}
+        <div class="footer__secondary">
+            <div class="footer__newsletter">
+                <div class="newsletter">
+                    <div class="newsletter__container">
+                        <div class="newsletter__intro">
+                            <p>Get regular updates on our research and events in your inbox.</p>
+                        </div>
+                        <form class="newsletter__form">
+                            <input class="newsletter__input" type="email" placeholder="Your email">
+                            <button class="newsletter__button">
+                                <svg class="newsletter__button-icon" width="24" height="24">
+                                    <use xlink:href="#mail" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social">
+                {% include "@molecules/social-links/social-links.twig" with share only %}
+            </div>
         </div>
-        {% endif %}
     </div>
 </div>

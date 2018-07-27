@@ -4,6 +4,8 @@
 
     <div class="page__header">
 
+        {% include "@molecules/hero/hero.twig" %}
+
         {% if newsFeed %}
         {% include "@organisms/latest/latest.twig" with newsFeed %}
         {% endif %}
