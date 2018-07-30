@@ -5,6 +5,8 @@
     &__container {
         @include aligner;
         position: relative;
+        display: grid;
+        grid-template-columns: 20% 80%;
     }
 
     &__content {

@@ -4,208 +4,96 @@
 
     <div class="page__header">
 
-        {% include "@molecules/hero/hero.twig" %}
+        <div class="introduction">
+            <div class="introduction__container">
+                <p class="introduction__text">An independent, non-partisan think tank with an objective and uniquely global perspective&hellip; <a href="#">more about us</a></p>
+                <!-- <img class="introduction__image" alt="" src="../../../images/intro_image.jpg"> -->
+            </div>
+        </div>
 
         {% if newsFeed %}
         {% include "@organisms/latest/latest.twig" with newsFeed %}
         {% endif %}
+
+        <div class="featured-topics">
+            <div class="featured-topics__header">
+                <h2 class="featured-topics__heading">Trending topics</h2>
+            </div>
+            <div class="featured-topics__container">
+                <div class="featured-topics__item">
+                    <a href="#" class="featured-topics__item-header">
+                        <h2 class="featured-topics__item-heading">Summits & Institutions</h2>
+                        <img src="../../../images/topic_summit.jpg" class="featured-topics__item-image" alt="">
+                    </a>
+                    <div class="featured-topics__item-content">
+                        <div class="featured-topic-item featured-topic-item--featured">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">The G20 fights fire - But it won't prevent them</h3>
+                                    <p class="featured-topic-item__meta">24 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Trump is threatening the rule of law - What's at stake?</h3>
+                                    <p class="featured-topic-item__meta">21 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">In an evolving economy, the G7 must evolve too</h3>
+                                    <p class="featured-topic-item__meta">18 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-topics__item">
+                    <a href="#" class="featured-topics__item-header">
+                        <h2 class="featured-topics__item-heading">Environment & Energy</h2>
+                        <img src="../../../images/topic_environment.jpg" class="featured-topics__item-image" alt="">
+                    </a>
+                    <div class="featured-topics__item-content">
+                        <div class="featured-topic-item featured-topic-item--featured">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">The G20 fights fire - But it won't prevent them</h3>
+                                    <p class="featured-topic-item__meta">24 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Trump is threatening the rule of law - What's at stake?</h3>
+                                    <p class="featured-topic-item__meta">21 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">In an evolving economy, the G7 must evolve too</h3>
+                                    <p class="featured-topic-item__meta">18 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 
     <div class="page__content" id="content">
 
         {% include "@molecules/newsletter/newsletter.twig" %}
-
-        <div class="feature-area">
-            <div class="feature-area__container">
-                <div class="feature-area__hero">
-                    <div class="hero">
-                        <div class="hero__container">
-                            <div class="hero-item" style="background-image: url('../../../images/hero.jpg')">
-                                <a href="#" class="hero-item__link">
-                                    <div class="hero-item__header">
-                                        <div class="hero-item__meta">Trade & Finance</div>
-                                        <h2 class="hero-item__heading">Making Policy in Uncertain Times</h2>
-                                        <p class="hero-item__date">25 July 2018 - Author: Jason Thistlewaite & Daniel Henstra</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-area__features">
-                    <div class="feed">
-                        <div class="feed__container">
-                            <div class="feed__header">
-                                <h2 class="feed__heading">
-                                    Browse
-                                    <a href="#" class="feed__dropdown">
-                                        <div class="feed__dropdown-label">Latest</div>
-                                        <svg class="feed__dropdown-icon" width="24" height="24">
-                                            <use xlink:href="#arrow-down" />
-                                        </svg>
-                                    </a>
-                                </h2>
-                                <div class="feed__sort-order sort-order">
-                                    <a href="#" class="sort-order__item">
-                                        <div class="sort-order__label">Image view</div>
-                                        <svg class="sort-order__icon" width="24" height="24">
-                                            <use xlink:href="#sort-image" />
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="sort-order__item sort-order__item--active">
-                                        <div class="sort-order__label">List view</div>
-                                        <svg class="sort-order__icon" width="24" height="24">
-                                            <use xlink:href="#sort-list" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="feed__content" id="js-modal">
-                                <div class="feed-item js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item feed-item--video js-slide-in js-modal-item" data-src="https://www.youtube.com/watch?v=JB0vKVSnfzg">
-                                    <a class="feed-item__link js-modal-item" href="#" >
-                                        <div class="feed-item__image-container">
-                                            <svg class="feed-item__video-icon" width="48" height="48">
-                                                <use xlink:href="#video" />
-                                            </svg>
-                                            <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item feed-item--video js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <svg class="feed-item__video-icon" width="48" height="48">
-                                                <use xlink:href="#video" />
-                                            </svg>
-                                            <img class="feed-item__image" src="../../../images/news-item3.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <img class="feed-item__image" src="../../../images/news-item3.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item feed-item--video js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <svg class="feed-item__video-icon" width="48" height="48">
-                                                <use xlink:href="#video" />
-                                            </svg>
-                                            <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <img class="feed-item__image" src="../../../images/news-item2.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="feed-item feed-item--video js-slide-in">
-                                    <a class="feed-item__link" href="#">
-                                        <div class="feed-item__image-container">
-                                            <svg class="feed-item__video-icon" width="48" height="48">
-                                                <use xlink:href="#video" />
-                                            </svg>
-                                            <img class="feed-item__image" src="../../../images/news-item.jpg" alt="">
-                                        </div>
-                                        <div class="feed-item__text">
-                                            <p class="feed-item__meta">July 29, 2018</p>
-                                            <h3 class="feed-item__heading">The Brussels Summit Wasn't so bad</h3>
-                                            <p class="feed-item__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="feed__load-more">
-                                {% include "@atoms/load-more/load-more.twig" %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- /feature-area -->
-
-        {% include "@molecules/partners/partners.twig" %}
-
 
         {% include "@molecules/multimedia/multimedia.twig" %}
 
@@ -237,8 +125,8 @@
                     <div class="carousel__slides glide__slides">
                         <div class="carousel__slide glide__slide">
                             <div class="carousel-item">
-                                <a class="carousel-item__link" href="{{ link }}">
-                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                <a class="carousel-item__link" href="#">
+                                    <img class="carousel-item__image" src="../../../images/partner_image.jpg" alt="" />
                                     <h3 class="carousel-item__heading">Institute for new economic thinking</h3>
                                     <div class="carousel-item__meta">
                                         <div class="carousel-item__date">
@@ -251,8 +139,8 @@
                         </div>
                         <div class="carousel__slide glide__slide">
                             <div class="carousel-item">
-                                <a class="carousel-item__link" href="{{ link }}">
-                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                <a class="carousel-item__link" href="#">
+                                    <img class="carousel-item__image" src="../../../images/partner_image4.jpg" alt="" />
                                     <h3 class="carousel-item__heading">The Africa Portal</h3>
                                     <div class="carousel-item__meta">
                                         <div class="carousel-item__date">
@@ -265,28 +153,26 @@
                         </div>
                         <div class="carousel__slide glide__slide">
                             <div class="carousel-item">
-                                <a class="carousel-item__link" href="{{ link }}">
-                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                <a class="carousel-item__link" href="#">
+                                    <img class="carousel-item__image" src="../../../images/partner_image2.png" alt="" />
                                     <h3 class="carousel-item__heading">Balsillie School of International Affairs</h3>
                                     <div class="carousel-item__meta">
                                         <div class="carousel-item__date">
                                             <div class="carousel-item__date-label">Partner Content</div>
                                         </div>
-
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="carousel__slide glide__slide">
                             <div class="carousel-item">
-                                <a class="carousel-item__link" href="{{ link }}">
-                                    <img class="carousel-item__image" src="{{ image }}" alt="" />
+                                <a class="carousel-item__link" href="#">
+                                    <img class="carousel-item__image" src="../../../images/partner_image3.jpg" alt="" />
                                     <h3 class="carousel-item__heading">Open Canada</h3>
                                     <div class="carousel-item__meta">
                                         <div class="carousel-item__date">
                                             <div class="carousel-item__date-label">Partner Content</div>
                                         </div>
-
                                     </div>
                                 </a>
                             </div>
@@ -296,31 +182,6 @@
 
             </div>
         </div> <!-- /carousel -->
-
-
-    </div>
-
-    <div class="page__footer">
-
-        <div class="who-we-are">
-            Who we are TBC - could include programmes?
-        </div>
-
-        <div class="cta">
-            <div class="cta__container">
-                <div class="cta__message">
-                    <p>Know what we know. Sign up for regular updates on our research, CIGI news and events.</p>
-                    <form class="newsletter__form">
-                        <input class="newsletter__input" type="email" placeholder="Your email">
-                        <button class="newsletter__button">
-                            <svg class="newsletter__button-icon" width="24" height="24">
-                                <use xlink:href="#mail" />
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
 
     </div>
 

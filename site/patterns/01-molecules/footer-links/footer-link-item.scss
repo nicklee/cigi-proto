@@ -1,20 +1,17 @@
 .footer-link-item {
     @include font-size(xs);
     margin-right: 0;
-    color: $color--primary;
-    text-align: center;
-
-    @include media-query(laptop) {
-        margin-right: ($grid / 2);
-        text-align: left;
-    }
+    float: left;
+    width: 50%;
+    text-align: left;
 
     &__link {
-        color: $color--black;
+        color: $color--primary;
         text-decoration: none;
+        font-weight: 500;
 
         &:hover {
-            color: $color--link-hover;
+            color: $color--white;
         }
 
     }

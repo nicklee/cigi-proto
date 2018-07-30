@@ -5,35 +5,9 @@
     "newsFeed" : {
         "items" : [
             {
-                "title" : "Can Nato Survive the Trump Presidency?",
-                "href" : "#",
-                "image" : "../../../images/news-item.jpg",
-                "meta" : [
-                    {
-                        "title" : "News"
-                    },
-                    {
-                        "title" : "20 June"
-                    }
-                ]
-            },
-            {
-                "title" : "How social media can silence dissent",
-                "href" : "#",
-                "image" : "../../../images/news-item2.jpg",
-                "meta" : [
-                    {
-                        "title" : "News"
-                    },
-                    {
-                        "title" : "20 June"
-                    }
-                ]
-            },
-            {
                 "title" : "The economic Consequences of Trump's Iran Policy",
                 "href" : "#",
-                "text" : "Cranfield University’s Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
+                "text" : "Europe's Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
                 "image" : "../../../images/news-feature.jpg",
                 "featured" : true,
                 "meta" : [
@@ -46,9 +20,9 @@
                 ]
             },
             {
-                "title" : "Geopolitical chaos is the new normal",
+                "title" : "Can Nato Survive the Trump Presidency?",
                 "href" : "#",
-                "image" : "../../../images/news-item3.jpg",
+                "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
                         "title" : "News"
@@ -61,10 +35,36 @@
             {
                 "title" : "How social media can silence dissent",
                 "href" : "#",
-                "image" : "../../../images/news-item2.jpg",
+                "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "Press release"
+                    },
+                    {
+                        "title" : "20 June"
+                    }
+                ]
+            },
+            {
+                "title" : "Geopolitical chaos is the new normal",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    },
+                    {
+                        "title" : "20 June"
+                    }
+                ]
+            },
+            {
+                "title" : "How social media can silence dissent",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "meta" : [
+                    {
+                        "title" : "Job"
                     },
                     {
                         "title" : "20 June"
@@ -74,10 +74,10 @@
             {
                 "title" : "The economic Consequences of Trump's Iran Policy",
                 "href" : "#",
-                "image" : "../../../images/news-item3.jpg",
+                "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "Announcement"
                     },
                     {
                         "title" : "23 May"
@@ -88,7 +88,7 @@
                 "title" : "Geopolitical chaos is the new normal",
                 "href" : "#",
                 "text" : "",
-                "image" : "../../../images/news-item3.jpg",
+                "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
                         "title" : "News"
@@ -102,10 +102,10 @@
                 "title" : "How social media can silence dissent",
                 "href" : "#",
                 "text" : "",
-                "image" : "../../../images/news-item2.jpg",
+                "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "Event"
                     },
                     {
                         "title" : "20 June"
@@ -115,7 +115,7 @@
             {
                 "title" : "The economic Consequences of Trump's Iran Policy",
                 "href" : "#",
-                "image" : "../../../images/news-item2.jpg",
+                "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
                     {
                         "title" : "News"
@@ -128,7 +128,7 @@
         ]
     },
     "events" : {
-        "title" : "Upcoming events",
+        "title" : "Events",
         "items" : [
             {
                 "title" : "78th Biennial International Law Association Conference",

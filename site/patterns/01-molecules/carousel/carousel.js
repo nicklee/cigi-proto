@@ -17,14 +17,14 @@ class carousel {
             gap: 28,
             peek: {
                 before: 0,
-                after: 200
+                after: 0
             },
             breakpoints: {
                 1024: {
-                    perView: 4
+                    perView: 2
                 },
                 600: {
-                    perView: 2
+                    perView: 1
                 }
             }
         }).mount();

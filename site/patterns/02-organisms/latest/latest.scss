@@ -2,7 +2,40 @@
     @include aligner;
 
     &__container {
-        @include gutter(1, 0, 0, 0);
+        @include gutter(1, 0, 1.5, 0);
+    }
+
+    &__header {
+        @include gutter(0, 0, 1, 0);
+        display: flex;
+        color: $color--off-black;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        @include font-size(l);
+        @include gutter(0.25, 0, 0, 0);
+        display: inline-block;
+        color: $color--black;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+    &__action {
+        @include font-size(m);
+
+        a {
+            color: $color--black;
+            font-weight: 400;
+            transition: color $default-transition-speed ease 0s;
+
+            &:hover {
+                color: $color--primary;
+            }
+
+        }
+
     }
 
     &__content {

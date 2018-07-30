@@ -1,0 +1,29 @@
+.social-link-item {
+    @include gutter(0, 0, 0, 0.25);
+    $root: &;
+
+    &__link {
+        opacity: 0.6;
+
+        &:hover {
+            opacity: 1;
+
+            #{$root}__icon {
+                fill: $color--primary;
+            }
+
+        }
+
+    }
+    &__icon {
+        width: 21px;
+        height: 21px;
+        fill: $color--white;
+        transition: fill $default-transition-speed ease 0s;
+    }
+
+    &__label {
+        display: none;
+    }
+
+}

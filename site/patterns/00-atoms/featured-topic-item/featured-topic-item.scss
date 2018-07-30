@@ -1,0 +1,52 @@
+.featured-topic-item {
+    @include gutter(0.5, 0.75, 0, 0.75);
+    $root: &;
+    border-bottom: 1px solid $color--off-white;
+
+    &--featured {
+
+        #{$root}__heading {
+            @include font-size(m);
+            font-weight: 500;
+        }
+
+        #{$root}__meta {
+            @include font-size(xs);
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        cursor: url('../../../images/cursor_plus.png'), auto;
+
+        &:hover {
+
+            #{$root}__heading {
+                color: $color--primary;
+            }
+
+        }
+
+    }
+
+    &__meta {
+        @include font-size(xxs);
+        color: $color--primary;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        @include font-size(s);
+        margin-bottom: 0;
+        font-weight: 400;
+        color: $color--black;
+        transition: color $default-transition-speed ease 0s;
+
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+}

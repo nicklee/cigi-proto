@@ -13,14 +13,6 @@
 
             <div class="listing-item__text-container">
 
-                <div class="listing-item__header">
-                    <h2 class="listing-item__heading">{{ title|raw }}</h2>
-                </div>
-
-                {% if text %}
-                    <p class="listing-item__text">{{ text }}</p>
-                {% endif %}
-
                 {% if meta %}
                     <div class="listing-item__meta meta">
                         {% for item in meta %}
@@ -37,6 +29,15 @@
                         {% endfor %}
                     </div>
                 {% endif %}
+
+                <div class="listing-item__header">
+                    <h2 class="listing-item__heading">{{ title|raw }}</h2>
+                </div>
+
+                {% if text %}
+                    <p class="listing-item__text">{{ text }}</p>
+                {% endif %}
+
 
             </div>
 

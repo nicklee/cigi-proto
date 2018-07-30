@@ -6,27 +6,41 @@
     &__container {
         @include gutter(2, 0, 2, 0);
         @include aligner;
-        display: grid;
-        grid-template-columns: 20% 80%;
+        display: flex;
     }
 
     &__header {
-
+        flex-basis: 20%;
+        min-width: 20%;
     }
 
     &__heading {
         @include font-size(l);
-        @include gutter(0.25, 1, 0.5, 0);
+        @include gutter(0.25, 0, 0.5, 0);
         display: inline-block;
         border-top: 3px solid $color--secondary;
         margin-bottom: 0;
     }
 
-    &__content {
+    &__action {
+        display: block;
+        color: $color--white;
+        text-decoration: none;
+        transition: color $default-transition-speed ease 0s;
 
+        &:hover {
+            color: $color--black;
+        }
+
+    }
+
+    &__content {
+        flex-basis: 80%;
+        min-width: 80%;
+        max-width: 80%;
         display: grid;
         grid-gap: ($grid);
-        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }

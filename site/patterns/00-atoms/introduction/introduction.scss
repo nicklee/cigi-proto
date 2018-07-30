@@ -1,31 +1,48 @@
 .introduction {
     $root: &;
 
+    &__container {
+        @include aligner;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
     &__text {
-        @include font-size(m);
-        color: $color--primary;
+        @include gutter(2, 0, 0.5, 0);
+        @include font-size(xl);
+        color: $color--black;
+        margin-bottom: 0;
+        max-width: ($grid * 30);
+        line-height: 1.4;
 
-        @include media-query(tablet) {
-            @include font-size(l);
-        }
+        // &::after {
+        //     content: '';
+        //     width: ($grid * 2);
+        //     height: 0px;
+        //     border-bottom: 1px dotted $color--border-dark;
+        //     display: block;
+        //     background-color: transparent;
+        //     margin-top: ($grid * 1.5);
+        // }
 
+    }
+
+    &__image {
+        @include gutter(0.5, 0, 0, 0);
+        position: relative;
+        height: 240px;
+        width: auto;
     }
 
     a {
+        font-weight: 500;
         color: $color--primary;
+        transition: color $default-transition-speed ease 0s;
 
         &:hover {
             color: $color--black;
-        }
-
-    }
-
-    // Template specifiec
-
-    .page__primary-content & {
-
-        #{$root}__container {
-            @include gutter(0, 0, 0.75, 0);
         }
 
     }

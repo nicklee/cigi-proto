@@ -8,7 +8,7 @@
         #{$root}__container {
             display: grid;
             grid-gap: ($grid);
-            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         #{$root}__image-container {
@@ -32,18 +32,53 @@
 
     }
 
+    &__container {
+        display: block;
+        text-decoration: none;
+        cursor: url('../../../images/cursor_play.png'), auto;
+        // sass-lint:disable indentation
+        transition: transform $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        &:hover {
+            transform: translateY(-1px);
+
+            #{$root}__image {
+                mix-blend-mode: luminosity;
+                opacity: 0.8;
+            }
+
+            #{$root}__heading {
+                color: $color--white;
+            }
+
+            #{$root}__video-icon {
+                opacity: 1;
+            }
+
+        }
+
+    }
+
     &__image-container {
         position: relative;
+        overflow: hidden;
+        background-color: $color--white;
     }
 
     &__image {
         display: block;
         width: 100%;
         height: auto;
+        // sass-lint:disable indentation
+        transition: opacity $default-transition-speed ease 0s,
+                    mix-blend-mode $default-transition-speed ease 0s;
+        // sass-lint:enddisable
     }
 
     &__video-icon {
         position: absolute;
+        z-index: 2;
         bottom: ($grid / 2);
         left: ($grid / 2);
         fill: $color--white;
@@ -61,10 +96,15 @@
         @include font-size(default);
         line-height: 1.2;
         margin-bottom: 0;
+        color: $color--black;
+        // sass-lint:disable indentation
+        transition: color $default-transition-speed ease 0s;
+        // sass-lint:enddisable
     }
 
     &__description {
         line-height: 1.3;
+        color: $color--black;
     }
 
 }

@@ -7,6 +7,7 @@
         text-decoration: none;
         background-color: rgba($color--white, 0.8);
         border: 2px solid transparent;
+        cursor: url('../../../images/cursor_plus.png'), auto;
         transition: background-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s,
                     border-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s,
                     transform $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s;

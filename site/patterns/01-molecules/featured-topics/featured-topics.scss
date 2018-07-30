@@ -1,0 +1,60 @@
+.featured-topics {
+    @include aligner;
+    @include gutter(0, 0, 2, 0);
+    $root: &;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: ($grid);
+    }
+
+    &__item {
+        background-color: $color--white;
+    }
+
+    &__heading {
+        @include font-size(l);
+        @include gutter(0.1, 0, 1, 0);
+        display: inline-block;
+        border-top: 3px solid $color--secondary;
+        margin-bottom: 0;
+    }
+
+    &__item-header {
+        display: block;
+        position: relative;
+        background-color: $color--primary;
+        cursor: url('../../../images/cursor_plus.png'), auto;
+
+        &:hover {
+
+            #{$root}__item-image {
+                mix-blend-mode: luminosity;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__item-heading {
+        @include font-size(default);
+        @include gutter(0.15, 0.5, 0.15, 0.5);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: $color--white;
+        margin-bottom: 0;
+        background-color: rgba($color--black, 0.6);
+        border-top: 3px solid $color--primary;
+    }
+
+    &__item-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: mix-blend-mode $default-transition-speed ease 0s,
+                    opacity $default-transition-speed ease 0s;
+    }
+
+}

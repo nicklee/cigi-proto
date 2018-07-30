@@ -1,19 +1,8 @@
 .newsletter {
-    @include gutter(1.5, 0, 2, 0);
-    background-color: $color--white;
-
-    &__container {
-        @include aligner;
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        grid-gap: ($grid * 2);
-    }
+    $root: &;
 
     &__intro {
-        @include font-size(l);
-        font-weight: 400;
-        color: $color--default;
-        line-height: 1.2;
+
 
         p {
             margin-bottom: 0;
@@ -33,14 +22,7 @@
         width: 100%;
         border: 0;
         border-bottom: 2px solid $color--primary;
-        color: $color--black;
         transition: border-color $default-transition-speed ease 0s;
-
-        &:focus {
-            outline: 0;
-            border-bottom: 2px solid $color--black;
-        }
-
     }
 
     &__button {
@@ -49,15 +31,75 @@
         bottom: ($grid / 4);
         cursor: pointer;
         color: $color--primary;
-
-        &:hover {
-            color: $color--secondary;
-        }
-
     }
 
     &__button-icon {
         fill: currentColor;
+    }
+
+    .page__content & {
+        @include gutter(1.5, 0, 2, 0);
+        background-color: $color--white;
+
+        #{$root}__container {
+            @include aligner;
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-gap: ($grid * 2);
+        }
+
+        #{$root}__intro {
+            @include font-size(l);
+            font-weight: 400;
+            color: $color--default;
+            line-height: 1.2;
+        }
+
+        #{$root}__input {
+            color: $color--black;
+
+            &:focus {
+                outline: 0;
+                border-bottom: 2px solid $color--black;
+            }
+
+        }
+
+        #{$root}__button {
+
+            &:hover {
+                color: $color--secondary;
+            }
+
+        }
+
+    }
+
+    .footer & {
+        @include gutter(0, 0, 1, 0);
+
+        #{$root}__intro {
+            @include font-size(default);
+        }
+
+        #{$root}__button {
+
+            &:hover {
+                color: $color--white;
+            }
+
+        }
+
+        #{$root}__input {
+            color: $color--white;
+
+            &:focus {
+                outline: 0;
+                border-bottom: 2px solid $color--white;
+            }
+
+        }
+
     }
 
 }

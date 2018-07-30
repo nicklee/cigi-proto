@@ -2,6 +2,11 @@
 
     <div class="latest__container">
 
+        <div class="latest__header">
+            <h2 class="latest__heading">Latest</h2>
+            <div class="latest__action"><a href="#">news</a>, <a href="#">events</a>, <a href="#">press release</a> & <a href="#">jobs</a></div>
+        </div>
+
         <div class="latest__content">
             {% for item in items %}
                 {% include "@molecules/listing-item/listing-item.twig" with item %}
