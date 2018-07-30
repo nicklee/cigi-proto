@@ -4,7 +4,7 @@
     color: $color--white;
 
     &__container {
-        @include gutter(1, 0.5, 0.75, 0.5);
+        @include gutter(1.5, 0.5, 2, 0.5);
         @include aligner;
         display: grid;
         grid-gap: ($grid);
