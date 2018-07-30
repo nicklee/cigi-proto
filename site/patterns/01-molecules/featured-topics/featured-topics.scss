@@ -15,7 +15,7 @@
 
     &__heading {
         @include font-size(l);
-        @include gutter(0.1, 0, 1, 0);
+        @include gutter(0.1, 0, 0.75, 0);
         display: inline-block;
         border-top: 3px solid $color--secondary;
         margin-bottom: 0;
@@ -25,7 +25,7 @@
         display: block;
         position: relative;
         background-color: $color--primary;
-        cursor: url('../../../images/cursor_plus.png'), auto;
+        cursor: url('../images/cursor_plus.png'), auto;
 
         &:hover {
 
@@ -38,10 +38,10 @@
 
     &__item-heading {
         @include font-size(default);
-        @include gutter(0.15, 0.5, 0.15, 0.5);
+        @include gutter(0.25, 0.75, 0.25, 0.75);
         position: absolute;
         z-index: 1;
-        top: 0;
+        bottom: 0;
         left: 0;
         color: $color--white;
         margin-bottom: 0;

@@ -18,7 +18,7 @@
 
     &__link {
         text-decoration: none;
-        cursor: url('../../../images/cursor_plus.png'), auto;
+        cursor: url('../images/cursor_plus.png'), auto;
 
         &:hover {
 
@@ -37,7 +37,7 @@
     }
 
     &__heading {
-        @include font-size(s);
+        @include font-size(default);
         margin-bottom: 0;
         font-weight: 400;
         color: $color--black;

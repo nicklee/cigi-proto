@@ -35,7 +35,7 @@
     &__container {
         display: block;
         text-decoration: none;
-        cursor: url('../../../images/cursor_play.png'), auto;
+        cursor: url('../images/cursor_play.png'), auto;
         // sass-lint:disable indentation
         transition: transform $default-transition-speed ease 0s;
         // sass-lint:enddisable
