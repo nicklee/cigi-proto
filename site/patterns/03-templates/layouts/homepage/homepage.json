@@ -7,8 +7,8 @@
             {
                 "title" : "The economic Consequences of Trump's Iran Policy",
                 "href" : "#",
-                "text" : "Europe's Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
-                "image" : "../../../images/news-feature.jpg",
+                "text" : "United States President Donald Trump dealt a severe blow to the Joint Comprehensive Plan of Action…",
+                "image" : "../../../images/news-feature2.jpg",
                 "featured" : true,
                 "meta" : [
                     {
@@ -95,33 +95,6 @@
                     },
                     {
                         "title" : "20 June"
-                    }
-                ]
-            },
-            {
-                "title" : "How social media can silence dissent",
-                "href" : "#",
-                "text" : "",
-                "image" : "../../../images/news-item_social.jpg",
-                "meta" : [
-                    {
-                        "title" : "Event"
-                    },
-                    {
-                        "title" : "20 June"
-                    }
-                ]
-            },
-            {
-                "title" : "The economic Consequences of Trump's Iran Policy",
-                "href" : "#",
-                "image" : "../../../images/news-item2_large.jpg",
-                "meta" : [
-                    {
-                        "title" : "News"
-                    },
-                    {
-                        "title" : "23 May"
                     }
                 ]
             }

@@ -21,11 +21,6 @@
         #{$root}__heading {
             @include gutter(0, 0, 0.2, 0);
             @include font-size(l);
-            max-width: ($grid * 13);
-        }
-
-        #{$root}__text {
-            max-width: ($grid * 15);
         }
 
         .latest & {
@@ -38,7 +33,7 @@
             }
 
             @include media-query(laptop) {
-                grid-column: 1 / span 2;
+                grid-column: 1 / span 3;
                 grid-row: 1 / span 2;
             }
 
