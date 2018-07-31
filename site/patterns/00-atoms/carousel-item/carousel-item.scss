@@ -8,7 +8,7 @@
         text-decoration: none;
         background-color: rgba($color--white, 0.8);
         border: 2px solid transparent;
-        cursor: url('../images/cursor_plus.png'), auto;
+        // cursor: url('../images/cursor_plus.png'), auto;
         transition: background-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s,
                     border-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s,
                     transform $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s;
@@ -90,6 +90,30 @@
         background-color: $color--secondary;
         pointer-events: none;
         transition: opacity $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
+    }
+
+    .partners & {
+
+        #{$root}__link {
+            @include gutter(0, 0, 0, 0, true);
+        }
+
+        #{$root}__heading {
+            @include gutter(0.5, 0.5, 0, 0.5);
+        }
+
+        #{$root}__meta {
+            @include gutter(0, 0.5, 0.5, 0.5);
+        }
+
+        #{$root}__date-label {
+            @include gutter(0, 0.15, 0, 0, true);
+        }
+
+        #{$root}__date-icon {
+            fill: $color--primary;
+        }
+
     }
 
 }

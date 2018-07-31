@@ -1,5 +1,5 @@
 .partners {
-    @include gutter(0, 0, 2, 0);
+    @include gutter(0, 0, 0.5, 0);
 
     &__container {
         @include aligner;

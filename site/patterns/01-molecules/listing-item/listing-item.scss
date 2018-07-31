@@ -59,7 +59,7 @@
         background-color: transparent;
         background-size: cover;
         background-position: 50% 50%;
-        cursor: url('../images/cursor_plus.png'), auto;
+        // cursor: url('../images/cursor_plus.png'), auto;
         // sass-lint:disable indentation
         transition: box-shadow $default-transition-speed ease 0s,
                     transform $default-transition-speed ease 0s,

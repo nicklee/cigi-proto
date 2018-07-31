@@ -39,6 +39,11 @@
                 opacity: 1;
             }
 
+            #{$root}__image {
+                mix-blend-mode: luminosity;
+                opacity: 0.8;
+            }
+
         }
 
     }
@@ -57,12 +62,14 @@
         max-width: 40%;
         min-width: 40%;
         height: auto;
+        background-color: $color--primary;
     }
 
     &__image {
         display: block;
         width: 100%;
         height: auto;
+        transition: opacity $default-transition-speed ease 0s;
     }
 
     &__meta {
