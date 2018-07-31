@@ -44,7 +44,7 @@
     }
 
     &__text {
-        @include gutter(0.5, 0, 0, 0.5);
+        @include gutter(0.25, 0, 0, 0.5);
         border-top: 1px solid $color--border-light;
     }
 
@@ -73,8 +73,9 @@
 
     &__heading {
         @include gutter(0, 0, 0.1, 0);
-        @include font-size(m);
+        @include font-size(default);
         color: $color--secondary;
+        line-height: 1.2;
         margin-bottom: 0;
         transition: color $default-transition-speed ease 0.1s;
     }
@@ -84,6 +85,7 @@
         color: $color--default;
         margin-bottom: 0;
         line-height: 1.3;
+        display: none;
     }
 
     &__video-icon {

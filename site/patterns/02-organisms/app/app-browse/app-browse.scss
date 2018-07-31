@@ -1,0 +1,61 @@
+.app-browse {
+    $root: &;
+    position: fixed;
+    z-index: 12;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 40%;
+    overflow: scroll;
+    background-color: $color--white;
+    pointer-events: none;
+    will-change: transform;
+    transform: translate3d(200%, 0, 0);
+    // sass-lint:disable indentation
+    transition: transform $default-transition-speed cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                opacity $default-transition-speed cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    // sass-lint:enddisable
+
+    &.active {
+        transform: translate3d(0%, 0, 0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    &__overlay {
+        content: '';
+        position: fixed;
+        pointer-events: none;
+        z-index: 11;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color--secondary, 0.8);
+        transition: opacity $default-transition-speed cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+        .browse-active & {
+            opacity: 1;
+        }
+
+    }
+
+    &__close {
+        background-color: transparent !important;
+    }
+
+    &__close-icon {
+        position: absolute;
+        top: ($grid);
+        right: ($grid);
+        cursor: pointer;
+        transition: fill $default-transition-speed cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+        &:hover {
+            fill: $color--primary;
+        }
+    }
+
+}

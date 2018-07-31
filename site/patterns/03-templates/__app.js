@@ -6,6 +6,7 @@ class App {
         this.$node              = $(node);
         this.$appNavigation     = this.$node.find('.app__navigation');
         this.$appSearch         = this.$node.find('.app__search');
+        this.$appBrowse         = this.$node.find('.app__browse');
         this.openClass          = 'open';
 
         // State
@@ -16,6 +17,12 @@ class App {
         };
 
         this.searchState = {
+            menu: {
+                open: false
+            }
+        };
+
+        this.browseState = {
             menu: {
                 open: false
             }
@@ -68,6 +75,27 @@ class App {
         }
     }
 
+    browseOpen() {
+        this.$appBrowse.addClass(this.openClass);
+        this.browseState.menu.open = true;
+    }
+
+    browseClose() {
+        this.$appBrowse.removeClass(this.openClass);
+        this.browseState.menu.open = false;
+    }
+
+    browseToggle() {
+        if (this.browseState.menu.open) {
+            this.browseClose();
+        } else {
+            this.browseOpen();
+            if (this.browseState.menu.open) {
+                this.browseClose();
+            }
+        }
+    }
+
     bindEvents() {
 
         $(window).on('app:MobileMenuLink:toggle', () => {
@@ -76,6 +104,10 @@ class App {
 
         $(window).on('app:SearchToggle:toggle', () => {
             this.searchToggle();
+        });
+
+        $(window).on('app:BrowseToggle:toggle', () => {
+            this.browseToggle();
         });
 
     }

@@ -2,7 +2,7 @@
     $root: &;
 
     &__container {
-        @include gutter(2, 1, 0.5, 0);
+        @include gutter(2, 1, 2, 1);
     }
 
     &__header {
@@ -37,7 +37,7 @@
     }
 
     &__sort-order {
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
     }
