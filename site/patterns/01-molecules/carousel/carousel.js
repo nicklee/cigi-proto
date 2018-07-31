@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import Glide from '@glidejs/glide';
 
 class Carousel {
@@ -19,13 +18,7 @@ class Carousel {
     }
 
 }
-// const carousels = Array.from(document.getElementsByClassName('js-carousel'));
-//
-//
-// carousels.forEach(foo => {
-//     new Carousel();
-// });
 
-$('.js-carousel').each(function() {
-    new Carousel(this);
+[].forEach.call(document.getElementsByClassName('js-carousel'), function(el) {
+    new Carousel(el);
 });
