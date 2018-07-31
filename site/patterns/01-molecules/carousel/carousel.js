@@ -1,38 +1,31 @@
+import $ from 'jquery';
 import Glide from '@glidejs/glide';
 
-class carousel {
+class Carousel {
 
-    constructor( ) {
-        this.carouselContainer =  '.js-carousel';
-
-        this.launchcarousel();
+    constructor(node) {
+        this.launchcarousel(node);
     }
 
-    launchcarousel() {
+    launchcarousel(node) {
 
-        new Glide(this.carouselContainer, {
+        new Glide(node, {
             type: 'slider',
             startAt: 0,
             perView: 2,
-            gap: 28,
-            peek: {
-                before: 0,
-                after: 0
-            },
-            breakpoints: {
-                1024: {
-                    perView: 2
-                },
-                600: {
-                    perView: 1
-                }
-            }
+            gap: 28
         }).mount();
 
     }
 
 }
+// const carousels = Array.from(document.getElementsByClassName('js-carousel'));
+//
+//
+// carousels.forEach(foo => {
+//     new Carousel();
+// });
 
-[].forEach.call(document.getElementsByClassName('js-carousel'), function(el) {
-    new carousel(el);
+$('.js-carousel').each(function() {
+    new Carousel(this);
 });

@@ -44,8 +44,11 @@
     }
 
     &__text {
-        @include gutter(0.25, 0, 0, 0.5);
+        @include gutter(0.5, 0, 0, 0.5);
         border-top: 1px solid $color--border-light;
+        flex-basis: 60%;
+        max-width: 60%;
+        min-width: 60%;
     }
 
     &__image-container {
@@ -73,7 +76,8 @@
 
     &__heading {
         @include gutter(0, 0, 0.1, 0);
-        @include font-size(default);
+        @include font-size(m);
+        font-weight: 400;
         color: $color--secondary;
         line-height: 1.2;
         margin-bottom: 0;
