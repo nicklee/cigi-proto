@@ -1,0 +1,12 @@
+<div class="events-feed">
+    <div class="events-feed__container">
+        <div class="events-feed__header">
+            <h2 class="events-feed__heading">{{ title }}</h2>
+        </div>
+        <div class="events-feed__content">
+            {% for event in items %}
+                {% include "@atoms/event-item/event-item.twig" with event %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

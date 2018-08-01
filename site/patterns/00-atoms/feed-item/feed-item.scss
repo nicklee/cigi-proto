@@ -20,6 +20,51 @@
 
     }
 
+    &--featured {
+
+        #{$root}__link {
+            flex-direction: column;
+        }
+
+        #{$root}__text {
+            order: 2;
+            flex-basis: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        #{$root}__heading {
+            font-weight: 500;
+        }
+
+        #{$root}__image-container {
+            order: 1;
+            flex-basis: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+    }
+
+    &--no-image {
+
+        #{$root}__text {
+            @include gutter(0.5, 0.75, 0, 0);
+            flex-basis: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        #{$root}__image-container {
+            display: none;
+        }
+
+        #{$root}__heading {
+            @include font-size(default);
+        }
+
+    }
+
     &__link {
         @include gutter(0, 0, 1, 0);
         display: flex;
@@ -49,20 +94,22 @@
     }
 
     &__text {
-        @include gutter(0.5, 0, 0, 0.5);
+        @include gutter(0.5, 0.75, 0, 0);
+        order: 1;
         border-top: 1px solid $color--border-light;
-        flex-basis: 60%;
-        max-width: 60%;
-        min-width: 60%;
+        flex-basis: 55%;
+        max-width: 55%;
+        min-width: 55%;
     }
 
     &__image-container {
+        order: 2;
         position: relative;
-        flex-basis: 40%;
-        max-width: 40%;
-        min-width: 40%;
+        flex-basis: 45%;
+        max-width: 45%;
+        min-width: 45%;
         height: auto;
-        background-color: $color--primary;
+        background-color: $color--image-hover;
     }
 
     &__image {
@@ -75,10 +122,25 @@
     &__meta {
         @include gutter(0, 0, 0.1, 0);
         @include font-size(xxs);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-weight: 500;
         color: $color--primary;
         margin-bottom: 0;
         text-transform: uppercase;
+    }
+
+    &__meta-label {
+        @include font-size(xxs);
+        font-weight: 500;
+        color: $color--primary;
+        text-transform: uppercase;
+    }
+
+    &__meta-icon {
+        margin-left: ($grid / 4);
+        opacity: 0.7;
     }
 
     &__heading {

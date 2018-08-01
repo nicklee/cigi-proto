@@ -9,6 +9,7 @@
 
 /* Primary */
 $color--red:                    #e6023b;
+$color--teal:                   #43b1b0;
 
 /* Secondary */
 $color--grey-dark:              #92908c;
@@ -25,7 +26,7 @@ $color--off-black:              #373737;
 $color--primary:                $color--red;
 $color--secondary:              $color--black;
 $color--tertiary:               $color--off-white;
-$color--quaternary:             $color--grey-dark;
+$color--quaternary:             $color--teal;
 $color--quinary:                $color--grey-mid;
 $color--senary:                 $color--grey-light;
 
@@ -39,6 +40,7 @@ $color--border-dark:            $color--quaternary;
 $color--default:                $color--off-black;
 $color--link:                   $color--black;
 $color--link-hover:             $color--primary;
+$color--image-hover:            $color--quaternary;
 $color--meta:                   $color--quinary;
 
 // Social

@@ -5,7 +5,7 @@
     "newsFeed" : {
         "items" : [
             {
-                "title" : "The economic Consequences of Trump's Iran Policy",
+                "title" : "NAFTA Will Test López Obrador's Campaign Promises",
                 "href" : "#",
                 "text" : "Europe's Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
                 "image" : "../../../images/news-feature.jpg",
@@ -20,7 +20,7 @@
                 ]
             },
             {
-                "title" : "Can Nato Survive the Trump Presidency?",
+                "title" : "What You Need to Know about NAFTA Renegotiations",
                 "href" : "#",
                 "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "title" : "How social media can silence dissent",
+                "title" : "The G20 Fights Fires — But It Won't Prevent Them",
                 "href" : "#",
                 "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
@@ -46,7 +46,7 @@
                 ]
             },
             {
-                "title" : "Geopolitical chaos is the new normal",
+                "title" : "Trade and Climate Change: Synergies and Conflicts",
                 "href" : "#",
                 "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
@@ -133,30 +133,39 @@
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "link" : "#",
-                "image" : false,
-                "date" : "20th August 2018",
+                "featured" : true,
+                "image" : "../../../images/news-feature.jpg",
+                "date" : "20 - 24 August",
                 "location" : "Sydney, Australia"
             },
             {
                 "title" : "The Collapse of the American Empire",
                 "link" : "#",
                 "image" : false,
-                "date" : "29th August 2018",
+                "date" : "29 August",
                 "location" : "Waterloo, Canada"
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "link" : "#",
                 "image" : false,
-                "date" : "20th August 2018",
+                "date" : "20 August",
                 "location" : "Sydney, Australia"
             },
             {
                 "title" : "The Collapse of the American Empire",
                 "link" : "#",
                 "image" : false,
-                "date" : "29th August 2018",
+                "date" : "29 August",
                 "location" : "Waterloo, Canada"
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "link" : "#",
+                "image" : false,
+                "past" :  true,
+                "date" : "31 July",
+                "location" : "Sydney, Australia"
             }
         ]
     }

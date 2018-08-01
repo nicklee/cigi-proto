@@ -1,0 +1,34 @@
+{
+    "title" : "Events",
+    "items" : [
+        {
+            "title" : "78th Biennial International Law Association Conference",
+            "link" : "#",
+            "featured" : true,
+            "image" : false,
+            "date" : "20th August 2018",
+            "location" : "Sydney, Australia"
+        },
+        {
+            "title" : "The Collapse of the American Empire",
+            "link" : "#",
+            "image" : false,
+            "date" : "29th August 2018",
+            "location" : "Waterloo, Canada"
+        },
+        {
+            "title" : "78th Biennial International Law Association Conference",
+            "link" : "#",
+            "image" : false,
+            "date" : "20th August 2018",
+            "location" : "Sydney, Australia"
+        },
+        {
+            "title" : "The Collapse of the American Empire",
+            "link" : "#",
+            "image" : false,
+            "date" : "29th August 2018",
+            "location" : "Waterloo, Canada"
+        }
+    ]
+}

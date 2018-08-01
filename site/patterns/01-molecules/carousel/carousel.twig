@@ -5,12 +5,12 @@
         <div class="carousel__header">
             <h2 class="carousel__heading">{{ title }}</h3>
             <div class="carousel__controls glide__arrows" data-glide-el="controls">
-                <button aria-label="Previous" class="carousel__arrow carousel__arrow--prev glide__arrow glide__arrow--left" data-glide-dir="<">
+                <button aria-label="Previous" class="carousel__arrow carousel__arrow--prev glide__arrow glide__arrow--left" data-glide-dir="<<">
                     <svg class="carousel__arrow-icon" width="24" height="24">
                         <use xlink:href="#arrow-left" />
                     </svg>
                 </button>
-                <button aria-label="Next" class="carousel__arrow carousel__arrow--next glide__arrow glide__arrow--right" data-glide-dir=">">
+                <button aria-label="Next" class="carousel__arrow carousel__arrow--next glide__arrow glide__arrow--right" data-glide-dir=">>">
                     <svg class="carousel__arrow-icon" width="24" height="24">
                         <use xlink:href="#arrow-right" />
                     </svg>
@@ -26,6 +26,12 @@
                 </div>
                 {% endfor %}
             </div>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
         </div>
 
     </div>

@@ -78,12 +78,8 @@
                 background-color: $color--primary;
             }
 
-            #{$root}__heading {
-                color: $color--link-hover;
-            }
-
             #{$root}__image-container {
-                background-color: $color--primary;
+                background-color: $color--image-hover;
             }
 
             #{$root}__image-placeholder {

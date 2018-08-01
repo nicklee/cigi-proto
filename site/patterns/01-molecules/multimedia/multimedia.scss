@@ -1,7 +1,7 @@
 .multimedia {
     $root: &;
     background-color: $color--primary;
-    margin-bottom: ($grid * 2);
+    margin-bottom: ($grid * 2.5);
 
     &__container {
         @include gutter(2, 0, 2, 0);
@@ -18,8 +18,9 @@
         @include font-size(l);
         @include gutter(0.25, 0, 0.5, 0);
         display: inline-block;
-        border-top: 3px solid $color--secondary;
+        border-top: 3px solid $color--white;
         margin-bottom: 0;
+        color: $color--white;
     }
 
     &__action {
