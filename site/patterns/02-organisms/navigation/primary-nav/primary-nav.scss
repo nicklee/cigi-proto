@@ -4,14 +4,15 @@
 
     &__menu {
         display: none;
+        transition: opacity $default-transition-speed ease 0.3s;
 
         @include media-query(laptop) {
             display: flex;
+            opacity: 1;
         }
 
-        .headroom--not-top &,
-        .template__data & {
-            display: none;
+        .headroom--not-top & {
+            opacity: 0;
         }
 
     }
@@ -19,11 +20,6 @@
     &__full-link {
         display: flex;
         align-items: center;
-
-        .header--light & {
-            border-color: $color--off-black;
-        }
-
     }
 
 }

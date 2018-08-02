@@ -4,7 +4,16 @@
 
 .logo {
     $root: &;
+    position: relative;
     display: block;
+    width: 150px;
+    height: 41px;
+    padding-top: 8px;
+    border-top: 3px solid $color--secondary;
+    // sass-lint:disable indentation
+    transition: height $default-transition-speed ease 0s,
+                width $default-transition-speed ease 0s;
+    // sass-lint:enddisable
 
     &__item {
         display: block;
@@ -12,9 +21,7 @@
         width: 100%;
         height: auto;
         // sass-lint:disable indentation
-        transition: opacity $default-transition-speed ease 0s,
-                    height $default-transition-speed ease 0s,
-                    width $default-transition-speed ease 0s;
+        transition: opacity 150ms ease 0.2s;
         // sass-lint:enddisable
 
         &:hover {
@@ -22,19 +29,26 @@
         }
 
         &--mini {
-            display: none;
+            position: absolute;
+            top: 8px;
+            opacity: 0;
+            width: 46px;
+            height: 16px;
         }
 
     }
 
     .headroom--not-top & {
+        width: 46px;
+        height: 28px;
 
         #{$root}__item {
-            display: none;
+            opacity: 0;
         }
 
         #{$root}__item--mini {
             display: block;
+            opacity: 1;
         }
 
     }

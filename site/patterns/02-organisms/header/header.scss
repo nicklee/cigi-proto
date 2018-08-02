@@ -11,13 +11,11 @@
     background-color: $color--off-white;
     border-bottom: 1px solid transparent;
     // sass-lint:disable indentation
-    transition: background-color $default-transition-speed ease 0s,
-                border-bottom $default-transition-speed ease 0s;
+    transition: border-color $default-transition-speed ease 0s;
     // sass-lint:enddisable
 
     &__container {
         @include aligner;
-        transition: padding $default-transition-speed ease 0s;
     }
 
     &__content {
@@ -68,18 +66,6 @@
 
         @include media-query(laptop) {
             height: auto;
-        }
-
-    }
-
-    &__audience-navigation {
-        @include font-size(s);
-        display: none;
-
-        @include media-query(laptop) {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
         }
 
     }

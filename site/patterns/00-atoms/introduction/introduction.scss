@@ -16,16 +16,15 @@
         margin-bottom: 0;
         max-width: ($grid * 30);
         line-height: 1.4;
+        transition: opacity $default-transition-speed ease 0.1s,
+                    display $default-transition-speed ease 2s,
+                    transform $default-transition-speed ease 0.1s;
 
-        // &::after {
-        //     content: '';
-        //     width: ($grid * 2);
-        //     height: 0px;
-        //     border-bottom: 1px dotted $color--border-dark;
-        //     display: block;
-        //     background-color: transparent;
-        //     margin-top: ($grid * 1.5);
-        // }
+        &.closed {
+            transform: translate3d(0, -200%, 0);
+            opacity: 0;
+            display: none;
+        }
 
     }
 
@@ -34,6 +33,23 @@
         position: relative;
         height: 240px;
         width: auto;
+    }
+
+    &__dismiss {
+        position: relative;
+        top: 12px;
+        left: 0;
+        opacity: 0.3;
+        cursor: pointer;
+        fill: $color--secondary;
+        transition: opacity $default-transition-speed ease 0.1s,
+                    fill $default-transition-speed ease 0.1s;
+
+        &:hover {
+            fill: $color--primary;
+            opacity: 1;
+        }
+
     }
 
     a {
