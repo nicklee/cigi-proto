@@ -1,0 +1,25 @@
+.publications {
+    $root: &;
+    margin-bottom: ($grid * 2.5);
+
+    &__container {
+        @include aligner;
+    }
+
+    &__heading {
+        @include font-size(l);
+        @include gutter(0.1, 0, 0.75, 0);
+        display: inline-block;
+        border-top: 3px solid $color--secondary;
+        margin-bottom: 0;
+    }
+
+    &__content {
+        display: grid;
+        width: 100%;
+        grid-column-gap: $grid;
+        grid-row-gap: ($grid * 1.5);
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
