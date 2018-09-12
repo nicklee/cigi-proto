@@ -199,7 +199,7 @@
     .listing--opinion & {
         margin-bottom: ($grid / 2);
 
-        #{$root}__container {
+        #{$root}__link {
             display: flex;
             flex-direction: row;
             align-items: stretch;

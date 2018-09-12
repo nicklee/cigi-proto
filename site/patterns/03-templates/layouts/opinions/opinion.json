@@ -81,7 +81,7 @@
         "items" : [
             {
                 "title" : "78th Biennial International Law Association Conference",
-                "link" : "#",
+                "href" : "#",
                 "featured" : true,
                 "image" : "../../../images/news-feature.jpg",
                 "meta" : [
@@ -92,7 +92,7 @@
             },
             {
                 "title" : "The Collapse of the American Empire",
-                "link" : "#",
+                "href" : "#",
                 "image" : "../../../images/news-feature.jpg",
                 "meta" : [
                     {
@@ -102,7 +102,7 @@
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
-                "link" : "#",
+                "href" : "#",
                 "image" : "../../../images/news-feature.jpg",
                 "meta" : [
                     {
@@ -112,7 +112,7 @@
             },
             {
                 "title" : "The Collapse of the American Empire",
-                "link" : "#",
+                "href" : "#",
                 "image" : "../../../images/news-feature.jpg",
                 "meta" : [
                     {
@@ -122,7 +122,57 @@
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
-                "link" : "#",
+                "href" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
                 "image" : "../../../images/news-feature.jpg",
                 "meta" : [
                     {

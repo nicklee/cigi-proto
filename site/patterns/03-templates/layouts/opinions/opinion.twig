@@ -17,13 +17,17 @@
 
     <div class="page__content" id="content">
 
-        {% if overviewNav %}
-            {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
-        {% endif %}
+        <div class="page__sticky-container">
 
-        {% if listing %}
-            {% include "@organisms/listing/listing.twig" with listing %}
-        {% endif %}
+            {% if overviewNav %}
+                {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+            {% endif %}
+
+            {% if listing %}
+                {% include "@organisms/listing/listing.twig" with listing %}
+            {% endif %}
+            
+        </div>
 
         <div class="carousel partners">
             <div class="carousel__container glide js-carousel">
