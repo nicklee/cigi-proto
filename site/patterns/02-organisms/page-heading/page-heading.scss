@@ -54,14 +54,14 @@
 
     &__heading {
         @include gutter(0, 0, 0.5, 0);
-        @include font-size(xxl);
+        @include font-size(xl);
         line-height: 1.2;
         font-weight: 300;
         margin-bottom: 0;
         max-width: $max-width--s;
 
         @include media-query(tablet) {
-            @include rem-font-size(82px);
+            @include font-size(xxl);
         }
 
     }

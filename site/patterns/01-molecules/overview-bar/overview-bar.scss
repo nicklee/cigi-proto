@@ -4,8 +4,8 @@
     position: sticky;
     top: $header-sticky-height;
     z-index: 3;
-    background-color: $color--white;
-    border-bottom: 1px solid rgba($color--border, 0.4);
+    border-bottom: 1px solid transparent;
+    background-color: $color--off-white;
     margin-bottom: ($grid);
     color: $color--black;
     will-change: transform;
@@ -25,8 +25,13 @@
     }
 
     &.stuck {
-        background-color: rgba($color--primary, 0.95);
-        color: $color--white;
+        background-color: rgba($color--white, 0.95);
+        border-bottom: 1px solid rgba($color--border, 0.4);
+        color: $color--black;
+
+        #{$root}__container {
+            border-bottom: 1px solid transparent;
+        }
     }
 
     &__container {
@@ -35,6 +40,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid rgba($color--border, 0.4);
 
         @include media-query(tablet) {
             @include gutter(0, 1, 0, 1);

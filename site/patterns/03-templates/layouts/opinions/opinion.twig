@@ -7,6 +7,9 @@
         <div class="page-heading">
             <div class="page-heading__container">
                 <h1 class="page-heading__heading">{{ title }}</h1>
+                {% if introduction %}
+                    {% include "@atoms/introduction/introduction.twig" %}
+                {% endif %}
             </div>
         </div>
 

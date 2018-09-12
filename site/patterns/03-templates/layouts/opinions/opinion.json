@@ -2,6 +2,7 @@
     "title": "Opinions",
     "template" : "opinion",
     "progressBar" : true,
+    "introduction" : "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
     "overviewNav" : {
         "title" : "Browse by",
         "date" : false,

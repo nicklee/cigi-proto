@@ -1,6 +1,15 @@
 .introduction {
     $root: &;
 
+    &--home {
+
+        #{$root}__text {
+            @include font-size(xl);
+            @include gutter(2, 0, 0.5, 0);
+        }
+
+    }
+
     &__container {
         @include aligner;
         display: flex;
@@ -10,8 +19,8 @@
     }
 
     &__text {
-        @include gutter(2, 0, 0.5, 0);
-        @include font-size(xl);
+        @include gutter(0, 0, 0.5, 0);
+        @include font-size(l);
         color: $color--black;
         margin-bottom: 0;
         max-width: ($grid * 30);
