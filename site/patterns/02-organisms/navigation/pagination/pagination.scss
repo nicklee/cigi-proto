@@ -1,5 +1,8 @@
 .pagination {
-    @include gutter(1, 0, 2, 0);
+    @include gutter(1, 0, 1.5, 0);
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
 
     &__container {
         display: flex;

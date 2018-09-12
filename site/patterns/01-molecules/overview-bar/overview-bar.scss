@@ -4,15 +4,10 @@
     position: sticky;
     top: $header-sticky-height;
     z-index: 3;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba($color--border, 0.4);
     background-color: $color--off-white;
-    margin-bottom: ($grid);
     color: $color--black;
     will-change: transform;
-
-    @include media-query(laptop) {
-        margin-bottom: ($grid * 1.5);
-    }
 
     &--initial {
         visibility: hidden;
@@ -26,7 +21,6 @@
 
     &.stuck {
         background-color: rgba($color--white, 0.95);
-        border-bottom: 1px solid rgba($color--border, 0.4);
         color: $color--black;
 
         #{$root}__container {
@@ -40,7 +34,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid rgba($color--border, 0.4);
 
         @include media-query(tablet) {
             @include gutter(0, 1, 0, 1);

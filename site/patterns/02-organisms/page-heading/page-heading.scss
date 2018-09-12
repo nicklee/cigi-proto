@@ -61,7 +61,13 @@
         max-width: $max-width--s;
 
         @include media-query(tablet) {
-            @include font-size(xxl);
+            @include rem-font-size(42px);
+        }
+
+        em {
+            color: $color--primary;
+            font-weight: 500;
+            font-style: normal;
         }
 
     }

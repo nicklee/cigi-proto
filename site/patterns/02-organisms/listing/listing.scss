@@ -20,6 +20,10 @@
     }
 
     &--opinion {
+        background-color: $color--white;
+        padding-bottom: ($grid * 1.5);
+        padding-top: ($grid * 1.5);
+        margin-bottom: ($grid * 2);
 
         #{$root}__container {
             max-width: 980px;

@@ -1,8 +1,7 @@
 {
-    "title": "Opinions",
+    "title": "<em>Expert opinions</em> bringing clarity & innovative thinking to global policy making",
     "template" : "opinion",
     "progressBar" : true,
-    "introduction" : "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
     "overviewNav" : {
         "title" : "Browse by",
         "date" : false,
@@ -83,8 +82,11 @@
                 "title" : "78th Biennial International Law Association Conference",
                 "href" : "#",
                 "featured" : true,
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Featured opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -93,8 +95,12 @@
             {
                 "title" : "The Collapse of the American Empire",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "featured" : true,
+                "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Featured opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -103,8 +109,11 @@
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Op-ed"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -113,8 +122,11 @@
             {
                 "title" : "The Collapse of the American Empire",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Commentary"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -123,8 +135,11 @@
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -133,8 +148,11 @@
             {
                 "title" : "The Collapse of the American Empire",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -143,8 +161,11 @@
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -153,8 +174,11 @@
             {
                 "title" : "The Collapse of the American Empire",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -163,8 +187,11 @@
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Commentary"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }
@@ -173,8 +200,11 @@
             {
                 "title" : "The Collapse of the American Empire",
                 "href" : "#",
-                "image" : "../../../images/news-feature.jpg",
+                "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
                     {
                         "title" : "20 - 24 August"
                     }

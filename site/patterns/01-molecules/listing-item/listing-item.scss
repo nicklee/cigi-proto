@@ -3,10 +3,6 @@
 
     // Modifiers
 
-    &--image {
-
-    }
-
     &--featured {
 
         #{$root}__image-container {
@@ -198,6 +194,7 @@
 
     .listing--opinion & {
         margin-bottom: ($grid / 2);
+        border-bottom: 1px solid $color--border-light;
 
         #{$root}__link {
             display: flex;
@@ -213,12 +210,38 @@
         }
 
         #{$root}__text-container {
+            @include gutter(0.4, 0.5, 0.4, 0.5);
             justify-content: center;
             height: 100%;
-            flex-basis: 80%;
-            max-width: 80%;
-            min-width: 80%;
+            flex-basis: 75%;
+            max-width: 75%;
+            min-width: 75%;
             padding-left: ($grid);
+        }
+
+        &--featured {
+            padding-bottom: ($grid / 2);
+
+            #{$root}__heading {
+                @include font-size(l);
+                font-weight: 500;
+                max-width: 100%;
+            }
+
+            #{$root}__image-container {
+                flex-basis: 20%;
+                max-width: 20%;
+                min-width: 20%;
+            }
+
+            #{$root}__meta-item {
+
+                &:first-of-type {
+                    font-weight: 500;
+                }
+
+            }
+
         }
 
     }

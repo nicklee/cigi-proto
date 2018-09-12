@@ -1,5 +1,5 @@
 .pagination-item {
-    @include font-size(default);
+    @include font-size(xs);
     @include gutter(0, 0.125, 0, 0.125);
     $root: &;
     font-weight: 500;
