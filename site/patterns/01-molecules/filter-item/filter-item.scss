@@ -1,0 +1,294 @@
+.filter-item {
+    $root: &;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid $color--border-light;
+    transition: background-color $default-transition-speed ease 0s;
+
+    @include media-query(tablet) {
+        border-bottom: 0;
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+
+        @include media-query(tablet) {
+            margin-right: 0;
+        }
+
+    }
+
+    &.active {
+
+        #{$root}__icon {
+
+            @include media-query(tablet-max) {
+                transform: rotate(-180deg);
+            }
+
+        }
+
+        #{$root}__options {
+
+            @include media-query(tablet-max) {
+                position: relative;
+                height: 100%;
+                width: auto;
+                pointer-events: auto;
+                mask-image: none;
+                // sass-lint:disable no-vendor-prefixes
+                -webkit-mask-image: none;
+                // sass-lint:enddisable
+            }
+
+        }
+
+        #{$root}__options-container {
+
+            @include media-query(tablet-max) {
+                height: 100%;
+                pointer-events: auto;
+                opacity: 1;
+                transform: translate3d(0, 0%, 0);
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+            #{$root}__icon {
+
+                @include media-query(tablet-max) {
+                    fill: $color--black;
+                }
+
+            }
+
+        }
+
+    }
+
+    &:hover,
+    &:focus {
+
+        #{$root}__icon {
+            transform: rotate(-180deg);
+        }
+
+        @include media-query(tablet) {
+
+            #{$root}__options-container {
+                height: 100%;
+                pointer-events: auto;
+                opacity: 1;
+                transform: translate3d(0, 0%, 0);
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+            #{$root}__heading {
+                color: $color--black;
+            }
+
+            #{$root}__icon {
+                fill: $color--black;
+            }
+
+        }
+
+    }
+
+    &__header {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        // sass-lint:disable indentation
+        transition: background-color $default-transition-speed ease 0s,
+                    box-shadow $default-transition-speed ease 0s;
+        // sass-lint:enddisable
+
+        @include media-query(tablet) {
+            width: auto;
+        }
+
+    }
+
+    &__heading {
+        @include font-size(s);
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height: 1;
+        color: $color--black;
+
+        .filtered-list & {
+            @include font-size(m);
+            font-weight: 300;
+            color: $color--primary;
+
+            @include media-query(tablet) {
+                @include font-size(l);
+            }
+
+        }
+
+    }
+
+    &__icon {
+        fill: $color--primary;
+    }
+
+    &__options {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        height: 405px;
+        width: 300px;
+        pointer-events: none;
+        // sass-lint:disable no-vendor-prefixes
+        -webkit-mask-image: linear-gradient(to bottom, rgba($color--black, 1) 0%, rgba($color--black, 1) 100%);
+        // sass-lint:enddisable
+        mask-image: linear-gradient(to bottom, rgba($color--black, 1) 0%, rgba($color--black, 1) 100%);
+
+        @include media-query(tablet) {
+            width: 400px;
+        }
+
+        .overview-bar & {
+
+            @include media-query(tablet) {
+                right: -1px; // take into account right border
+                top: 48px; // take into account bottom border
+                width: 280px;
+            }
+
+        }
+
+        .filter-item--step & {
+
+            @include media-query(tablet) {
+                width: ($grid * 13);
+            }
+
+        }
+
+    }
+
+    &__options-container {
+        @include gutter(0.25, 0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        transform: translate3d(0, -100%, 0);
+
+        @include media-query(tablet) {
+            width: ($grid * 10);
+            // sass-lint:disable indentation
+            transition: transform $default-transition-speed ease 0s,
+                        opacity ($default-transition-speed / 4) ease 0s;
+            // sass-lint:enddisable
+
+            .filter-item--step & {
+                width: ($grid * 13);
+            }
+
+        }
+
+        @include media-query(tablet-max) {
+            position: relative;
+            max-height: 40vh;
+            // overflow-y: scroll;
+            overflow-y: auto;
+        }
+
+    }
+
+
+    .overview-bar & {
+        position: relative;
+        // sass-lint:disable no-important
+
+        // sass-lint:enddisable
+
+        @include media-query(tablet) {
+            @include gutter(0, 0.5, 0, 0.5);
+            border-left: 1px solid $color--border-light;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        &:last-child {
+
+            @include media-query(tablet) {
+                border-right: 1px solid $color--border-light;
+            }
+
+        }
+
+        &:hover,
+        &:focus {
+
+            @include media-query(tablet) {
+                color: $color--white;
+                background-color: $color--border;
+            }
+
+        }
+
+        #{$root}__header {
+            @include gutter(0, 0.5, 0, 0);
+
+            @include media-query(tablet) {
+                @include gutter(0, 0, 0, 0);
+            }
+
+        }
+
+        #{$root}__heading {
+            @include gutter(0.5, 1, 0.5, 1);
+            @include font-size(default);
+            color: $color--black;
+
+            @include media-query(tablet) {
+                @include gutter(0, 0, 0, 0);
+            }
+
+        }
+
+        #{$root}__options-container {
+            @include gutter(0, 0, 0, 0, true);
+        }
+
+    }
+
+    .overview-bar.stuck & {
+
+        &:hover,
+        &:focus {
+
+            @include media-query(tablet) {
+                background-color: $color--border;
+            }
+
+        }
+
+        #{$root}__heading {
+            color: $color--white;
+        }
+
+        #{$root}__icon {
+            fill: $color--white;
+        }
+
+    }
+
+}

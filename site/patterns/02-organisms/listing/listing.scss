@@ -19,6 +19,16 @@
 
     }
 
+    &--opinion {
+
+        #{$root}__container {
+            max-width: 980px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    }
+
     &__container {
         display: flex;
         flex-direction: row;

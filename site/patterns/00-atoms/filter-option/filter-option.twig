@@ -1,0 +1,11 @@
+<button class="filter-option {{ class }}" {% if safeTitle %}data-filter="{{ safeTitle }}"{% endif %}>
+    {% if count %}<span class="filter-option__count">{{ count }}</span>{% endif %}
+    {% if count %}
+    <div class="filter-option__content">
+    {% endif %}
+        <span class="filter-option__title">{{ title }}</span>
+        {% if description %}<span class="filter-option__description">{{ description }}</span>{% endif %}
+    {% if count %}
+    </div>
+    {% endif %}
+</button>

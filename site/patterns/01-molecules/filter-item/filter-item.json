@@ -1,0 +1,14 @@
+{
+    "title" : "Filter item",
+    "nested" : [
+        {
+            "title" : "Filter item child",
+            "href" : "#"
+        },
+        {
+            "title" : "Filter item active child",
+            "href" : "#",
+            "class" : "active"
+        }
+    ]
+}

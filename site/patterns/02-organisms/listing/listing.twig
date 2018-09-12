@@ -1,8 +1,10 @@
 <div class="listing {% for item in listingModifier %}listing--{{ item.class }} {% endfor %}">
 
-    {% include "@molecules/listing-header/listing-header.twig" %}
+    {% if item.heading %}
+        {% include "@molecules/listing-header/listing-header.twig" %}
+    {% endif %}
 
-    <div class="listing__container {% if filterable %}js-filterable{% endif %}">
+    <div class="listing__container">
 
         {% for listing in items %}
             {% include "@molecules/listing-item/listing-item.twig" with listing %}

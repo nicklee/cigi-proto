@@ -196,4 +196,19 @@
         transition: fill $default-transition-speed ease 0s;
     }
 
+    .listing--opinion & {
+
+        #{$root}__container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #{$root}__image-container {
+            flex-basis: 30%;
+            max-width: 30%;
+            min-width: 30%;
+        }
+
+    }
+
 }

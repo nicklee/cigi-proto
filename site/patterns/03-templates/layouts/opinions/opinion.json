@@ -1,0 +1,134 @@
+{
+    "title": "Opinions",
+    "template" : "opinion",
+    "progressBar" : true,
+    "overviewNav" : {
+        "title" : "Browse by",
+        "date" : false,
+        "items" : [
+            {
+                "title" : "Research areas",
+                "nested" : [
+                    {
+                        "title" : "All research areas",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Conflict management & security",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Environment & energy",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Innovation & productivity",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Internet governance & jurisdiction",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Summits & institutions",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Trade & finance",
+                        "href" : "#"
+                    }
+                ]
+            },
+            {
+                "title" : "Types",
+                "nested" : [
+                    {
+                        "title" : "All types",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Opinions",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Op-eds",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Commentaries",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Interviews",
+                        "href" : "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "listing" : {
+        "listingModifier" : [
+            {
+                "class" : "opinion"
+            }
+        ],
+        "title" : false,
+        "paginationOn" :  true,
+        "loadMoreOn" :  false,
+        "items" : [
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "link" : "#",
+                "featured" : true,
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "link" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "link" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "link" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "link" : "#",
+                "image" : "../../../images/news-feature.jpg",
+                "meta" : [
+                    {
+                        "title" : "20 - 24 August"
+                    }
+                ]
+            }
+        ]
+    }
+}

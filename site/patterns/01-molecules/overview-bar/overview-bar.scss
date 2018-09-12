@@ -2,6 +2,7 @@
     $root: &;
     display: block;
     position: sticky;
+    top: $header-sticky-height;
     z-index: 3;
     background-color: $color--white;
     border-bottom: 1px solid rgba($color--border, 0.4);

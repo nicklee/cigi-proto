@@ -50,14 +50,6 @@
         flex-basis: 100%;
         min-width: 100%;
         max-width: 100%;
-
-        @include media-query(laptop) {
-            flex-direction: row;
-            flex-basis: 61.5%;
-            min-width: 61.5%;
-            max-width: 61.5%;
-        }
-
     }
 
     &__heading {

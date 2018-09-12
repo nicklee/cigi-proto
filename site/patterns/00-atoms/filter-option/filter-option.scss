@@ -1,0 +1,130 @@
+.filter-option {
+    @include font-size(s);
+    @include gutter(0.5, 1, 0.5, 1);
+    $root: &;
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 1.2;
+    background-color: $color--white;
+    color: $color--black;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 0;
+    text-align: left;
+    text-decoration: none;
+    min-height: 45px;
+    box-shadow: 0 ($grid / 4) ($grid / 2) rgba($color--black, 0.1), 0 3px 6px rgba($color--black, 0.08);
+    // sass-lint:disable indentation
+    transition: background-color $default-transition-speed ease 0s,
+                color $default-transition-speed ease 0s;
+    // sass-lint:enddisable
+
+    @include media-query(tablet) {
+        padding: ($grid / 4) ($grid / 2);
+        background-color: $color--white;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 ($grid / 2);
+        height: 1px;
+        background-color: $color--border-light;
+    }
+
+    &:last-child,
+    &.active {
+
+        &::after {
+            display: none;
+        }
+
+    }
+
+    &:hover {
+        color: $color--primary;
+
+        #{$root}__title {
+            color: $color--primary;
+        }
+
+    }
+
+    &.active {
+        background-color: $color--primary;
+        color: $color--white;
+
+        &:hover {
+            background-color: $color--primary;
+            color: $color--white;
+            cursor: default;
+
+            #{$root}__title {
+                color: $color--white;
+            }
+
+        }
+
+    }
+
+    &__title {
+        display: block;
+
+        .filter-item--step & {
+            @include font-size(default);
+            @include gutter(0, 0, 0.15, 0);
+            color: $color--border;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__count {
+        @include font-size(xl);
+        @include gutter(0, 0.15, 0, 0.15);
+        flex-basis: 15%;
+        font-weight: 700;
+        color: $color--border;
+    }
+
+    &__description {
+        @include font-size(s);
+        color: $color--black;
+    }
+
+    .filter-item--step & {
+        @include gutter(0.5, 0.4, 0.5, 0.4);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        &::after {
+            margin: 0 ($grid * 0.75);
+        }
+
+    }
+
+    .overview-bar & {
+        border-left: 1px solid $color--border-light;
+        border-right: 1px solid $color--border-light;
+
+        &:first-child {
+            border-top: 1px solid $color--border-light;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid $color--border-light;
+        }
+
+    }
+
+}
