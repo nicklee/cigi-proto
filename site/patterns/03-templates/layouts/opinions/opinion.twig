@@ -17,6 +17,10 @@
 
     <div class="page__content" id="content">
 
+        {% if features %}
+            {% include "@organisms/latest/latest.twig" with features %}
+        {% endif %}
+
         <div class="page__sticky-container">
 
             {% if overviewNav %}

@@ -2,6 +2,79 @@
     "title": "<em>Expert opinions</em> bringing clarity & innovative thinking to global policy making",
     "template" : "opinion",
     "progressBar" : true,
+    "features" : {
+        "title" : "Featured opinions",
+        "actions" : false,
+        "items" : [
+            {
+                "title" : "NAFTA Will Test López Obrador's Campaign Promises",
+                "href" : "#",
+                "text" : "Europe's Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
+                "image" : "../../../images/news-feature.jpg",
+                "featured" : true,
+                "meta" : [
+                    {
+                        "title" : "News"
+                    },
+                    {
+                        "title" : "23 May"
+                    }
+                ]
+            },
+            {
+                "title" : "What You Need to Know about NAFTA Renegotiations",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "meta" : [
+                    {
+                        "title" : "News"
+                    },
+                    {
+                        "title" : "20 June"
+                    }
+                ]
+            },
+            {
+                "title" : "The G20 Fights Fires — But It Won't Prevent Them",
+                "href" : "#",
+                "image" : "../../../images/news-item_social.jpg",
+                "meta" : [
+                    {
+                        "title" : "Press release"
+                    },
+                    {
+                        "title" : "20 June"
+                    }
+                ]
+            },
+            {
+                "title" : "Trade and Climate Change: Synergies and Conflicts",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    },
+                    {
+                        "title" : "20 June"
+                    }
+                ]
+            },
+            {
+                "title" : "How social media can silence dissent",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "meta" : [
+                    {
+                        "title" : "Job"
+                    },
+                    {
+                        "title" : "20 June"
+                    }
+                ]
+            }
+        ]
+    },
     "overviewNav" : {
         "title" : "Browse by",
         "date" : false,
@@ -81,11 +154,10 @@
             {
                 "title" : "78th Biennial International Law Association Conference",
                 "href" : "#",
-                "featured" : true,
                 "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
                     {
-                        "title" : "Featured opinion"
+                        "title" : "Opinion"
                     },
                     {
                         "title" : "20 August"
@@ -98,11 +170,10 @@
             {
                 "title" : "The Collapse of the American Empire",
                 "href" : "#",
-                "featured" : true,
                 "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
                     {
-                        "title" : "Featured opinion"
+                        "title" : "Opinion"
                     },
                     {
                         "title" : "24 August"

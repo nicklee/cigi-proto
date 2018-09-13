@@ -8,41 +8,8 @@
         @include gutter(0, 0, 0, 0);
     }
 
-    &--full {
-
-        #{$root}__container {
-            flex-basis: 100%;
-            min-width: 100%;
-            max-width: 100%;
-        }
-
-    }
-
-    &--deep {
-
-        #{$root}__container {
-            @include gutter(1.5, 0, 1, 0);
-        }
-
-    }
-
-    &--centered {
-
-        #{$root}__container {
-            align-items: center;
-            text-align: center;
-
-            @include media-query(laptop) {
-                align-items: auto;
-                text-align: left;
-            }
-
-        }
-
-    }
-
     &__container {
-        @include gutter(1.5, 0, 1, 0);
+        @include gutter(1.5, 0, 0, 0);
         @include aligner;
         display: flex;
         justify-content: space-between;
