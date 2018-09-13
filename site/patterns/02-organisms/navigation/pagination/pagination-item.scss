@@ -13,7 +13,6 @@
 
     &--prev,
     &--next {
-        @include gutter(0, 0.25, 0, 0.25);
         font-weight: 500;
 
         #{$root}__link {
@@ -25,6 +24,14 @@
 
         }
 
+    }
+
+    &--next {
+        @include gutter(0, 0, 0, 0.25);
+    }
+
+    &--prev {
+        @include gutter(0, 0.25, 0, 0);
     }
 
     &--active {
