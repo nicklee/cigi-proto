@@ -192,7 +192,8 @@
         transition: fill $default-transition-speed ease 0s;
     }
 
-    .listing--opinion & {
+    .listing--opinion &,
+    .listing--multimedia & {
         margin-bottom: ($grid / 2);
         border-bottom: 1px solid $color--border-light;
 
@@ -244,6 +245,15 @@
 
         }
 
+    }
+
+    .listing--multimedia & {
+        border-bottom: 1px solid rgba($color--white, 0.1);
+
+        #{$root}__heading {
+            color: $color--white;
+        }
+        
     }
 
 }

@@ -4,7 +4,7 @@
     $root: &;
     display: flex;
 
-    @include media-query(wide) {
+    @include media-query(desktop) {
         @include gutter(0, 0, 0, 0);
     }
 
@@ -80,6 +80,14 @@
         @include media-query(mobile) {
             @include gutter(0, 0.5, 0, 0);
             width: auto;
+        }
+
+    }
+
+    .template__multimedia & {
+
+        #{$root}__heading {
+            color: $color--white;
         }
 
     }

@@ -78,4 +78,16 @@
 
     }
 
+    .template__multimedia & {
+
+        #{$root}__link {
+            color: $color--white;
+
+            &:hover {
+                color: $color--link-hover;
+            }
+            
+        }
+    }
+
 }

@@ -109,6 +109,10 @@
 
     }
 
+    .template__multimedia & {
+        background-color: $color--primary;
+    }
+
     // Animations
 
     @keyframes fadein {

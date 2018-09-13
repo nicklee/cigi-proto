@@ -1,0 +1,175 @@
+{
+    "title": "Multimedia",
+    "template" : "multimedia",
+    "progressBar" : true,
+    "overviewNav" : {
+        "title" : "Browse multimedia by",
+        "date" : false,
+        "items" : [
+            {
+                "title" : "Types",
+                "nested" : [
+                    {
+                        "title" : "All types",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Video",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Audio",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Multimedia Series",
+                        "href" : "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "listing" : {
+        "listingModifier" : [
+            {
+                "class" : "multimedia"
+            }
+        ],
+        "title" : false,
+        "paginationOn" :  true,
+        "loadMoreOn" :  false,
+        "items" : [
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Video"
+                    },
+                    {
+                        "title" : "20 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Audio"
+                    },
+                    {
+                        "title" : "24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Multimedia series"
+                    },
+                    {
+                        "title" : "01 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Video"
+                    },
+                    {
+                        "title" : "05 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Video"
+                    },
+                    {
+                        "title" : "10 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Audio"
+                    },
+                    {
+                        "title" : "12 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Video"
+                    },
+                    {
+                        "title" : "20 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Multimedia series"
+                    },
+                    {
+                        "title" : "21 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Audio"
+                    },
+                    {
+                        "title" : "21 Sept"
+                    }
+                ]
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Video"
+                    },
+                    {
+                        "title" : "23 Sept"
+                    }
+                ]
+            }
+        ]
+    }
+}

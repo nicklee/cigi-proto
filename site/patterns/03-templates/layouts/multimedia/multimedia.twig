@@ -1,0 +1,99 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header">
+
+        <div class="page-heading">
+            <div class="page-heading__container">
+                <h1 class="page-heading__heading">{{ title|raw }}</h1>
+                {% if introduction %}
+                    {% include "@atoms/introduction/introduction.twig" %}
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page__content" id="content">
+
+        <div class="multimedia multimedia--full">
+            <div class="multimedia__container">
+                <div class="multimedia__content">
+                    <div class="multimedia-item multimedia-item--featured">
+                        <a href="#" class="multimedia-item__container">
+                            <div class="multimedia-item__image-container">
+                                <svg class="multimedia-item__video-icon" width="48" height="48">
+                                    <use xlink:href="#video" />
+                                </svg>
+                                <img class="multimedia-item__image" src="../../../images/multimedia-feature.jpg" alt="">
+                            </div>
+                            <div class="multimedia-item__content">
+                                <div class="multimedia-item__meta">Summits & Institutions</div>
+                                <h3 class="multimedia-item__heading">Trade policy under Brexit</h3>
+                                <p class="multimedia-item__description">When it comes to trade, the G20 has signalled that it has nothing to offer </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="multimedia-item">
+                        <a href="#" class="multimedia-item__container">
+                            <div class="multimedia-item__image-container">
+                                <svg class="multimedia-item__video-icon" width="48" height="48">
+                                    <use xlink:href="#video" />
+                                </svg>
+                                <img class="multimedia-item__image" src="../../../images/multimedia-item.jpg" alt="">
+                            </div>
+                            <div class="multimedia-item__content">
+                                <div class="multimedia-item__meta">Summits & Institutions</div>
+                                <h3 class="multimedia-item__heading">The G20 Fights Fire - But it won't prevent them</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="multimedia-item">
+                        <a href="#" class="multimedia-item__container">
+                            <div class="multimedia-item__image-container">
+                                <svg class="multimedia-item__video-icon" width="48" height="48">
+                                    <use xlink:href="#video" />
+                                </svg>
+                                <img class="multimedia-item__image" src="../../../images/multimedia-feature.jpg" alt="">
+                            </div>
+                            <div class="multimedia-item__content">
+                                <div class="multimedia-item__meta">Environment & Energy</div>
+                                <h3 class="multimedia-item__heading">The Irish border and Brexit</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="multimedia-item">
+                        <a href="#" class="multimedia-item__container">
+                            <div class="multimedia-item__image-container">
+                                <svg class="multimedia-item__video-icon" width="48" height="48">
+                                    <use xlink:href="#video" />
+                                </svg>
+                                <img class="multimedia-item__image" src="../../../images/multimedia-item.jpg" alt="">
+                            </div>
+                            <div class="multimedia-item__content">
+                                <div class="multimedia-item__meta">Environment & Energy</div>
+                                <h3 class="multimedia-item__heading">Legal pathways for addressing environmental harm in deep seabed mining activities</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page__sticky-container">
+
+            {% if overviewNav %}
+                {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+            {% endif %}
+
+            {% if listing %}
+                {% include "@organisms/listing/listing.twig" with listing %}
+            {% endif %}
+
+        </div>
+
+    </div>
+
+{% endblock %}

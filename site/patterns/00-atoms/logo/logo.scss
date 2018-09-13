@@ -53,4 +53,13 @@
 
     }
 
+    .template__multimedia & {
+        border-color: $color--white;
+
+        #{$root}__item {
+            fill: $color--white;
+        }
+
+    }
+
 }
