@@ -1,0 +1,52 @@
+.author {
+    $root: &;
+
+    &__container {
+        @include gutter(0.2, 0, 0, 0);
+        display: flex;
+        align-items: center;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        width: ($grid * 1);
+        height: ($grid * 1);
+        overflow: hidden;
+    }
+
+    &__avatar-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__name {
+        @include font-size(xs);
+        margin: 0;
+        font-weight: 400;
+        padding-left: 7px;
+        color: $color--black;
+    }
+
+    .latest & {
+
+        #{$root}__container {
+            border-top: 1px solid $color--border-light;
+            margin-top: 14px;
+        }
+        //
+        // #{$root}__avatar {
+        //     order: 2;
+        // }
+        //
+        // #{$root}__info {
+        //     order: 1;
+        // }
+        //
+        // #{$root}__name {
+        //     padding-left: 0;
+        // }
+
+    }
+
+}

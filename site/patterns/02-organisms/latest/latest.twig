@@ -2,10 +2,12 @@
 
     <div class="latest__container">
 
+        {% if title %}
         <div class="latest__header">
             <h2 class="latest__heading">{{ title }}</h2>
             {% if actions %}<div class="latest__action">{{ actions|raw }}</div>{% endif %}
         </div>
+        {% endif %}
 
         <div class="latest__content">
             {% for item in items %}

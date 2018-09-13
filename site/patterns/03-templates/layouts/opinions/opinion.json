@@ -3,21 +3,23 @@
     "template" : "opinion",
     "progressBar" : true,
     "features" : {
-        "title" : "Featured opinions",
+        "title" : false,
         "actions" : false,
         "items" : [
             {
-                "title" : "NAFTA Will Test López Obrador's Campaign Promises",
+                "title" : "With NAFTA in Trump's Crosshairs, What Role for Congress?",
                 "href" : "#",
-                "text" : "Europe's Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
-                "image" : "../../../images/news-feature.jpg",
+                "text" : "On Saturday, US President Donald Trump issued a tweet seeking once again to send a loud, clear message on the latest round of trade negotiations between Canada and the United States over the future of the North American Free Trade Agreement (NAFTA)…",
+                "image" : "../../../images/opinion-feature.jpg",
                 "featured" : true,
+                "authorName" : "Jesse Hirsh",
+                "authorImage" : "../../../images/avatar_3.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "Opinion"
                     },
                     {
-                        "title" : "23 May"
+                        "title" : "20 August"
                     }
                 ]
             },
@@ -25,12 +27,14 @@
                 "title" : "What You Need to Know about NAFTA Renegotiations",
                 "href" : "#",
                 "image" : "../../../images/news-item_politics.jpg",
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "Opinion"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "20 August"
                     }
                 ]
             },
@@ -38,12 +42,14 @@
                 "title" : "The G20 Fights Fires — But It Won't Prevent Them",
                 "href" : "#",
                 "image" : "../../../images/news-item_social.jpg",
+                "authorName" : "Eden Charles",
+                "authorImage" : "../../../images/avatar_2.jpg",
                 "meta" : [
                     {
-                        "title" : "Press release"
+                        "title" : "Opinion"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "20 August"
                     }
                 ]
             },
@@ -51,12 +57,14 @@
                 "title" : "Trade and Climate Change: Synergies and Conflicts",
                 "href" : "#",
                 "image" : "../../../images/news-item3_large.jpg",
+                "authorName" : "Jesse Hirsh",
+                "authorImage" : "../../../images/avatar_3.jpg",
                 "meta" : [
                     {
-                        "title" : "Event"
+                        "title" : "Opinion"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "20 August"
                     }
                 ]
             },
@@ -64,12 +72,14 @@
                 "title" : "How social media can silence dissent",
                 "href" : "#",
                 "image" : "../../../images/news-item_politics.jpg",
+                "authorName" : "Stephanie MacLellan",
+                "authorImage" : "../../../images/avatar_3.jpg",
                 "meta" : [
                     {
-                        "title" : "Job"
+                        "title" : "Opinion"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "20 August"
                     }
                 ]
             }
@@ -161,11 +171,10 @@
                     },
                     {
                         "title" : "20 August"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_1.jpg"
             },
             {
                 "title" : "The Collapse of the American Empire",
@@ -177,11 +186,10 @@
                     },
                     {
                         "title" : "24 August"
-                    },
-                    {
-                        "title" : "Jesse Hirsh"
                     }
-                ]
+                ],
+                "authorName" : "Jesse Hirsh",
+                "authorImage" : "../../../images/avatar_3.jpg"
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
@@ -193,11 +201,10 @@
                     },
                     {
                         "title" : "01 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_3.jpg"
             },
             {
                 "title" : "The Collapse of the American Empire",
@@ -209,11 +216,10 @@
                     },
                     {
                         "title" : "05 Sept"
-                    },
-                    {
-                        "title" : "Eden Charles"
                     }
-                ]
+                ],
+                "authorName" : "Eden Charles",
+                "authorImage" : "../../../images/avatar_1.jpg"
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
@@ -225,11 +231,10 @@
                     },
                     {
                         "title" : "10 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg"
             },
             {
                 "title" : "The Collapse of the American Empire",
@@ -241,11 +246,10 @@
                     },
                     {
                         "title" : "12 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_3.jpg"
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
@@ -257,11 +261,10 @@
                     },
                     {
                         "title" : "20 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_1.jpg"
             },
             {
                 "title" : "The Collapse of the American Empire",
@@ -273,11 +276,10 @@
                     },
                     {
                         "title" : "21 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg"
             },
             {
                 "title" : "78th Biennial International Law Association Conference",
@@ -289,11 +291,10 @@
                     },
                     {
                         "title" : "21 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_1.jpg"
             },
             {
                 "title" : "The Collapse of the American Empire",
@@ -305,11 +306,10 @@
                     },
                     {
                         "title" : "23 Sept"
-                    },
-                    {
-                        "title" : "Ronald Orol"
                     }
-                ]
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg"
             }
         ]
     }

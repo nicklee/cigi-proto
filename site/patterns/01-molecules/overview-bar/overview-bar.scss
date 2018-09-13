@@ -40,7 +40,7 @@
             flex-direction: row;
         }
 
-        @include media-query(wide) {
+        @include media-query(desktop) {
             @include gutter(0, 0, 0, 0);
         }
 
