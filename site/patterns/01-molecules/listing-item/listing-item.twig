@@ -7,6 +7,11 @@
 
             {% if image %}
                 <div class="listing-item__image-container">
+                    {% if video %}
+                    <svg class="multimedia-item__video-icon" width="48" height="48">
+                        <use xlink:href="#video" />
+                    </svg>
+                    {% endif %}
                     <img class="listing-item__image" src="{{ image }}" alt="" />
                 </div>
             {% endif %}

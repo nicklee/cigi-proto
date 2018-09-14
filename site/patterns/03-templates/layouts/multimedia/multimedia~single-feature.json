@@ -2,6 +2,7 @@
     "title": "Multimedia",
     "template" : "multimedia",
     "progressBar" : true,
+    "singleFeature" : true,
     "overviewNav" : {
         "title" : "Browse multimedia by",
         "date" : false,

@@ -249,11 +249,31 @@
 
     .listing--multimedia & {
         border-bottom: 1px solid rgba($color--white, 0.1);
+        margin-bottom: 0;
 
         #{$root}__heading {
-            color: $color--white;
+            @include font-size(s);
+            font-weight: 500;
+            // color: $color--white;
         }
-        
+
+        #{$root}__link {
+            flex-direction: column;
+        }
+
+        #{$root}__image-container {
+            flex-basis: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        #{$root}__text-container {
+            @include gutter(0, 0, 0, 0);
+            flex-basis: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
     }
 
 }
