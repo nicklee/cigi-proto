@@ -35,7 +35,7 @@
     }
 
     &__home-link {
-        @include gutter(0.25, 0, 0.35, 0);
+        @include gutter(1, 0, 0.75, 0);
 
         @include media-query(tablet) {
             flex-basis: auto;

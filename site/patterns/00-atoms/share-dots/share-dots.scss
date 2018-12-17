@@ -1,0 +1,80 @@
+.share-dots {
+    $root: &;
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+
+        #{$root}__options {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #{$root}__icon {
+            fill: $color--secondary;
+        }
+
+    }
+
+    &__icon {
+        fill: $color--primary;
+        transition: fill $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
+    }
+
+    &__options {
+        @include gutter(0.4, 0.4, 0.4, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        top: -106px;
+        left: -2px;
+        z-index: 2;
+        opacity: 0;
+        background-color: $color--white;
+        box-shadow: 0 0 15px 0 rgba($color--black, 0.2);
+        pointer-events: none;
+        width: 156px;
+        transition: opacity $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
+
+        &::after {
+            top: 100%;
+            left: 14px;
+            border: solid transparent;
+            content: '';
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-top-color: $color--white;
+            border-width: 7px;
+            margin-left: -7px;
+        }
+
+    }
+
+    &__share {
+        @include font-size(xs);
+        display: flex;
+        justify-content: space-between;
+        color: $color--meta;
+        margin-bottom: ($grid / 2);
+    }
+
+    &__download {
+        @include font-size(xs);
+        @include gutter(0.1, 0.2, 0.1, 0.2);
+        display: block;
+        text-align: center;
+        border: 1px solid $color--primary;
+        color: $color--primary;
+    }
+
+    .listing-item & {
+        opacity: 0;
+        transition: opacity $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
+    }
+
+}

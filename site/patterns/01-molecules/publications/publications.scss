@@ -6,14 +6,6 @@
         @include aligner;
     }
 
-    &__heading {
-        @include font-size(l);
-        @include gutter(0.1, 0, 0.75, 0);
-        display: inline-block;
-        border-top: 3px solid $color--secondary;
-        margin-bottom: 0;
-    }
-
     &__content {
         display: grid;
         width: 100%;

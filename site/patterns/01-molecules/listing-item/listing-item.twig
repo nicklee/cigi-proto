@@ -18,41 +18,29 @@
 
             <div class="listing-item__text-container">
 
-                {% if dot %}
-                <div class="listing-item__dot-meta">
-                {% endif %}
+                {% if meta %}
+                    <div class="listing-item__meta meta">
 
-                    {% if dot %}
-                        <div class="listing-item__dot listing-item__dot--{{ dot }}"></div>
-                    {% endif %}
-
-                    {% if meta %}
-                        <div class="listing-item__meta meta">
-
-                            {% for item in meta %}
-                                <div class="listing-item__meta-item meta-item">
-                                    {% if item.icon %}
-                                        <svg class="listing-item__icon" width="21px" height="21px">
-                                            <use xlink:href="#{{ item.icon }}"></use>
-                                        </svg>
-                                    {% endif %}
-                                    {% if item.title %}
-                                        <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
-                                    {% endif %}
-                                </div>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
-
-                {% if dot %}
-                </div>
+                        {% for item in meta %}
+                            <div class="listing-item__meta-item meta-item">
+                                {% if item.icon %}
+                                    <svg class="listing-item__icon" width="21px" height="21px">
+                                        <use xlink:href="#{{ item.icon }}"></use>
+                                    </svg>
+                                {% endif %}
+                                {% if item.title %}
+                                    <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
                 {% endif %}
 
                 <div class="listing-item__header">
                     <h2 class="listing-item__heading">{{ title|raw }}</h2>
                 </div>
 
-                {% if text %}
+                {% if text and featured %}
                     <p class="listing-item__text">{{ text }}</p>
                 {% endif %}
 
@@ -71,6 +59,15 @@
                     </div>
                 {% endif %}
 
+                {% if date %}
+                  <div class="listing-item__date date">
+                    <div class="listing-item__date-container">
+                      {{ date }}
+                    </div>
+                  </div>
+                {% endif %}
+
+                {% include "@atoms/share-dots/share-dots.twig" %}
 
             </div>
 

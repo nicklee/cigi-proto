@@ -4,35 +4,35 @@
     "progressBar" : true,
     "newsFeed" : {
         "title" : "Featured",
-        "actions" : "<a href='#'>news</a>, <a href='#'>events</a>, <a href='#'>press release</a> & <a href='#'>jobs</a>",
+        "actions" : "Trending: <a href='#'>G20</a> <a href='#'>Traditional Knowledge</a> <a href='#'>USMCA</a> <a href='#'>Climate Change</a>",
         "items" : [
             {
                 "title" : "Brexit's impact on International Law",
                 "href" : "#",
                 "text" : "A CIGI Essay Series",
                 "image" : "../../../images/news-feature.jpg",
-                "featured" : true,
+                "video" : true,
                 "meta" : [
                     {
-                        "title" : "4 Dec"
-                    },
-                    {
-                        "title" : "Nigel Readings"
+                        "title" : "Multimedia"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "2018 Annual report",
                 "href" : "#",
                 "image" : "../../../images/news-item_politics.jpg",
+                "text" : "Ten years after the United Nations’ founding, membership had grown by only a handful from the original 51 countries.",
+                "featured" : true,
                 "meta" : [
                     {
-                        "title" : "4 Dec"
-                    },
-                    {
-                        "title" : "Katie Smith"
+                        "title" : "Opinion"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "Searching for the Smart City's Democratic Future",
@@ -40,12 +40,11 @@
                 "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
-                        "title" : "2 Dec"
-                    },
-                    {
-                        "title" : "Frank Nigelson"
+                        "title" : "Opinion"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "Canada needs standards to support big data analytics",
@@ -53,10 +52,7 @@
                 "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
                     {
-                        "title" : "1 Dec"
-                    },
-                    {
-                        "title" : "Santa Claus"
+                        "title" : "Publication"
                     }
                 ]
             },
@@ -66,25 +62,22 @@
                 "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
-                        "title" : "4 Dec"
-                    },
-                    {
-                        "title" : "Nicholas Lee"
+                        "title" : "Event"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "Lip-service Commitments Won't Halt Protectionism",
                 "href" : "#",
-                "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
                     {
-                        "title" : "4 Dec"
-                    },
-                    {
-                        "title" : "Jesse Hirsh"
+                        "title" : "Publication"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "Steel and Aluminum Tariffs Move to the Back Burner",
@@ -92,12 +85,11 @@
                 "text" : "",
                 "meta" : [
                     {
-                        "title" : "5 Dec"
-                    },
-                    {
-                        "title" : "Oliver Tolkien"
+                        "title" : "Event"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "Can the G20 Save Globalization's Waning Reputation?",
@@ -106,12 +98,11 @@
                 "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
-                        "title" : "27 Nov"
-                    },
-                    {
-                        "title" : "Chris Claws"
+                        "title" : "Publication"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "The economic Consequences of Trump's Iran Policy",
@@ -119,12 +110,24 @@
                 "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
                     {
-                        "title" : "27 Nov"
-                    },
-                    {
-                        "title" : "Roberto Surnameson"
+                        "title" : "Event"
                     }
-                ]
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Can the G20 Save Globalization's Waning Reputation?",
+                "href" : "#",
+                "text" : "",
+                "image" : "../../../images/news-item_social.jpg",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             }
         ]
     },
@@ -159,14 +162,6 @@
                 "image" : false,
                 "date" : "29 August",
                 "location" : "Waterloo, Canada"
-            },
-            {
-                "title" : "78th Biennial International Law Association Conference",
-                "link" : "#",
-                "image" : false,
-                "past" :  true,
-                "date" : "31 July",
-                "location" : "Sydney, Australia"
             }
         ]
     }

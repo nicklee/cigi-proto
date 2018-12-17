@@ -1,7 +1,10 @@
 <div class="events-feed">
     <div class="events-feed__container">
-        <div class="events-feed__header">
-            <h2 class="events-feed__heading">{{ title }}</h2>
+        <div class="events-feed__header section-header">
+            <h2 class="events-feed__heading section-header__heading">{{ title }}</h2>
+            <div class="section-header__actions">
+                <a href="#">View all</a>
+            </div>
         </div>
         <div class="events-feed__content">
             {% for event in items %}

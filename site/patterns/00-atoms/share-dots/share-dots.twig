@@ -1,0 +1,16 @@
+<div class="share-dots">
+    <div class="share-dots__container">
+        <svg class="share-dots__icon" width="24" height="24">
+            <use xlink:href="#more-dots" />
+        </svg>
+    </div>
+    <div class="share-dots__options">
+        <div class="share-dots__share">
+            <div class="share-dots__share-heading">Share:</div>
+            {% include "@molecules/social-links/social-links.twig" with share only %}
+        </div>
+        <div class="share-dots__download">
+            <div class="share-dots__download-link" href="#">Download PDF</div>
+        </div>
+    </div>
+</div>

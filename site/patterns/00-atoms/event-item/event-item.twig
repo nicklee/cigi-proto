@@ -23,13 +23,13 @@
                 <div class="event-item__location-label">{{ location }}</div>
             </div>
         </div>
-        <div class="event-item__share">
-            <div class="event-item__share-toggle">
-                <svg class="event-item__share-toggle-icon" width="24" height="24">
+        <div class="event-item__share share-dots">
+            <div class="event-item__share-toggle share-dots__container">
+                <svg class="event-item__share-toggle-icon share-dots__icon" width="24" height="24">
                     <use xlink:href="#more-dots" />
                 </svg>
             </div>
-            <div class="event-item__share-options">
+            <div class="event-item__share-options share-dots__options">
                 {% include "@molecules/social-links/social-links.twig" with share only %}
             </div>
         </div>

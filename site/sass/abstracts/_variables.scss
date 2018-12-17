@@ -10,10 +10,11 @@
 /* Primary */
 $color--red:                    #e6023b;
 $color--teal:                   #43b1b0;
+$color--teal-light:             #d6eee1;
 
 /* Secondary */
 $color--grey-dark:              #92908c;
-$color--grey-mid:               #c2c0bb;
+$color--grey-mid:               #cecece;
 $color--grey-light:             #dfdcd7;
 $color--yellow:                 #e3b353;
 
@@ -27,7 +28,7 @@ $color--off-black:              #373737;
 $color--primary:                $color--red;
 $color--secondary:              $color--black;
 $color--tertiary:               $color--off-white;
-$color--quaternary:             $color--teal;
+$color--quaternary:             $color--teal-light;
 $color--quinary:                $color--grey-mid;
 $color--senary:                 $color--grey-light;
 
@@ -42,7 +43,7 @@ $color--default:                $color--off-black;
 $color--link:                   $color--black;
 $color--link-hover:             $color--primary;
 $color--image-hover:            $color--quaternary;
-$color--meta:                   $color--quinary;
+$color--meta:                   #8c8c8c;
 
 // Social
 // https://simpleicons.org/
@@ -55,7 +56,6 @@ $color--linkedin:               #0077b5;
 
 /* ============================================
    Typography
-   :: Default to system font stack
 */
 $font-sans-serif: 'futura-pt', sans-serif;
 
@@ -75,7 +75,7 @@ $font-sizes: (
     m:     21px,
     default: $base-font-size,
     s:     16px,
-    xs:    14px,
+    xs:    13px,
     xxs:   12px
 );
 
@@ -107,7 +107,7 @@ $font-weights: (
    Max width
 */
 
-$max-width:         980px;
+$max-width:         1060px; // Used to be 980px
 $max-width--m:      768px;
 $max-width--s:      768px;
 
@@ -115,7 +115,7 @@ $max-width--s:      768px;
    Magic numbers
 */
 
-$header-height:             66px;
+$header-height:             138px;
 $header-sticky-height:      55px;
 
 $footer-height:             261px;

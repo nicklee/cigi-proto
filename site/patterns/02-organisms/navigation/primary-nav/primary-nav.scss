@@ -15,11 +15,17 @@
             opacity: 0;
         }
 
+        .header__navigation & {
+            display: none;
+        }
+
     }
 
     &__full-link {
         display: flex;
         align-items: center;
     }
+
+
 
 }

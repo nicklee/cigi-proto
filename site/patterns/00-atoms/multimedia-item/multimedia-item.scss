@@ -2,28 +2,24 @@
     $root: &;
 
     &--featured {
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 1;
+        grid-row: 1 / span 3;
 
         #{$root}__container {
-            display: grid;
-            grid-gap: ($grid);
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        #{$root}__image-container {
-            grid-column: 1 / span 2;
-            grid-row: 1 / span 1;
+            flex-direction: column;
         }
 
         #{$root}__content {
-            border-top: 1px solid rgba($color--white, 0.8);
-            grid-column: 3 / span 1;
-            grid-row: 1 / span 1;
+            @include gutter(0, 0, 0, 0, true);
         }
 
         #{$root}__heading {
             @include font-size(l);
+        }
+
+        #{$root}__image-container {
+            flex-basis: 100%;
+            min-width: 100%;
+            max-width: 100%;
         }
 
         #{$root}__meta {
@@ -33,7 +29,8 @@
     }
 
     &__container {
-        display: block;
+        display: flex;
+        flex-direction: row;
         text-decoration: none;
         cursor: url('../images/cursor_play.png'), auto;
         // sass-lint:disable indentation
@@ -61,6 +58,9 @@
     }
 
     &__image-container {
+        flex-basis: 40%;
+        max-width: 40%;
+        min-width: 40%;
         position: relative;
         overflow: hidden;
         background-color: $color--white;
@@ -76,11 +76,18 @@
         // sass-lint:enddisable
     }
 
+    &__content {
+        @include gutter(0, 0, 0, 0.5);
+    }
+
     &__video-icon {
+        $width: 48px;
         position: absolute;
         z-index: 2;
-        bottom: ($grid / 2);
-        left: ($grid / 2);
+        top: 50%;
+        left: 50%;
+        margin-left: -($width / 2);
+        margin-top: -($width / 2);
         fill: $color--white;
 
         .listing--multimedia & {

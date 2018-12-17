@@ -1,0 +1,32 @@
+.section-header {
+    @include gutter(0, 0, 0.2, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100%;
+    min-width: 100%;
+    border-bottom: 1px solid $color--border;
+    margin-bottom: ($grid);
+
+    &__heading {
+        @include font-size(default);
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    &__actions {
+
+        a {
+            color: $color--primary;
+            text-decoration: none;
+
+            &:hover {
+                color: $color--secondary;
+            }
+
+        }
+
+    }
+
+}

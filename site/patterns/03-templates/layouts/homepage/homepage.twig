@@ -4,26 +4,16 @@
 
     <div class="page__header">
 
-        <div class="introduction introduction--home">
-            <div class="introduction__container">
-                <p class="introduction__text">
-                    An independent, non-partisan think tank with an objective and uniquely global perspective&hellip; <a href="#">more about us</a>
-                    <svg class="introduction__dismiss js-dismiss" width="24" height="24">
-                        <use xlink:href="#close" />
-                    </svg>
-                </p>
-            </div>
-        </div>
-
         {% if newsFeed %}
         {% include "@organisms/latest/latest.twig" with newsFeed %}
         {% endif %}
 
         <div class="publications">
             <div class="publications__container">
-                <div class="publications__header">
-                    <h2 class="publications__heading">Publications</h2>
-                </div>
+                <div class="publications__header section-header">
+                    <h2 class="publications__heading section-header__heading">Publications</h2>
+                    <div class="publications__actions section-header__actions"><a href="#">View all</a></div>
+            </div>
                 <div class="publications__content">
 
                     <div class="publication-item">
@@ -32,6 +22,7 @@
                                 <img class="publication-item__image" src="../../../images/pub_1.2.jpg" alt="">
                             </div>
                             <div class="publication-item__text-container">
+                                <div class="publication-item__type">Paper</div>
                                 <h3 class="publication-item__heading">Governance Innovation for a Connected World: Protecting Free Expression, Diversity and Civic Engagement in the Global Digital Ecosystem</h3>
                                 <div class="publication-item__meta">
                                     <div class="publication-item__meta-item">
@@ -51,6 +42,7 @@
                                 <img class="publication-item__image" src="../../../images/pub_2.2.jpg" alt="">
                             </div>
                             <div class="publication-item__text-container">
+                                <div class="publication-item__type">Conference Report</div>
                                 <h3 class="publication-item__heading">The Emerging Model of Economic Policy Making under Xi Jinping: Literature Review, Theoretical Frameworks and Methodologies</h3>
                                 <div class="publication-item__meta">
                                     <div class="publication-item__meta-item">
@@ -70,6 +62,7 @@
                                 <img class="publication-item__image" src="../../../images/pub_3.2.jpg" alt="">
                             </div>
                             <div class="publication-item__text-container">
+                                <div class="publication-item__type">Policy Brief</div>
                                 <h3 class="publication-item__heading">Energizing Regional Collaboration and Governance: CIGI Summit of North American Arctic Leaders</h3>
                                 <div class="publication-item__meta">
                                     <div class="publication-item__meta-item">
@@ -89,6 +82,7 @@
                                 <img class="publication-item__image" src="../../../images/pub_1.2.jpg" alt="">
                             </div>
                             <div class="publication-item__text-container">
+                                <div class="publication-item__type">Paper</div>
                                 <h3 class="publication-item__heading">Governance Innovation for a Connected World: Protecting Free Expression, Diversity and Civic Engagement in the Global Digital Ecosystem</h3>
                                 <div class="publication-item__meta">
                                     <div class="publication-item__meta-item">
@@ -107,15 +101,29 @@
             </div>
         </div>
 
-    {% include "@organisms/featured-topics/featured-topics.twig" %}
+    {% include "@molecules/multimedia/multimedia.twig" %}
 
     <div class="page__content" id="content">
 
-        {% include "@molecules/newsletter/newsletter.twig" %}
-
-        {% include "@molecules/multimedia/multimedia.twig" %}
-
         {% include "@molecules/events-feed/events-feed.twig" with events %}
+
+        <div class="experts">
+            <div class="experts__container">
+                <div class="experts__header section-header">
+                    <h2 class="experts__heading section-header__heading">Featured Exports</h2>
+                    <div class="experts__actions section-header__actions">
+                        <a href="#">View all</a>
+                    </div>
+                </div>
+                <div class="experts__content">
+                    <div class="expert-item">
+                        <div class="export-item__container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="carousel partners">
             <div class="carousel__container glide js-carousel">
