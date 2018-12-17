@@ -43,6 +43,21 @@
 
     }
 
+    &--no-image {
+        @include gutter(0.65, 0.5, 0, 0);
+        display: flex;
+        align-items: flex-end;
+        border: 3px solid $color--white;
+        border-left: 0;
+        border-bottom: 0;
+        transition: border-color $default-transition-speed ease 0s;
+
+        &:hover {
+            border-color: $color--quaternary;
+        }
+
+    }
+
     // Child elements
 
     &__link {
@@ -190,6 +205,33 @@
         height: ($grid * 0.75);
         margin-right: 5px;
         transition: fill $default-transition-speed ease 0s;
+    }
+
+    &__dot-meta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__dot {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        margin-right: ($grid / 4);
+        margin-bottom: 5px;
+
+        &--green {
+            background-color: $color--quaternary;
+        }
+
+        &--yellow {
+            background-color: $color--yellow;
+        }
+
+        &--red {
+            background-color: $color--red;
+        }
+
     }
 
     .listing--opinion &,

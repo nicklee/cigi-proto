@@ -1,0 +1,405 @@
+{
+    "title": "Search results",
+    "template" : "search",
+    "searchTerm" : "Climate Change",
+    "progressBar" : true,
+    "features" : {
+        "title" : false,
+        "actions" : false,
+        "items" : [
+            {
+                "title" : "With NAFTA in Trump's Crosshairs, What Role for Congress?",
+                "href" : "#",
+                "text" : "On Saturday, US President Donald Trump issued a tweet seeking once again to send a loud, clear message on the latest round of trade negotiations between Canada and the United States over the future of the North American Free Trade Agreement (NAFTA)…",
+                "image" : "../../../images/opinion-feature.jpg",
+                "featured" : true,
+                "authorName" : "Jesse Hirsh",
+                "authorImage" : "../../../images/avatar_3.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "20 August"
+                    }
+                ]
+            },
+            {
+                "title" : "What You Need to Know about NAFTA Renegotiations",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "23 August"
+                    }
+                ]
+            },
+            {
+                "title" : "The G20 Fights Fires — But It Won't Prevent Them",
+                "href" : "#",
+                "image" : "../../../images/news-item_social.jpg",
+                "authorName" : "Eden Charles",
+                "authorImage" : "../../../images/avatar_2.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "24 August"
+                    }
+                ]
+            },
+            {
+                "title" : "Trade and Climate Change: Synergies and Conflicts",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "authorName" : "Jesse Hirsh",
+                "authorImage" : "../../../images/avatar_3.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "26 August"
+                    }
+                ]
+            },
+            {
+                "title" : "How social media can silence dissent",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "authorName" : "Stephanie MacLellan",
+                "authorImage" : "../../../images/avatar_3.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "30 August"
+                    }
+                ]
+            }
+        ]
+    },
+    "overviewNav" : {
+        "title" : "2412 results",
+        "date" : false,
+        "items" : [
+            {
+                "title" : "Research areas",
+                "nested" : [
+                    {
+                        "title" : "All research areas",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Conflict management & security",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Environment & energy",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Innovation & productivity",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Internet governance & jurisdiction",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Summits & institutions",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Trade & finance",
+                        "href" : "#"
+                    }
+                ]
+            },
+            {
+                "title" : "Programs",
+                "nested" : [
+                    {
+                        "title" : "All programs",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Opinions",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Op-eds",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Commentaries",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Interviews",
+                        "href" : "#"
+                    }
+                ]
+            },
+            {
+                "title" : "Content types",
+                "nested" : [
+                    {
+                        "title" : "All types",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Opinions",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Op-eds",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Commentaries",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Interviews",
+                        "href" : "#"
+                    }
+                ]
+            },
+            {
+                "title" : "Publication type",
+                "nested" : [
+                    {
+                        "title" : "All types",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "Opinions",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Op-eds",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Commentaries",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "Interviews",
+                        "href" : "#"
+                    }
+                ]
+            },
+            {
+                "title" : "Published year",
+                "nested" : [
+                    {
+                        "title" : "All years",
+                        "href" : "#",
+                        "class" : "active"
+                    },
+                    {
+                        "title" : "2018",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "2017",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "2016",
+                        "href" : "#"
+                    },
+                    {
+                        "title" : "2015",
+                        "href" : "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "listing" : {
+        "listingModifier" : [
+            {
+                "class" : "opinion"
+            }
+        ],
+        "title" : false,
+        "paginationOn" :  false,
+        "loadMoreOn" :  true,
+        "items" : [
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "dot" : "green",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "20 August"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_1.jpg"
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "dot" : "green",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "24 August"
+                    }
+                ],
+                "authorName" : "Jesse Hirsh",
+                "authorImage" : "../../../images/avatar_3.jpg"
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item_large.jpg",
+                "dot" : "red",
+                "meta" : [
+                    {
+                        "title" : "Op-ed"
+                    },
+                    {
+                        "title" : "01 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_3.jpg"
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "dot" : "yellow",
+                "meta" : [
+                    {
+                        "title" : "Commentary"
+                    },
+                    {
+                        "title" : "05 Sept"
+                    }
+                ],
+                "authorName" : "Eden Charles",
+                "authorImage" : "../../../images/avatar_1.jpg"
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "dot" : "red",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "10 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg"
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item_large.jpg",
+                "dot" : "red",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "12 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_3.jpg"
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "dot" : "red",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "20 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_1.jpg"
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item_large.jpg",
+                "dot" : "red",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "21 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg"
+            },
+            {
+                "title" : "78th Biennial International Law Association Conference",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "dot" : "yellow",
+                "meta" : [
+                    {
+                        "title" : "Commentary"
+                    },
+                    {
+                        "title" : "21 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_1.jpg"
+            },
+            {
+                "title" : "The Collapse of the American Empire",
+                "href" : "#",
+                "image" : "../../../images/news-item2_large.jpg",
+                "dot" : "red",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    },
+                    {
+                        "title" : "23 Sept"
+                    }
+                ],
+                "authorName" : "Ronald Orol",
+                "authorImage" : "../../../images/avatar_2.jpg"
+            }
+        ]
+    }
+}

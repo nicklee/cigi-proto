@@ -79,7 +79,8 @@
 
     }
 
-    .template__multimedia & {
+    .template__multimedia &,
+    .template__search & {
 
         span {
             background-color: $color--white;

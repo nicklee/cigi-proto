@@ -7,110 +7,109 @@
         "actions" : "<a href='#'>news</a>, <a href='#'>events</a>, <a href='#'>press release</a> & <a href='#'>jobs</a>",
         "items" : [
             {
-                "title" : "NAFTA Will Test López Obrador's Campaign Promises",
+                "title" : "Brexit's impact on International Law",
                 "href" : "#",
-                "text" : "Europe's Aerospace Integration Research Building (AIRC), which is helping to change the future design of aircraft…",
+                "text" : "A CIGI Essay Series",
                 "image" : "../../../images/news-feature.jpg",
                 "featured" : true,
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "4 Dec"
                     },
                     {
-                        "title" : "23 May"
+                        "title" : "Nigel Readings"
                     }
                 ]
             },
             {
-                "title" : "What You Need to Know about NAFTA Renegotiations",
+                "title" : "2018 Annual report",
                 "href" : "#",
                 "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "4 Dec"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "Katie Smith"
                     }
                 ]
             },
             {
-                "title" : "The G20 Fights Fires — But It Won't Prevent Them",
+                "title" : "Searching for the Smart City's Democratic Future",
                 "href" : "#",
                 "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
-                        "title" : "Press release"
+                        "title" : "2 Dec"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "Frank Nigelson"
                     }
                 ]
             },
             {
-                "title" : "Trade and Climate Change: Synergies and Conflicts",
+                "title" : "Canada needs standards to support big data analytics",
                 "href" : "#",
                 "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
                     {
-                        "title" : "Event"
+                        "title" : "1 Dec"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "Santa Claus"
                     }
                 ]
             },
             {
-                "title" : "How social media can silence dissent",
+                "title" : "COP24 Will Put Climate Diplomacy to the Test",
                 "href" : "#",
                 "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
-                        "title" : "Job"
+                        "title" : "4 Dec"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "Nicholas Lee"
                     }
                 ]
             },
             {
-                "title" : "The economic Consequences of Trump's Iran Policy",
+                "title" : "Lip-service Commitments Won't Halt Protectionism",
                 "href" : "#",
                 "image" : "../../../images/news-item3_large.jpg",
                 "meta" : [
                     {
-                        "title" : "Announcement"
+                        "title" : "4 Dec"
                     },
                     {
-                        "title" : "23 May"
+                        "title" : "Jesse Hirsh"
                     }
                 ]
             },
             {
-                "title" : "Geopolitical chaos is the new normal",
+                "title" : "Steel and Aluminum Tariffs Move to the Back Burner",
                 "href" : "#",
                 "text" : "",
-                "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "5 Dec"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "Oliver Tolkien"
                     }
                 ]
             },
             {
-                "title" : "How social media can silence dissent",
+                "title" : "Can the G20 Save Globalization's Waning Reputation?",
                 "href" : "#",
                 "text" : "",
                 "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
-                        "title" : "Event"
+                        "title" : "27 Nov"
                     },
                     {
-                        "title" : "20 June"
+                        "title" : "Chris Claws"
                     }
                 ]
             },
@@ -120,10 +119,10 @@
                 "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
                     {
-                        "title" : "News"
+                        "title" : "27 Nov"
                     },
                     {
-                        "title" : "23 May"
+                        "title" : "Roberto Surnameson"
                     }
                 ]
             }

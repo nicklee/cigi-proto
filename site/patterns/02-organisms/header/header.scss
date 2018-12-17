@@ -113,6 +113,10 @@
         background-color: $color--primary;
     }
 
+    .template__search & {
+        background-color: $color--black;
+    }
+
     // Animations
 
     @keyframes fadein {

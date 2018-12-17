@@ -1,4 +1,4 @@
-<div class="listing-item {% if image %}listing-item--image{% endif %} {% if featured %}listing-item--featured{% endif %} js-slide-in">
+<div class="listing-item {% if image %}listing-item--image{% else %}listing-item--no-image{% endif %} {% if featured %}listing-item--featured{% endif %} js-slide-in">
     <div class="listing-item__container" >
 
         {% if href %}
@@ -18,21 +18,34 @@
 
             <div class="listing-item__text-container">
 
-                {% if meta %}
-                    <div class="listing-item__meta meta">
-                        {% for item in meta %}
-                            <div class="listing-item__meta-item meta-item">
-                                {% if item.icon %}
-                                    <svg class="listing-item__icon" width="21px" height="21px">
-                                        <use xlink:href="#{{ item.icon }}"></use>
-                                    </svg>
-                                {% endif %}
-                                {% if item.title %}
-                                    <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
-                                {% endif %}
-                            </div>
-                        {% endfor %}
-                    </div>
+                {% if dot %}
+                <div class="listing-item__dot-meta">
+                {% endif %}
+
+                    {% if dot %}
+                        <div class="listing-item__dot listing-item__dot--{{ dot }}"></div>
+                    {% endif %}
+
+                    {% if meta %}
+                        <div class="listing-item__meta meta">
+
+                            {% for item in meta %}
+                                <div class="listing-item__meta-item meta-item">
+                                    {% if item.icon %}
+                                        <svg class="listing-item__icon" width="21px" height="21px">
+                                            <use xlink:href="#{{ item.icon }}"></use>
+                                        </svg>
+                                    {% endif %}
+                                    {% if item.title %}
+                                        <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                {% if dot %}
+                </div>
                 {% endif %}
 
                 <div class="listing-item__header">
@@ -46,9 +59,11 @@
                 {% if authorName %}
                     <div class="listing-item__author author">
                         <div class="author__container">
+                            {% if authorImage %}
                             <div class="author__avatar">
                                 <img class="author__avatar-image" src="{{ authorImage }}" alt="{{ authorName }}">
                             </div>
+                            {% endif %}
                             <div class="author__info">
                                 <h3 class="author__name">{{ authorName }}</h3>
                             </div>

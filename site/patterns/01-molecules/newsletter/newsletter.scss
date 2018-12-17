@@ -37,9 +37,24 @@
         fill: currentColor;
     }
 
+
+
     .page__content & {
         @include gutter(1.5, 0, 2, 0);
         background-color: $color--white;
+
+        &--no-bg {
+            @include aligner;
+            background-color: transparent;
+            border-top: 2px solid $color--border;
+            border-bottom: 1px solid $color--border;
+            margin-bottom: ($grid * 2);
+
+            #{$root}__intro {
+                color: $color--black !important;
+            }
+
+        }
 
         #{$root}__container {
             @include aligner;

@@ -59,8 +59,9 @@
         padding-left: 0 !important;
     }
 
-    .template__multimedia & {
+    .template__multimedia &,
+    .template__search & {
         color: $color--white;
     }
-    
+
 }

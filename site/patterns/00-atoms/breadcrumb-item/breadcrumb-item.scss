@@ -1,6 +1,7 @@
 .breadcrumb-item {
     @include font-size(xs);
     @include gutter(0, 0.15, 0, 0);
+    $root: &;
     display: flex;
     align-items: center;
     color: $color--black;
@@ -29,15 +30,15 @@
         color: $color--border;
     }
 
-    .breadcrumb & {
+    .hero & {
+        color: $color--off-white;
 
-        // breadcrumb label
-        &:first-child {
-            display: none;
-            color: $color--default;
+        #{$root}__link {
+            color: $color--white;
+            text-decoration: underline;
 
-            @include media-query(tablet) {
-                display: flex;
+            &:hover {
+                text-decoration: none;
             }
 
         }

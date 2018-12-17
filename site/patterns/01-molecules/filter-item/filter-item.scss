@@ -215,9 +215,6 @@
 
     .overview-bar & {
         position: relative;
-        // sass-lint:disable no-important
-
-        // sass-lint:enddisable
 
         @include media-query(tablet) {
             @include gutter(0, 0.5, 0, 0.5);
@@ -289,6 +286,12 @@
             fill: $color--primary;
         }
 
+    }
+
+    .template__search & {
+        @include gutter(0, 0.2, 0, 0.5);
+        width: 150px;
+        font-weight: 300;
     }
 
 }

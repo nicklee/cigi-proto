@@ -1,5 +1,6 @@
 .latest {
     @include aligner;
+    $root: &;
 
     &__container {
         @include gutter(1, 0, 1.75, 0);
@@ -52,6 +53,19 @@
 
         @include media-query(laptop) {
             grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+        }
+
+    }
+
+    .template__landing-page & {
+
+        #{$root}__heading {
+            @include gutter(0.1, 0, 0, 0);
+            @include font-size(l);
+            font-weight: 500;
+            display: inline-block;
+            border-top: 3px solid $color--secondary;
+            margin-bottom: 0;
         }
 
     }

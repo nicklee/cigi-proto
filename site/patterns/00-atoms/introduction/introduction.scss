@@ -72,4 +72,17 @@
 
     }
 
+    .page-heading__primary-col & {
+        padding-right: ($grid * 2.5);
+
+        #{$root}__text {
+            @include font-size(m);
+        }
+
+        #{$root}__container {
+            flex-direction: column;
+        }
+
+    }
+
 }

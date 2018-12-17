@@ -1,7 +1,10 @@
 .load-more {
-    @include gutter(0, 0, 1, 0);
+    @include gutter(1, 0, 1.5, 0);
     $root: &;
-    display: inline-block;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
     text-decoration: none;
 
     &__container {
@@ -9,7 +12,9 @@
         @include font-size(xs);
         display: flex;
         flex-direction: row;
+        text-align: center;
         align-items: center;
+        justify-content: center;
         border: 2px solid $color--primary;
         color: $color--primary;
     }

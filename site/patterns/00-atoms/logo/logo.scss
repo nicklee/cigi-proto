@@ -53,7 +53,8 @@
 
     }
 
-    .template__multimedia & {
+    .template__multimedia &,
+    .template__search & {
         border-color: $color--white;
 
         #{$root}__item {

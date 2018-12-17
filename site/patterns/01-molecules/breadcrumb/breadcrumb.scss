@@ -4,7 +4,7 @@
     min-width: 100%;
 
     &__container {
-        @include gutter(0, 0, 0.5, 0);
+        @include gutter(0, 0, 0.15, 0);
         display: flex;
     }
 

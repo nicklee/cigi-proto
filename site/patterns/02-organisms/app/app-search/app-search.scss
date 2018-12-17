@@ -31,7 +31,6 @@
 
         @include media-query(laptop) {
             @include font-size(xl);
-            width: 60%;
         }
 
         &::placeholder {
@@ -47,6 +46,17 @@
         .search-header & {
             width: 100%;
             border-color: $color--black;
+        }
+
+        .template__search & {
+            color: $color--white;
+            transition: border $default-transition-speed ease 0s;
+            border-width: 3px;
+
+            &:focus {
+                border-color: $color--white;
+            }
+
         }
 
     }
@@ -83,6 +93,18 @@
             right: 0;
         }
 
+        .template__search & {
+            position: absolute;
+            left: auto;
+            right: ($grid * 2.75);
+            opacity: 1;
+
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+
     }
 
     &__icon {
@@ -92,6 +114,10 @@
         @include media-query(tablet) {
             width: ($grid * 1.5);
             height: ($grid * 1.5);
+        }
+
+        .template__search & {
+            fill: $color--white;
         }
 
     }

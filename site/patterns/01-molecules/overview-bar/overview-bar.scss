@@ -68,7 +68,7 @@
     &__heading {
         @include gutter(0.2, 1, 0.2, 0);
         @include font-size(m);
-        font-weight: 500;
+        font-weight: 300;
         margin: 0;
 
         @media only screen and ( min-device-pixel-ratio: 1.25),
@@ -103,9 +103,8 @@
         max-width: 100%;
     }
 
-    // .template__multimedia & {
-    //     background-color: $color--black;
-    //     color: $color--white;
-    // }
+    .template__search & {
+        @include gutter(0.25, 0, 0.25, 0);
+    }
 
 }

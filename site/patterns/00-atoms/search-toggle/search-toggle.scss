@@ -62,12 +62,13 @@
 
     }
 
-    .template__multimedia & {
+    .template__multimedia &,
+    .template__search & {
 
         #{$root}__icon {
             fill: $color--white;
         }
-        
+
     }
 
 

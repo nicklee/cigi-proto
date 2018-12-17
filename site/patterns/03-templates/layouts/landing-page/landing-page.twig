@@ -1,0 +1,208 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+    <div class="page__header">
+
+        <div class="hero" style="background-image: url('../../../images/hero_law.jpg')">
+            <div class="hero__container">
+                <div class="hero__content">
+                    {% include "@molecules/breadcrumb/breadcrumb.twig" with breadcrumb %}
+                    <h1 class="hero__heading">{{ title|raw }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-heading">
+            <div class="page-heading__container">
+
+                <div class="page-heading__primary-col">
+                    <div class="introduction">
+                        <div class="introduction__container">
+                            <p class="introduction__text">The International Law Research Program (ILRP) at CIGI is an integrated multidisciplinary research and teaching program that provides leading academics, government and private sector legal experts, as well as students from Canada and abroad with the opportunity to contribute to advancements in international law.</p>
+                            <a href='#'>More about our International Law work</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-heading__secondary-col">
+
+                    <div class="secondary-nav">
+                        <div class="secondary-nav__container">
+                            <div class="secondary-nav__header">
+                                <h2 class="secondary-nav__heading">Explore —</h2>
+                            </div>
+                            <div class="secondary-nav__items">
+                                <div class="secondary-nav-item">
+                                    <a class="secondary-nav-item__link" href="#">
+                                        About
+                                    </a>
+                                </div>
+                                <div class="secondary-nav-item">
+                                    <a class="secondary-nav-item__link" href="#">
+                                        Themes
+                                    </a>
+                                </div>
+                                <div class="secondary-nav-item">
+                                    <a class="secondary-nav-item__link" href="#">
+                                        Experts
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--/ page-heading__secondary-col -->
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page__content" id="content">
+
+        {% include "@organisms/latest/latest.twig" with newsFeed %}
+
+        <div class="newsletter newsletter--no-bg">
+            <div class="newsletter__container">
+                <div class="newsletter__intro">
+                    <p>Sign up to receive regular Professional Law updates in your inbox.</p>
+                </div>
+                <form class="newsletter__form">
+                    <input class="newsletter__input" type="email" placeholder="Your email">
+                    <button class="newsletter__button">
+                        <svg class="newsletter__button-icon" width="24" height="24">
+                            <use xlink:href="#mail" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="featured-topics">
+            <div class="featured-topics__header">
+                <h2 class="featured-topics__heading">Research themes</h2>
+            </div>
+            <div class="featured-topics__container">
+
+                <div class="featured-topics__item">
+                    <a href="#" class="featured-topics__item-header">
+                        <h2 class="featured-topics__item-heading">Economic Law</h2>
+                        <img src="../../../images/law_1.jpg" class="featured-topics__item-image" alt="">
+                    </a>
+                    <div class="featured-topics__item-content">
+                        <div class="featured-topic-item featured-topic-item--featured">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Possible Auto Tariffs Could Reshape NAFTA Talks</h3>
+                                    <p class="featured-topic-item__meta">24 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Canadian Media Has Outgrown Its Policy</h3>
+                                    <p class="featured-topic-item__meta">21 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-topics__item">
+                    <a href="#" class="featured-topics__item-header">
+                        <h2 class="featured-topics__item-heading">Environmental Law</h2>
+                        <img src="../../../images/law_2.jpg" class="featured-topics__item-image" alt="">
+                    </a>
+                    <div class="featured-topics__item-content">
+                        <div class="featured-topic-item featured-topic-item--featured">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">The G20 fights fire - But it won't prevent them</h3>
+                                    <p class="featured-topic-item__meta">24 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Trump is threatening the rule of law - What's at stake?</h3>
+                                    <p class="featured-topic-item__meta">21 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-topics__item">
+                    <a href="#" class="featured-topics__item-header">
+                        <h2 class="featured-topics__item-heading">Intellectual Property Law</h2>
+                        <img src="../../../images/law_3.jpg" class="featured-topics__item-image" alt="">
+                    </a>
+                    <div class="featured-topics__item-content">
+                        <div class="featured-topic-item featured-topic-item--featured">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Possible Auto Tariffs Could Reshape NAFTA Talks</h3>
+                                    <p class="featured-topic-item__meta">24 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Canadian Media Has Outgrown Its Policy</h3>
+                                    <p class="featured-topic-item__meta">21 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-topics__item">
+                    <a href="#" class="featured-topics__item-header">
+                        <h2 class="featured-topics__item-heading">International Indigenous Law</h2>
+                        <img src="../../../images/law_4.jpg" class="featured-topics__item-image" alt="">
+                    </a>
+                    <div class="featured-topics__item-content">
+                        <div class="featured-topic-item featured-topic-item--featured">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">The G20 fights fire - But it won't prevent them</h3>
+                                    <p class="featured-topic-item__meta">24 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-topic-item">
+                            <a class="featured-topic-item__link" href="#">
+                                <div class="featured-topic-item__content">
+                                    <h3 class="featured-topic-item__heading">Trump is threatening the rule of law - What's at stake?</h3>
+                                    <p class="featured-topic-item__meta">21 July, 2018</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="page__sticky-container">
+
+            {% if overviewNav %}
+                {% include "@molecules/overview-bar/overview-bar.twig" with overviewNav %}
+            {% endif %}
+
+            {% if listing %}
+                {% include "@organisms/listing/listing.twig" with listing %}
+            {% endif %}
+
+        </div>
+
+    </div>
+
+{% endblock %}
