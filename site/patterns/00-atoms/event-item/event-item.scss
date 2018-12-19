@@ -1,12 +1,26 @@
 .event-item {
     $root: &;
 
+    &:nth-child(2) {
+
+        #{$root}__short-date {
+            border-color: $color--border;
+        }
+
+        #{$root}__short-date-day {
+            color: darken($color--grey-dark, 10%);
+        }
+
+    }
+
     &--featured {
         grid-column: 1 / span 1;
         grid-row: 1 / span 3;
 
         #{$root}__link {
-            @include gutter(0, 0, 1, 0);
+            @include gutter(1, 1, 1, 0);
+            flex-direction: column;
+            border-right: 1px solid $color--border;
         }
 
         #{$root}__image-container {
@@ -14,7 +28,7 @@
         }
 
         #{$root}__heading {
-            @include font-size(default);
+            @include font-size(l);
             @include gutter(0, 0, 0.25, 0);
         }
 
@@ -29,9 +43,10 @@
     }
 
     &__link {
-        @include gutter(0.75, 0.75, 0.75, 0.75);
+        @include gutter(0, 0.75, 0, 0.75);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         position: relative;
         text-decoration: none;
         height: 100%;
@@ -53,6 +68,45 @@
 
         }
 
+    }
+
+    &__type {
+        @include font-size(xxs);
+        color: $color--primary;
+        text-transform: uppercase;
+        margin-bottom: ($grid / 4);
+    }
+
+    &__short-date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid $color--primary;
+        width: 66px;
+        height: 66px;
+        flex-basis: 66px;
+        max-width: 66px;
+        min-width: 66px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    &__short-date-day {
+        @include font-size(l);
+        color: $color--primary;
+        line-height: 1;
+    }
+
+    &__short-date-month {
+        @include font-size(default);
+        color: darken($color--grey-dark, 10%);
+        line-height: 1;
+    }
+
+    &__content {
+        padding-left: ($grid);
     }
 
     &__label {
@@ -99,9 +153,8 @@
         color: $color--default;
     }
 
-    &__date-label,
-    &__location-label {
-        @include gutter(0, 0, 0, 0.15);
+    &__date-label {
+        text-transform: uppercase;
     }
 
     .partners & {

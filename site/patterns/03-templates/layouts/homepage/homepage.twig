@@ -107,41 +107,34 @@
 
         {% include "@molecules/events-feed/events-feed.twig" with events %}
 
-        <div class="experts">
-            <div class="experts__container">
-                <div class="experts__header section-header">
-                    <h2 class="experts__heading section-header__heading">Featured Exports</h2>
-                    <div class="experts__actions section-header__actions">
-                        <a href="#">View all</a>
-                    </div>
-                </div>
-                <div class="experts__content">
-                    <div class="expert-item">
-                        <div class="export-item__container">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include "@molecules/experts/experts.twig" %}
 
         <div class="carousel partners">
             <div class="carousel__container glide js-carousel">
 
-                <div class="carousel__header">
-                    <h2 class="carousel__heading">From our Partners</h3>
-                    <div class="carousel__controls glide__arrows" data-glide-el="controls">
-                        <button aria-label="Previous" class="carousel__arrow carousel__arrow--prev glide__arrow glide__arrow--left" data-glide-dir="<">
-                            <svg class="carousel__arrow-icon" width="24" height="24">
-                                <use xlink:href="#arrow-left" />
-                            </svg>
-                        </button>
-                        <button aria-label="Next" class="carousel__arrow carousel__arrow--next glide__arrow glide__arrow--right" data-glide-dir=">">
-                            <svg class="carousel__arrow-icon" width="24" height="24">
-                                <use xlink:href="#arrow-right" />
-                            </svg>
-                        </button>
+                <div class="carousel__header section-header">
+                    <h2 class="carousel__heading section-header__heading">From our Partners</h3>
+                    <div class="section-header__actions">
+                        <div class="carousel__bullets glide__bullets" data-glide-el="controls[nav]">
+                            <button class="carousel__bullet glide__bullet" data-glide-dir="=0"></button>
+                            <button class="carousel__bullet glide__bullet" data-glide-dir="=1"></button>
+                            <button class="carousel__bullet glide__bullet" data-glide-dir="=2"></button>
+                            <button class="carousel__bullet glide__bullet" data-glide-dir="=3"></button>
+                        </div>
                     </div>
+                </div>
+
+                <div class="carousel__controls glide__arrows" data-glide-el="controls">
+                    <button aria-label="Previous" class="carousel__arrow carousel__arrow--prev glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <svg class="carousel__arrow-icon" width="42" height="42">
+                            <use xlink:href="#arrow-left" />
+                        </svg>
+                    </button>
+                    <button aria-label="Next" class="carousel__arrow carousel__arrow--next glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <svg class="carousel__arrow-icon" width="42" height="42">
+                            <use xlink:href="#arrow-right" />
+                        </svg>
+                    </button>
                 </div>
 
                 <div class="carousel__content glide__track" data-glide-el="track">
@@ -154,15 +147,6 @@
                                         <img class="carousel-item__image" src="../../../images/partner_image.jpg" alt="" />
                                     </div>
                                     <h3 class="carousel-item__heading">What money can't buy</h3>
-                                    <div class="carousel-item__meta">
-                                        <div class="carousel-item__date">
-                                            <div class="carousel-item__date-label">From Institute for new economic thinking</div>
-                                            <svg class="carousel-item__date-icon" width="14" height="14">
-                                                <use xlink:href="#external" />
-                                            </svg>
-                                        </div>
-
-                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -174,15 +158,6 @@
                                         <img class="carousel-item__image" src="../../../images/partner_image4.jpg" alt="" />
                                     </div>
                                     <h3 class="carousel-item__heading">The Africa Portal</h3>
-                                    <div class="carousel-item__meta">
-                                        <div class="carousel-item__date">
-                                            <div class="carousel-item__date-label">From Africa Portal</div>
-                                            <svg class="carousel-item__date-icon" width="14" height="14">
-                                                <use xlink:href="#external" />
-                                            </svg>
-                                        </div>
-
-                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -194,14 +169,6 @@
                                         <img class="carousel-item__image" src="../../../images/partner_image.jpg" alt="" />
                                     </div>
                                     <h3 class="carousel-item__heading">Balsillie School of International Affairs</h3>
-                                    <div class="carousel-item__meta">
-                                        <div class="carousel-item__date">
-                                            <div class="carousel-item__date-label">From Balsillie School of International Affairs</div>
-                                            <svg class="carousel-item__date-icon" width="14" height="14">
-                                                <use xlink:href="#external" />
-                                            </svg>
-                                        </div>
-                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -213,14 +180,6 @@
                                         <img class="carousel-item__image" src="../../../images/partner_image3.jpg" alt="" />
                                     </div>
                                     <h3 class="carousel-item__heading">150 years of Canadian foreign policy</h3>
-                                    <div class="carousel-item__meta">
-                                        <div class="carousel-item__date">
-                                            <div class="carousel-item__date-label">From Open Canada</div>
-                                            <svg class="carousel-item__date-icon" width="14" height="14">
-                                                <use xlink:href="#external" />
-                                            </svg>
-                                        </div>
-                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -228,12 +187,7 @@
                     </div>
                 </div>
 
-                <div class="carousel__bullets glide__bullets" data-glide-el="controls[nav]">
-                    <button class="carousel__bullet glide__bullet" data-glide-dir="=0"></button>
-                    <button class="carousel__bullet glide__bullet" data-glide-dir="=1"></button>
-                    <button class="carousel__bullet glide__bullet" data-glide-dir="=2"></button>
-                    <button class="carousel__bullet glide__bullet" data-glide-dir="=3"></button>
-                </div>
+
 
 
             </div>

@@ -1,36 +1,33 @@
 <div class="event-item {% if featured %}event-item--featured{% endif %} {% if past %}event-item--past{% endif %} {% if image %}event-item--image{% endif %}">
     <a class="event-item__link" href="{{ link }}">
-        <div class="event-item__image-container">
-            <img class="event-item__image" src="{{ image }}" alt="" />
-        </div>
-        {% if past %}
-        <div class="event-item__label">
-            Past event
+        {% if shortdate %}
+        <div class="event-item__short-date">
+            <span class="event-item__short-date-month">{{ shortdateMonth }}</span>
+            <span class="event-item__short-date-day">{{ shortdateDay }}</span>
         </div>
         {% endif %}
-        <h3 class="event-item__heading">{{ title }}</h3>
-        <div class="event-item__meta">
-            <div class="event-item__date">
-                <svg class="event-item__date-icon" width="12" height="12">
-                    <use xlink:href="#date" />
-                </svg>
-                <div class="event-item__date-label">{{ date }}</div>
+        <div class="event-item__content">
+            {% if type %}
+            <div class="event-item__type">
+                {{ type }}
             </div>
-            <div class="event-item__location">
-                <svg class="event-item__location-icon" width="12" height="12">
-                    <use xlink:href="#location" />
-                </svg>
-                <div class="event-item__location-label">{{ location }}</div>
+            {% endif %}
+            {% if image %}
+            <div class="event-item__image-container">
+                <img class="event-item__image" src="{{ image }}" alt="" />
             </div>
-        </div>
-        <div class="event-item__share share-dots">
-            <div class="event-item__share-toggle share-dots__container">
-                <svg class="event-item__share-toggle-icon share-dots__icon" width="24" height="24">
-                    <use xlink:href="#more-dots" />
-                </svg>
+            {% endif %}
+
+            {% if past %}
+            <div class="event-item__label">
+                Past event
             </div>
-            <div class="event-item__share-options share-dots__options">
-                {% include "@molecules/social-links/social-links.twig" with share only %}
+            {% endif %}
+            <h3 class="event-item__heading">{{ title }}</h3>
+            <div class="event-item__meta">
+                <div class="event-item__date">
+                    <div class="event-item__date-label">{{ date }}</div>
+                </div>
             </div>
         </div>
     </a>

@@ -1,0 +1,63 @@
+.expert-item {
+
+    &__bio {
+        @include gutter(0, 0, 1, 0);
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__avatar {
+        flex-basis: 56px;
+        min-width: 56px;
+        max-width: 56px;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+    }
+
+    &__avatar-image {
+        display: block;
+        width: 56px;
+        height: 56px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: ($grid * 0.75);
+    }
+
+    &__name {
+        @include font-size(default);
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $color--primary;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        @include font-size(default);
+        line-height: 1;
+    }
+
+    &__heading {
+        @include font-size(xs);
+        text-transform: uppercase;
+        color: lighten($color--black, 40%);
+        margin-bottom: ($grid / 4);
+    }
+
+    &__work-item-heading {
+        @include font-size(default);
+        margin-bottom: 5px;
+    }
+
+    &__work-item-date {
+        color: lighten($color--black, 40%);
+    }
+
+}

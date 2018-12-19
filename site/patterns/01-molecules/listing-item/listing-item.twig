@@ -1,8 +1,8 @@
-<div class="listing-item {% if image %}listing-item--image{% else %}listing-item--no-image{% endif %} {% if featured %}listing-item--featured{% endif %} js-slide-in">
+<div class="item listing-item {% if image %}listing-item--image{% else %}listing-item--no-image{% endif %} {% if featured %}listing-item--featured{% endif %}">
     <div class="listing-item__container" >
 
         {% if href %}
-        <a class="listing-item__link" href="{{ href }}" {% if imageBg %}style="background-image: url({{ image }})"{% endif %}>
+        <a class="listing-item__link content" href="{{ href }}" {% if imageBg %}style="background-image: url({{ image }})"{% endif %}>
         {% endif %}
 
             {% if image %}

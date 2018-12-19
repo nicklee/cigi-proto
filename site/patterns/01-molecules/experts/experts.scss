@@ -1,0 +1,14 @@
+.experts {
+    margin-bottom: ($grid * 2);
+
+    &__container {
+        @include aligner;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: ($grid);
+    }
+
+}

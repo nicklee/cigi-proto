@@ -9,7 +9,7 @@
         </div>
         {% endif %}
 
-        <div class="latest__content">
+        <div class="latest__content grid">
             {% for item in items %}
                 {% include "@molecules/listing-item/listing-item.twig" with item %}
             {% endfor %}

@@ -71,6 +71,7 @@
             {
                 "title" : "Lip-service Commitments Won't Halt Protectionism",
                 "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
                 "meta" : [
                     {
                         "title" : "Publication"
@@ -95,7 +96,6 @@
                 "title" : "Can the G20 Save Globalization's Waning Reputation?",
                 "href" : "#",
                 "text" : "",
-                "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
                         "title" : "Publication"
@@ -107,7 +107,6 @@
             {
                 "title" : "The economic Consequences of Trump's Iran Policy",
                 "href" : "#",
-                "image" : "../../../images/news-item2_large.jpg",
                 "meta" : [
                     {
                         "title" : "Event"
@@ -117,10 +116,9 @@
                 "date" : "June 6, 2018"
             },
             {
-                "title" : "Can the G20 Save Globalization's Waning Reputation?",
+                "title" : "Can the G20 Save Globalization's Waning Reputation? Can the G20 Save Globalization's Waning Reputation?",
                 "href" : "#",
                 "text" : "",
-                "image" : "../../../images/news-item_social.jpg",
                 "meta" : [
                     {
                         "title" : "Publication"
@@ -135,32 +133,45 @@
         "title" : "Events",
         "items" : [
             {
-                "title" : "78th Biennial International Law Association Conference",
+                "title" : "Making the Trading System Work for Climate Change",
                 "link" : "#",
                 "featured" : true,
                 "image" : "../../../images/news-feature.jpg",
+                "type" : "Upcoming event",
                 "date" : "20 - 24 August",
                 "location" : "Sydney, Australia"
             },
             {
-                "title" : "The Collapse of the American Empire",
+                "title" : "Japan’s Future Global Role: A New Dawn for the Land of the Rising Sun?",
                 "link" : "#",
                 "image" : false,
+                "type" : "Past event",
                 "date" : "29 August",
+                "shortdate" : true,
+                "shortdateMonth" : "Nov",
+                "shortdateDay" : "4",
                 "location" : "Waterloo, Canada"
             },
             {
-                "title" : "78th Biennial International Law Association Conference",
+                "title" : "Live Webcast: Jim Balsillie at the IMF Statistical Forum and Q & A with Christine Lagarde",
                 "link" : "#",
                 "image" : false,
+                "type" : "Upcoming event",
                 "date" : "20 August",
+                "shortdate" : true,
+                "shortdateMonth" : "Nov",
+                "shortdateDay" : "4",
                 "location" : "Sydney, Australia"
             },
             {
-                "title" : "The Collapse of the American Empire",
+                "title" : "The State of the World's Refugees",
                 "link" : "#",
                 "image" : false,
+                "type" : "Upcoming event",
                 "date" : "29 August",
+                "shortdate" : true,
+                "shortdateMonth" : "Nov",
+                "shortdateDay" : "4",
                 "location" : "Waterloo, Canada"
             }
         ]

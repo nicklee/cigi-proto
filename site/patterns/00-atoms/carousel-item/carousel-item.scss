@@ -6,14 +6,12 @@
         display: block;
         position: relative;
         text-decoration: none;
-        background-color: rgba($color--white, 0.8);
         // cursor: url('../images/cursor_plus.png'), auto;
         transition: background-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s,
                     border-color $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s,
                     transform $default-transition-speed cubic-bezier(0.65, 0.05, 0.36, 1) 0s;
 
         &:hover {
-            background-color: $color--white;
 
             #{$root}__heading {
                 color: $color--primary;
@@ -109,11 +107,11 @@
         }
 
         #{$root}__heading {
-            @include gutter(0.5, 0.5, 0, 0.5);
+            @include gutter(0.25, 0, 0, 0);
         }
 
         #{$root}__meta {
-            @include gutter(0, 0.5, 0.5, 0.5);
+            @include gutter(0, 0, 0.5, 0);
         }
 
         #{$root}__date-label {
