@@ -1,8 +1,12 @@
 .experts {
-    margin-bottom: ($grid * 2);
+    margin-bottom: ($grid * 4);
 
     &__container {
         @include aligner;
+    }
+
+    &__header {
+        margin-bottom: ($grid * 2);
     }
 
     &__content {

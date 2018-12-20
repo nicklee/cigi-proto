@@ -32,7 +32,6 @@
 
     &__name {
         @include font-size(default);
-        margin-bottom: 0;
         font-weight: 500;
         color: $color--primary;
         line-height: 1;
@@ -54,9 +53,12 @@
     &__work-item-heading {
         @include font-size(default);
         margin-bottom: 5px;
+        font-weight: 400;
     }
 
     &__work-item-date {
+        @include font-size(xxs);
+        text-transform: uppercase;
         color: lighten($color--black, 40%);
     }
 
