@@ -6,7 +6,7 @@
     &__content {
         display: grid;
         grid-column-gap: ($grid);
-        grid-row-gap: ($grid);
+        grid-row-gap: 0;
         grid-template-columns: 1fr 1fr;
     }
 

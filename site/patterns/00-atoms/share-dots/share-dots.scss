@@ -2,7 +2,7 @@
     $root: &;
     position: absolute;
     z-index: 20;
-    bottom: 0;
+    bottom: ($grid);
     right: 0;
     width: 24px;
     height: 24px;

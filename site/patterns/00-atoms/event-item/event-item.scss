@@ -18,9 +18,14 @@
         grid-row: 1 / span 3;
 
         #{$root}__link {
-            @include gutter(1, 1, 1, 0);
+            @include gutter(0, 1, 1, 0);
             flex-direction: column;
             border-right: 1px solid $color--border;
+
+            &:hover {
+                background-color: transparent;
+            }
+
         }
 
         #{$root}__image-container {
@@ -30,6 +35,10 @@
         #{$root}__heading {
             @include font-size(l);
             @include gutter(0, 0, 0.25, 0);
+        }
+
+        #{$root}__content {
+            padding-left: 0;
         }
 
     }

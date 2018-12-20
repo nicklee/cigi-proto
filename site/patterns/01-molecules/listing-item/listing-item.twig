@@ -5,6 +5,24 @@
         <a class="listing-item__link content" href="{{ href }}" {% if imageBg %}style="background-image: url({{ image }})"{% endif %}>
         {% endif %}
 
+        {% if meta %}
+            <div class="listing-item__meta meta">
+
+                {% for item in meta %}
+                    <div class="listing-item__meta-item meta-item">
+                        {% if item.icon %}
+                            <svg class="listing-item__icon" width="21px" height="21px">
+                                <use xlink:href="#{{ item.icon }}"></use>
+                            </svg>
+                        {% endif %}
+                        {% if item.title %}
+                            <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
             {% if image %}
                 <div class="listing-item__image-container">
                     {% if video %}
@@ -18,23 +36,7 @@
 
             <div class="listing-item__text-container">
 
-                {% if meta %}
-                    <div class="listing-item__meta meta">
 
-                        {% for item in meta %}
-                            <div class="listing-item__meta-item meta-item">
-                                {% if item.icon %}
-                                    <svg class="listing-item__icon" width="21px" height="21px">
-                                        <use xlink:href="#{{ item.icon }}"></use>
-                                    </svg>
-                                {% endif %}
-                                {% if item.title %}
-                                    <div class="listing-item__meta-label meta-item__label">{{ item.title }}</div>
-                                {% endif %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endif %}
 
                 <div class="listing-item__header">
                     <h2 class="listing-item__heading">{{ title|raw }}</h2>
@@ -67,9 +69,9 @@
                   </div>
                 {% endif %}
 
-                {% include "@atoms/share-dots/share-dots.twig" %}
-
             </div>
+
+            {% include "@atoms/share-dots/share-dots.twig" %}
 
         {% if href %}
         </a>
