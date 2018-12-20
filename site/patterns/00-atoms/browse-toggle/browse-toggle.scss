@@ -1,28 +1,32 @@
 .browse-toggle {
-    @include gutter(0.15, 0.4, 0.15, 0.2);
+    @include gutter(0, 0.4, 0.25, 0.2);
     $root: &;
     position: fixed;
     z-index: 10;
     right: -32px;
     top: 50%;
     display: flex;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
     align-items: center;
     will-change: transform;
     background-color: $color--white;
     transform: rotate(-90deg);
     cursor: pointer;
+    box-shadow: 0 0 5px rgba($color--black, 0.5);
     transition: background-color $default-transition-speed ease 0s,
-                transform $default-transition-speed ease 0s;
+                transform $default-transition-speed ease 0s,
+                right $default-transition-speed ease 0s;
 
     &--active {
-        background-color: $color--primary;
+        background-color: $color--white;
         transform: translate3d(0, (calc(30% - 32px)), 0), rotate(-90deg);
 
-        #{$root}__icon-off {
+        #{$root}__icon--off {
             display: none;
         }
 
-        #{$root}__icon-on {
+        #{$root}__icon--on {
             display: block;
         }
 
@@ -31,29 +35,46 @@
     &:hover {
         background-color: $color--primary;
 
-        #{$root}__icon-off {
+        #{$root}__icon--off,
+        #{$root}__icon--on {
             fill: $color--white;
         }
 
     }
 
-    &__icon-off {
-        display: block;
-        fill: $color--primary;
-        transition: fill $default-transition-speed ease 0s;
-    }
+    &__icon {
+        position: absolute;
 
-    &__icon-on {
-        display: none;
-        fill: $color--white;
-        transition: fill $default-transition-speed ease 0s;
+        &--off {
+            display: block;
+            fill: $color--primary;
+            transition: fill $default-transition-speed ease 0s;
+        }
+
+        &--on {
+            display: none;
+            transform: rotate(180deg);
+            fill: $color--primary;
+            transition: fill $default-transition-speed ease 0s;
+        }
+
     }
 
     &__label {
-        @include gutter(0, 0, 0, 0.25);
+        @include gutter(0.4, 0, 0, 0.25);
         @include font-size(s);
         color: $color--secondary;
-        font-weight: 500;
+        font-weight: 700;
+        text-transform: uppercase;
     }
+
+    .browse-active & {
+        z-index: 40;
+        right: 40%;
+        margin-right: -22px;
+        box-shadow: none;
+    }
+
+
 
 }

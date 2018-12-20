@@ -1,22 +1,28 @@
 <div class="app-browse">
-    <div class="app-browse__close js-browse-toggle">
-        <svg class="app-browse__close-icon" width="24" height="24">
-            <use xlink:href="#close" />
-        </svg>
-    </div>
     <div class="feed">
         <div class="feed__container">
             <div class="feed__header">
                 <h2 class="feed__heading">
-                    Browse
+                    Browse CIGI research
+                </h2>
+                <div class="feed__header-search">
+                    {% include "@molecules/search-form/search-form.twig" %}
+                </div>
+                <div class="feed__header-filters">
                     <a href="#" class="feed__dropdown">
-                        <div class="feed__dropdown-label">Latest</div>
                         <svg class="feed__dropdown-icon" width="24" height="24">
                             <use xlink:href="#arrow-down" />
                         </svg>
+                        <div class="feed__dropdown-label">Program</div>
                     </a>
-                </h2>
-                <div class="feed__sort-order sort-order">
+                    <a href="#" class="feed__dropdown">
+                        <svg class="feed__dropdown-icon" width="24" height="24">
+                            <use xlink:href="#arrow-down" />
+                        </svg>
+                        <div class="feed__dropdown-label">Topic</div>
+                    </a>
+                </div>
+                <!-- <div class="feed__sort-order sort-order">
                     <a href="#" class="sort-order__item">
                         <div class="sort-order__label">Image view</div>
                         <svg class="sort-order__icon" width="24" height="24">
@@ -29,7 +35,7 @@
                             <use xlink:href="#sort-list" />
                         </svg>
                     </a>
-                </div>
+                </div> -->
             </div>
             <div class="feed__content" id="js-modal">
                 <div class="feed-item feed-item--featured">
