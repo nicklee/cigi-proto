@@ -1,0 +1,102 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+<div class="page__header">
+    <div class="page-heading">
+        <div class="page-heading__container">
+            <div class="page-heading__primary-col">
+                {% include "@molecules/breadcrumb/breadcrumb.twig" with breadcrumb %}
+                <h1 class="page-heading__heading">{{ title|raw }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page__content">
+    <div class="page-content">
+        <div class="page-content__container">
+
+            <div class="page-content__primary-col">
+                <div class="introduction">
+                    <div class="introduction__container">
+                        <p class="introduction__text">We are the Centre for International Governance Innovation: an independent, non-partisan think tank with an objective and uniquely global perspective. Our research, opinions and public voice make a difference in today’s world by bringing clarity and innovative thinking to global policy making. By working across disciplines and in partnership with the best peers and experts, we are the benchmark for influential research and trusted analysis.</p>
+                    </div>
+                </div>
+                <div class="body">
+                    <p>Our research programs focus on governance of the global economy, global security and politics, and international law in collaboration with a range of strategic partners and support from the Government of Canada, the Government of Ontario, as well as founder Jim Balsillie.</p>
+                    <h2>Vision</h2>
+                    <p>CIGI strives to be the world's leading think tank on international governance, with recognized impact on significant global problems.</p>
+                    <h2>Mission</h2>
+                    <p>CIGI will build bridges from knowledge to power by conducting world-leading research and analysis, and influencing policy makers to innovate.</p>
+                    <h2>Beliefs</h2>
+                    <p>CIGI believes that better international governance can improve the lives of people everywhere, by increasing prosperity, ensuring global sustainability, addressing inequality and safeguarding human rights, and promoting a more secure world.</p>
+                </div>
+            </div>
+
+            <div class="page-content__secondary-col">
+
+                <div class="secondary-nav">
+                    <div class="secondary-nav__container">
+                        <div class="secondary-nav__header">
+                            <h2 class="secondary-nav__heading">Explore —</h2>
+                        </div>
+                        <div class="secondary-nav__items">
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Annual Report
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    CIGI Campus
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Donate
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Funding
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    History
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Leadership
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Partners
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Staff Directory
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Strategic Plan
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!--/ page-heading__secondary-col -->
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

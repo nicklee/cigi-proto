@@ -19,6 +19,76 @@
                 ],
                 "authorName" : "Rose Reyes",
                 "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Can the G20 Save Globalization's Waning Reputation?",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "featured" : true,
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Searching for the Smart City's Democratic Future",
+                "href" : "#",
+                "image" : "../../../images/news-item_social.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Canada needs standards to support big data analytics",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ]
+            },
+            {
+                "title" : "COP24 Will Put Climate Diplomacy to the Test",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Lip-service Commitments Won't Halt Protectionism",
+                "href" : "#",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Steel and Aluminum Tariffs Move to the Back Burner",
+                "href" : "#",
+                "text" : "",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
             }
         ]
     },

@@ -12,32 +12,40 @@
     }
 
     &__header-search {
-
+        display: flex;
+        flex-direction: row;
+        margin-bottom: ($grid / 2);
     }
 
     &__header-filters {
         display: flex;
         flex-direction: row;
+        margin-bottom: ($grid);
     }
 
     &__heading {
-        @include font-size(l);
+        @include font-size(default);
         display: flex;
         flex-direction: row;
-        font-weight: 400;
+        text-transform: uppercase;
+        font-weight: 700;
         align-items: baseline;
         // border-top: 3px solid $color--secondary;
-        margin-bottom: 0;
+        margin-bottom: ($grid / 2);
     }
 
     &__dropdown {
-        @include gutter(0, 0, 0, 0.2);
+        @include gutter(0, 0.2, 0, 0);
         display: flex;
         flex-direction: row;
         align-items: center;
         font-weight: 500;
         color: $color--primary;
         text-decoration: none;
+    }
+
+    &__dropdown-label {
+        color: $color--black;
     }
 
     &__dropdown-icon {

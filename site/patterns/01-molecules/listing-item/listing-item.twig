@@ -46,28 +46,30 @@
                     <p class="listing-item__text">{{ text }}</p>
                 {% endif %}
 
-                {% if authorName %}
-                    <div class="listing-item__author author">
-                        <div class="author__container">
-                            {% if authorImage %}
-                            <div class="author__avatar">
-                                <img class="author__avatar-image" src="{{ authorImage }}" alt="{{ authorName }}">
-                            </div>
-                            {% endif %}
-                            <div class="author__info">
-                                <h3 class="author__name">{{ authorName }}</h3>
+                <div class="listing-item__author-date">
+                    {% if authorName %}
+                        <div class="listing-item__author author">
+                            <div class="author__container">
+                                {% if authorImage %}
+                                <div class="author__avatar">
+                                    <img class="author__avatar-image" src="{{ authorImage }}" alt="{{ authorName }}">
+                                </div>
+                                {% endif %}
+                                <div class="author__info">
+                                    <h3 class="author__name">{{ authorName }}</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {% endif %}
+                    {% endif %}
 
-                {% if date %}
-                  <div class="listing-item__date date">
-                    <div class="listing-item__date-container">
-                      {{ date }}
-                    </div>
-                  </div>
-                {% endif %}
+                    {% if date %}
+                      <div class="listing-item__date date">
+                        <div class="listing-item__date-container">
+                          {{ date }}
+                        </div>
+                      </div>
+                    {% endif %}
+                </div>
 
             </div>
 

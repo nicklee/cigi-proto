@@ -310,4 +310,23 @@
 
     }
 
+    .latest & {
+        min-height: 332px;
+
+        #{$root}__link {
+            min-height: 332px;
+        }
+
+        &--no-image {
+            min-height: 180px;
+
+            #{$root}__link {
+                min-height: 180px;
+            }
+
+        }
+
+    }
+
+
 }

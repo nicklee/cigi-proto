@@ -1,0 +1,38 @@
+.page-content {
+    @include aligner;
+    $root: &;
+
+    &__container {
+        @include gutter(1, 0, 0, 0);
+        @include aligner;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-basis: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    &__primary-col {
+        flex-basis: 80%;
+        max-width: 700px;
+        min-width: 0;
+        border-bottom: 1px solid $color--border;
+        margin-bottom: ($grid * 3);
+        border-top: 1px solid $color--border;
+        max-width: 800px;
+        min-width: 0;
+        padding-top: ($grid * 1.5);
+        padding-bottom: ($grid * 1.5);
+        padding-right: ($grid * 2);
+    }
+
+    &__secondary-col {
+        flex-basis: 20%;
+        max-width: 20%;
+        min-width: 20%;
+        border-top: 1px solid $color--border;
+        padding-top: ($grid * 1.5);
+    }
+
+}

@@ -1,0 +1,178 @@
+{
+    "title": "Home Page",
+    "template" : "homepage",
+    "progressBar" : true,
+    "newsFeed" : {
+        "title" : "Featured",
+        "actions" : "Trending: <a href='#'>G20</a> <a href='#'>Traditional Knowledge</a> <a href='#'>USMCA</a> <a href='#'>Climate Change</a>",
+        "items" : [
+            {
+                "title" : "Brexit's impact on International Law",
+                "href" : "#",
+                "text" : "A CIGI Essay Series",
+                "image" : "../../../images/news-feature.jpg",
+                "video" : true,
+                "meta" : [
+                    {
+                        "title" : "Multimedia"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Can the G20 Save Globalization's Waning Reputation?",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "featured" : true,
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Searching for the Smart City's Democratic Future",
+                "href" : "#",
+                "image" : "../../../images/news-item_social.jpg",
+                "meta" : [
+                    {
+                        "title" : "Opinion"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Canada needs standards to support big data analytics",
+                "href" : "#",
+                "image" : "../../../images/news-item3_large.jpg",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ]
+            },
+            {
+                "title" : "COP24 Will Put Climate Diplomacy to the Test",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Lip-service Commitments Won't Halt Protectionism",
+                "href" : "#",
+                "image" : "../../../images/news-item_politics.jpg",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Steel and Aluminum Tariffs Move to the Back Burner",
+                "href" : "#",
+                "text" : "",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Can the G20 Save Globalization's Waning Reputation?",
+                "href" : "#",
+                "text" : "",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "The economic Consequences of Trump's Iran Policy",
+                "href" : "#",
+                "meta" : [
+                    {
+                        "title" : "Event"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            },
+            {
+                "title" : "Can the G20 Save Globalization's Waning Reputation? Can the G20 Save Globalization's Waning Reputation?",
+                "href" : "#",
+                "text" : "",
+                "meta" : [
+                    {
+                        "title" : "Publication"
+                    }
+                ],
+                "authorName" : "Rose Reyes",
+                "date" : "June 6, 2018"
+            }
+        ]
+    },
+    "events" : {
+        "title" : "Events",
+        "items" : [
+            {
+                "title" : "Making the Trading System Work for Climate Change",
+                "link" : "#",
+                "featured" : true,
+                "image" : "../../../images/news-feature.jpg",
+                "type" : "Upcoming event",
+                "date" : "20 - 24 August",
+                "location" : "Sydney, Australia"
+            },
+            {
+                "title" : "Japan’s Future Global Role: A New Dawn for the Land of the Rising Sun?",
+                "link" : "#",
+                "image" : false,
+                "type" : "Past event",
+                "date" : "29 August",
+                "shortdate" : true,
+                "shortdateMonth" : "Nov",
+                "shortdateDay" : "4",
+                "location" : "Waterloo, Canada"
+            },
+            {
+                "title" : "Live Webcast: Jim Balsillie at the IMF Statistical Forum and Q & A with Christine Lagarde",
+                "link" : "#",
+                "image" : false,
+                "type" : "Upcoming event",
+                "date" : "20 August",
+                "shortdate" : true,
+                "shortdateMonth" : "Nov",
+                "shortdateDay" : "4",
+                "location" : "Sydney, Australia"
+            },
+            {
+                "title" : "The State of the World's Refugees",
+                "link" : "#",
+                "image" : false,
+                "type" : "Upcoming event",
+                "date" : "29 August",
+                "shortdate" : true,
+                "shortdateMonth" : "Nov",
+                "shortdateDay" : "4",
+                "location" : "Waterloo, Canada"
+            }
+        ]
+    }
+}

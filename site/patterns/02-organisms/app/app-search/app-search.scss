@@ -41,6 +41,11 @@
                 @include font-size(xl);
             }
 
+            .app-browse & {
+                @include font-size(default);
+                color: $color--border;
+            }
+
         }
 
         .search-header & {
@@ -57,6 +62,12 @@
                 border-color: $color--white;
             }
 
+        }
+
+        .app-browse & {
+            @include font-size(default);
+            border-width: 3px;
+            border-color: $color--black;
         }
 
     }
@@ -105,6 +116,13 @@
 
         }
 
+        .app-browse & {
+            width: 21px;
+            height: 21px;
+            top: 11px;
+            left: -19px;
+        }
+
     }
 
     &__icon {
@@ -118,6 +136,11 @@
 
         .template__search & {
             fill: $color--white;
+        }
+
+        .app-browse & {
+            width: 21px;
+            height: 21px;
         }
 
     }

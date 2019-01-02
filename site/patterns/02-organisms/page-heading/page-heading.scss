@@ -132,4 +132,18 @@
 
     }
 
+    .template__standard .page__header & {
+
+        #{$root}__container {
+            margin-bottom: 0;
+        }
+
+        #{$root}__primary-col {
+            border-top: 0;
+            padding-top: 0;
+        }
+
+    }
+
+
 }
