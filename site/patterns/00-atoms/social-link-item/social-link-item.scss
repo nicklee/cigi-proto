@@ -10,6 +10,11 @@
 
             #{$root}__icon {
                 fill: $color--primary;
+
+                .homepage-v1 & {
+                    fill: $color--white;
+                }
+                
             }
 
         }
@@ -20,6 +25,11 @@
         height: 21px;
         fill: $color--white;
         transition: fill $default-transition-speed ease 0s;
+
+        .homepage-v1 & {
+            fill: $color--secondary;
+        }
+
     }
 
     &__label {

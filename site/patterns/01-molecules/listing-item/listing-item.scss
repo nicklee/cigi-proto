@@ -328,5 +328,37 @@
 
     }
 
+    .homepage-v1 & {
+
+        &:nth-child(n+6) {
+
+            #{$root}__text-container {
+                border-bottom: 0;
+            }
+
+        }
+
+        &:nth-child(7) {
+
+            #{$root}__text-container {
+                border-bottom: 1px solid $color--border;
+            }
+
+        }
+
+    }
+
+    .homepage-v2 & {
+
+        &:nth-child(n+4) {
+
+            #{$root}__text-container {
+                border-bottom: 0;
+            }
+
+        }
+
+    }
+
 
 }

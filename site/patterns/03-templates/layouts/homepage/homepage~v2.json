@@ -1,6 +1,7 @@
 {
     "title": "Home Page",
     "template" : "homepage",
+    "bodyModifier" : "homepage-v2",
     "progressBar" : true,
     "newsFeed" : {
         "title" : "Featured",

@@ -14,6 +14,17 @@
             color: $color--white;
         }
 
+        .homepage-v1 & {
+            color: $color--secondary;
+
+            &:hover {
+                color: $color--white;
+            }
+            
+        }
+
     }
+
+
 
 }

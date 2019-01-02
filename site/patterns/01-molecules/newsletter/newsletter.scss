@@ -113,6 +113,10 @@
                 border-bottom: 2px solid $color--white;
             }
 
+            .homepage-v1 & {
+                border-color: $color--white;
+            }
+
         }
 
     }
