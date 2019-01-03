@@ -86,7 +86,7 @@
         ]
     },
     "overviewNav" : {
-        "title" : "Browse International Law",
+        "title" : "Browse Publications",
         "date" : false,
         "items" : [
             {
@@ -120,7 +120,7 @@
                         "class" : "active"
                     },
                     {
-                        "title" : "Video",
+                        "title" : "Books",
                         "href" : "#"
                     },
                     {
