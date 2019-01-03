@@ -1,0 +1,304 @@
+{% extends "@templates/__app.twig" %}
+
+{% block app__page %}
+
+<div class="page__header">
+    <div class="page-heading">
+        <div class="page-heading__container">
+            <div class="page-heading__primary-col">
+                {% include "@molecules/breadcrumb/breadcrumb.twig" with breadcrumb %}
+                <h1 class="page-heading__heading">{{ title|raw }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page__content">
+    <div class="page-content">
+        <div class="page-content__container">
+
+            <div class="page-content__primary-col">
+                <div class="introduction">
+                    <div class="introduction__container">
+                        <p class="introduction__text">Publishing is an integral part of achieving CIGI’s mission. CIGI publishes peer-reviewed papers, special reports, policy briefs, collected series and conference reports that are outputs of CIGI’s research programs. Most publications are free to download from our website through a Creative Commons Non-commercial No Derivatives License.</p>
+                    </div>
+                </div>
+                <div class="body">
+
+                    <div class="publications glide js-carousel">
+                        <div class="publications__container">
+
+                            <div class="publications__header section-header">
+                                <h2 class="publications__heading section-header__heading">Featured</h2>
+                                <div class="section-header__actions">
+                                    <div class="carousel__bullets glide__bullets" data-glide-el="controls[nav]">
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=0"></button>
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=1"></button>
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=2"></button>
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=3"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel__content glide__track" data-glide-el="track">
+                                <div class="carousel__slides glide__slides">
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/pub_1.2.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Paper</div>
+                                                <h3 class="publication-item__heading">Governance Innovation for a Connected World: Protecting Free Expression, Diversity and Civic Engagement in the Global Digital Ecosystem</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        Alex He
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/pub_2.2.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Conference Report</div>
+                                                <h3 class="publication-item__heading">The Emerging Model of Economic Policy Making under Xi Jinping: Literature Review, Theoretical Frameworks and Methodologies</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        Alex He
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/pub_3.2.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Policy Brief</div>
+                                                <h3 class="publication-item__heading">Energizing Regional Collaboration and Governance: CIGI Summit of North American Arctic Leaders</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        John Higginbotham & Jennifer Spence
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/pub_1.2.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Paper</div>
+                                                <h3 class="publication-item__heading">Governance Innovation for a Connected World: Protecting Free Expression, Diversity and Civic Engagement in the Global Digital Ecosystem</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        Alex He
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publications glide js-carousel">
+                        <div class="publications__container">
+
+                            <div class="publications__header section-header">
+                                <h2 class="publications__heading section-header__heading">Recently added</h2>
+                                <div class="section-header__actions">
+                                    <div class="carousel__bullets glide__bullets" data-glide-el="controls[nav]">
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=0"></button>
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=1"></button>
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=2"></button>
+                                        <button class="carousel__bullet glide__bullet" data-glide-dir="=3"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel__content glide__track" data-glide-el="track">
+                                <div class="carousel__slides glide__slides">
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/publication_1.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Paper</div>
+                                                <h3 class="publication-item__heading">Governance Innovation for a Connected World: Protecting Free Expression, Diversity and Civic Engagement in the Global Digital Ecosystem</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        Alex He
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/publication_2.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Conference Report</div>
+                                                <h3 class="publication-item__heading">The Emerging Model of Economic Policy Making under Xi Jinping: Literature Review, Theoretical Frameworks and Methodologies</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        Alex He
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/publication_3.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Policy Brief</div>
+                                                <h3 class="publication-item__heading">Energizing Regional Collaboration and Governance: CIGI Summit of North American Arctic Leaders</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        John Higginbotham & Jennifer Spence
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="carousel-item glide__slide">
+                                        <a href="#" class="publication-item__container">
+                                            <div class="publication-item__image-container">
+                                                <img class="publication-item__image" src="../../../images/publication_4.jpg" alt="">
+                                            </div>
+                                            <div class="publication-item__text-container">
+                                                <div class="publication-item__type">Paper</div>
+                                                <h3 class="publication-item__heading">Governance Innovation for a Connected World: Protecting Free Expression, Diversity and Civic Engagement in the Global Digital Ecosystem</h3>
+                                                <div class="publication-item__meta">
+                                                    <div class="publication-item__meta-item">
+                                                        31 July 2018
+                                                    </div>
+                                                    <div class="publication-item__meta-item">
+                                                        Alex He
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="page-content__secondary-col">
+
+                <div class="secondary-nav">
+                    <div class="secondary-nav__container">
+                        <div class="secondary-nav__header">
+                            <h2 class="secondary-nav__heading">Explore —</h2>
+                        </div>
+                        <div class="secondary-nav__items">
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Books
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Bookstore
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Collected series
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Conference reports
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Papers
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Policy briefs
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Policy memos
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Special reports
+                                </a>
+                            </div>
+                            <div class="secondary-nav-item">
+                                <a class="secondary-nav-item__link" href="#">
+                                    Style guide
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!--/ page-heading__secondary-col -->
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
