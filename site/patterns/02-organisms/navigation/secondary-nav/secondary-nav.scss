@@ -103,4 +103,15 @@
 
     }
 
+    .template__publications & {
+        margin-bottom: ($grid);
+        margin-top: ($grid * 1.5);
+
+        #{$root}__items {
+            display: flex;
+            font-weight: bold;
+        }
+
+    }
+
 }

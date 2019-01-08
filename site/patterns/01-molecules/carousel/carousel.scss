@@ -12,12 +12,22 @@
 
     &__content {
         overflow: hidden;
+
+        .publications--all & {
+            overflow: visible;
+        }
+
     }
 
     &__slides {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+
+        .publications--all & {
+            flex-wrap: wrap;
+        }
+
     }
 
     &__controls {

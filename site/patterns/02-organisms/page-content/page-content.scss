@@ -35,4 +35,10 @@
         padding-top: ($grid * 1.5);
     }
 
+    &__full-col {
+        flex-basis: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
 }

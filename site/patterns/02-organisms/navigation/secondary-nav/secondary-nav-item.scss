@@ -55,4 +55,27 @@
 
     }
 
+    .template__publications & {
+        margin-right: ($grid * 1.75);
+
+        #{$root}__link {
+            border-bottom: 0;
+            line-height: 1.2;
+
+            &:hover {
+                color: $color--white;
+            }
+
+        }
+
+        &--selected {
+
+            #{$root}__link {
+                border-bottom: 2px solid $color--white;
+            }
+
+        }
+
+    }
+
 }

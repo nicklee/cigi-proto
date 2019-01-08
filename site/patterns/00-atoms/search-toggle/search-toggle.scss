@@ -63,7 +63,8 @@
     }
 
     .template__multimedia &,
-    .template__search & {
+    .template__search &,
+    .template__publications & {
 
         #{$root}__icon {
             fill: $color--white;

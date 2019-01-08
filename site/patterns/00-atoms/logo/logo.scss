@@ -54,7 +54,8 @@
     }
 
     .template__multimedia &,
-    .template__search & {
+    .template__search &,
+    .template__publications & {
         border-color: $color--white;
 
         #{$root}__item {

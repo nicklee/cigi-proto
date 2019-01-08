@@ -25,6 +25,12 @@
         min-width: 80%;
     }
 
+    &__full-col {
+        flex-basis: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
     &__secondary-col {
         flex-basis: 20%;
         max-width: 20%;
@@ -144,6 +150,16 @@
         }
 
     }
+
+    .template__publications & {
+
+        #{$root}__heading {
+            @include font-size(xxl);
+            color: $color--white;
+        }
+    }
+
+
 
 
 }

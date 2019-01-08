@@ -53,7 +53,8 @@
             border-color: $color--black;
         }
 
-        .template__search & {
+        .template__search &,
+        .template__publications & {
             color: $color--white;
             transition: border $default-transition-speed ease 0s;
             border-width: 3px;
@@ -134,7 +135,8 @@
             height: ($grid * 1.5);
         }
 
-        .template__search & {
+        .template__search &,
+        .template__publications & {
             fill: $color--white;
         }
 

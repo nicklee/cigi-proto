@@ -17,6 +17,10 @@
             top: ($grid * 2);
         }
 
+        .template__publications & {
+            background-color: $color--off-white;
+        }
+
     }
 
     &__content-container {

@@ -113,7 +113,8 @@
         background-color: $color--primary;
     }
 
-    .template__search & {
+    .template__search &,
+    .template__publications & {
         background-color: $color--black;
     }
 

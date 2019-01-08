@@ -89,4 +89,23 @@
         margin-bottom: ($grid);
     }
 
+    .template__publications & {
+
+        #{$root}__text {
+            color: rgba($color--white, 0.8);
+
+            &::after {
+                content: '';
+                display: block;
+                background-color: rgba($color--white, 0.3);
+                width: 80px;
+                height: 1px;
+                border-bottom: 5px;
+                margin-top: ($grid * 1.5);
+            }
+
+        }
+
+    }
+
 }
