@@ -57,8 +57,7 @@
         }
 
         @include media-query(laptop) {
-            // grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-column-gap: ($grid * 2);
+            grid-column-gap: ($grid * 1.5);
             grid-row-gap: ($grid);
             grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             grid-auto-rows: 10px;

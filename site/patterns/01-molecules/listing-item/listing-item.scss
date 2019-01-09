@@ -16,7 +16,8 @@
         #{$root}__heading {
             @include gutter(0, 0, 0.2, 0);
             @include font-size(l);
-            max-width: ($grid * 13);
+            max-width: ($grid * 15);
+            font-weight: 700;
         }
 
         #{$root}__text {
@@ -92,7 +93,7 @@
             top: -21px;
             left: -21px;
             width: calc(100% + 42px);
-            height: calc(100% + 56px);
+            height: calc(100% + 42px);
             z-index: -1;
             transition: opacity $default-transition-speed ease 0s;
         }
@@ -152,6 +153,7 @@
         flex-direction: row;
         text-transform: uppercase;
         color: $color--primary;
+        font-weight: 600;
         justify-self: flex-end;
     }
 
@@ -167,7 +169,7 @@
 
     &__heading {
         @include font-size(m);
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.1;
         margin-bottom: 5px;
     }
@@ -311,10 +313,10 @@
     }
 
     .latest & {
-        min-height: 332px;
+        min-height: 342px;
 
         #{$root}__link {
-            min-height: 332px;
+            min-height: 342px;
         }
 
         &--no-image {

@@ -18,7 +18,7 @@
                         "title" : "Multimedia"
                     }
                 ],
-                "authorName" : "Rose Reyes",
+                "authorName" : "Jesse Hirsh",
                 "date" : "June 6, 2018"
             },
             {
@@ -31,7 +31,7 @@
                         "title" : "Opinion"
                     }
                 ],
-                "authorName" : "Rose Reyes",
+                "authorName" : "Dan Ciuriak",
                 "date" : "June 6, 2018"
             },
             {
@@ -54,7 +54,9 @@
                     {
                         "title" : "Publication"
                     }
-                ]
+                ],
+                "authorName" : "Nikki Gladstone",
+                "date" : "June 6, 2018"
             },
             {
                 "title" : "COP24 Will Put Climate Diplomacy to the Test",
@@ -76,7 +78,7 @@
                         "title" : "Publication"
                     }
                 ],
-                "authorName" : "Rose Reyes",
+                "authorName" : "Kevin Carmicheal",
                 "date" : "June 6, 2018"
             },
             {
